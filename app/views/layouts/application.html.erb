@@ -10,17 +10,7 @@
   </head>
 
   <body>
-  <% if logged_in? %>
-    <form action="<%= session_url %>" method="POST">
-      <input type="hidden" name="_method" value="DELETE">
-      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-      <button>Sign Out</button>
-    </form>
-  <% end %>
 
-  <% if flash[:errors] %>
-    <%= json: currentUser.errors.full_messages %>
-  <% end %>
 
     <%= yield %>
   </body>
