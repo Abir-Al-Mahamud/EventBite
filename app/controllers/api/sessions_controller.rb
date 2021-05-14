@@ -1,34 +1,18 @@
-class SessionsController < ApplicationController
+class Api::SessionsController < ApplicationController
 
     def create 
-        @user = User.find_by_credentials(
-            params[:user][:email], 
-            params[:user][:password]
-        )
+        @user = User.find_by_credentials(params[:user][:email], [:user][:password])
 
-        if @user 
-            login(@user)
-            render "api/users/show"
+        if @user.nil?
+            render json: ['That is the wrong credentials'], status: 401
         else
-            render json: ["Invalid email or password"], status: 401
-            
+            login!(@user)
+            render 'api/users/show';
         end
     end
 
     def destroy 
-        @user = current_user 
-        if @user 
-            logout
-            render "api/users/show"
-        else
-            render json: ["Noone is currently signed in"], status: 404
-        end
+        logout! 
+        render json: { message: 'Logged out successfully'}
     end
-
-    private 
-
-    def session_params 
-        params.require(:user).permit(:email, :password)
-    end
-    
 end

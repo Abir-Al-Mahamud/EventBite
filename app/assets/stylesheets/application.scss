@@ -1,0 +1,79 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ html, body, div{
+     padding: 0;
+     margin: 0;
+     font-family: 'Times New Roman', Times, serif;
+ }
+
+ .nav-bar {
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+
+     .button{
+         background-color: orange;
+         padding: 20px;
+         box-shadow: gray;
+         text-decoration: none;
+     }
+     .button:hover{
+         background-color: blue;
+         box-shadow: black;
+     }
+ }
+
+ .signup-form{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     height: auto;
+     justify-content: center;
+     align-items: center;
+     form{
+         height: 300px;
+         width: 300px;
+         background: wheat;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+     }
+     label{
+         padding: 20px;
+         display: block;
+     }
+     button{
+         display: block;
+         padding: 10px;
+         margin: 30px;
+     }
+ }
+
+ .home{
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     min-height: 300px;
+     h1{
+         color: #f05537;
+         font-family: Helvetica, Arial, sans-serif;
+         z-index: 1;
+         text-align: left;
+         width: 100%;
+     }
+ }
