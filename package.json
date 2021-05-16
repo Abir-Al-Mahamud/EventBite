@@ -2,22 +2,22 @@
   "name": "event_bite",
   "private": true,
   "dependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.4",
-    "react": "^15.3.0",
-    "react-dom": "^15.3.0",
-    "react-redux": "^4.4.5",
-    "react-router": "^2.6.1",
-    "redux": "^3.5.2",
-    "redux-thunk": "^2.1.0",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0"
   },
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "version": "1.0.0",
-  "main": "index.js",
   "directories": {
     "lib": "lib",
     "test": "test"
@@ -25,8 +25,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "webpack",
-    "webpack": "webpack --watch --mode=development",
-    "build": "webpack --mode=production"
+    "webpack": "webpack --watch --mode=development"
   },
   "repository": {
     "type": "git",

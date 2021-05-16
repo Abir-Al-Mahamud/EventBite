@@ -7,6 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-user1 = User.create([ {email: 'abir@gmail.com', first_name: 'Abir', last_name: 'Mahamud'}])
-user2 = User.create([{email: 'hello@gmail.com', first_name:'Joe', last_name: 'BlackSmith'}]), 
-user3 = User.create([{email:'whatsup@gmail.com', first_name: 'Bob', last_name: 'Bradword'}]),
+user1 = User.create([ {email: 'abir@gmail.com', first_name: 'Abir', last_name: 'Mahamud', password: '123456'}])
+user2 = User.create([{email: 'hello@gmail.com', first_name:'Joe', last_name: 'BlackSmith', password: '12345678'}]), 
+user3 = User.create([{email:'whatsup@gmail.com', first_name: 'Bob', last_name: 'Bradword', password: '1234567'}]),

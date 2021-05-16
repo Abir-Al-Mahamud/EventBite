@@ -3380,3 +3380,841 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 7318ms (Views: 7313.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2021-05-14 13:40:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/abirmahamud/Desktop/EventBiteFullStack/app/assets/config
+  /Users/abirmahamud/Desktop/EventBiteFullStack/app/assets/images
+  /Users/abirmahamud/Desktop/EventBiteFullStack/app/assets/javascripts
+  /Users/abirmahamud/Desktop/EventBiteFullStack/app/assets/stylesheets
+  /Users/abirmahamud/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/abirmahamud/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.5/lib/assets/compiled
+  /Users/abirmahamud/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.5/app/assets/javascripts
+  /Users/abirmahamud/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.5/lib/assets/compiled
+  /Users/abirmahamud/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/abirmahamud/Desktop/EventBiteFullStack/node_modules):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3269740088333875578_70218623069280'
+Started GET "/" for ::1 at 2021-05-14 16:04:43 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/abirmahamud/Desktop/EventBiteFullStack/app/assets/config
+  /Users/abirmahamud/Desktop/EventBiteFullStack/app/assets/images
+  /Users/abirmahamud/Desktop/EventBiteFullStack/app/assets/javascripts
+  /Users/abirmahamud/Desktop/EventBiteFullStack/app/assets/stylesheets
+  /Users/abirmahamud/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/abirmahamud/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.5/lib/assets/compiled
+  /Users/abirmahamud/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.5/app/assets/javascripts
+  /Users/abirmahamud/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.5/lib/assets/compiled
+  /Users/abirmahamud/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/abirmahamud/Desktop/EventBiteFullStack/node_modules):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <% if current_user %>
+    11:     <script>
+    12:       window.user = {
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3269740088333875578_70218622574860'
+Started GET "/" for ::1 at 2021-05-14 16:05:54 -0400
+  [1m[35m (27.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/abirmahamud/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.2ms)
+  [1m[36mUser Load (28.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 4115ms (Views: 3987.0ms | ActiveRecord: 99.5ms)
+
+
+Started GET "/" for ::1 at 2021-05-14 16:18:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 249ms (Views: 220.0ms | ActiveRecord: 18.2ms)
+
+
+Started GET "/" for ::1 at 2021-05-14 16:18:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 91ms (Views: 82.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-05-14 16:22:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 1399ms (Views: 1391.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-05-14 16:24:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (10.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 1745ms (Views: 1729.6ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/" for ::1 at 2021-05-14 16:33:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 154ms (Views: 133.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2021-05-14 17:12:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 1023ms (Views: 1012.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for ::1 at 2021-05-14 17:13:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 845ms (Views: 839.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2021-05-14 17:14:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 605ms (Views: 600.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/session" for ::1 at 2021-05-14 19:31:05 -0400
+
+AbstractController::ActionNotFound - The action 'show' could not be found for Api::SessionsController:
+
+Started POST "/__better_errors/714fdee21d1e6e8d/variables" for ::1 at 2021-05-14 19:31:06 -0400
+Started GET "/" for ::1 at 2021-05-15 14:25:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (9.5ms)
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 280ms (Views: 218.2ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 16:18:25 -0400
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/abirmahamud/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 1756ms (Views: 1742.3ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 17:08:58 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 414ms (Views: 402.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 17:09:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 361ms (Views: 358.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 17:10:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 39ms (Views: 35.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 17:31:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 664ms (Views: 652.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 17:31:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 67ms (Views: 63.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 17:32:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 76ms (Views: 72.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 17:34:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 37ms (Views: 30.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 17:48:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 134ms (Views: 122.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 17:51:03 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 34ms (Views: 29.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 17:57:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 56ms (Views: 48.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 18:34:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 462ms (Views: 453.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 18:35:21 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 36ms (Views: 32.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 18:35:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 62ms (Views: 53.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:35:53 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:35:54 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:35:55 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:36:14 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:36:14 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:36:15 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:36:15 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:36:15 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:36:15 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:36:15 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:36:15 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:36:16 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:36:16 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:36:52 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:36:53 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started GET "/" for ::1 at 2021-05-15 18:38:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 77ms (Views: 72.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 18:38:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 65ms (Views: 60.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 18:39:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 60ms (Views: 55.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 18:40:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 47ms (Views: 43.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:40:32 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:40:34 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:40:34 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/api/users" for ::1 at 2021-05-15 18:43:13 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:43:14 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:43:14 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:43:14 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:43:14 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:43:14 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:43:14 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:43:15 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:43:15 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:43:15 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started GET "/" for ::1 at 2021-05-15 18:43:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 495ms (Views: 489.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:43:37 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:43:37 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:43:43 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:43:45 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:43:45 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:43:45 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/api/users" for ::1 at 2021-05-15 18:45:26 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:45:28 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:45:28 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:45:28 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:45:28 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:45:28 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:45:29 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 18:45:29 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started GET "/" for ::1 at 2021-05-15 18:45:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 78ms (Views: 75.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 19:10:58 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 624ms (Views: 616.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/denise-jans-KeJAicAQWF4-unsplash.jpg" for ::1 at 2021-05-15 19:11:03 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/denise-jans-KeJAicAQWF4-unsplash.jpg"):
+  
+actionpack (5.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-05-15 19:11:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 693ms (Views: 686.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 19:17:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 708ms (Views: 700.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 19:18:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 451ms (Views: 446.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 19:20:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 410ms (Views: 403.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/denise-jans-KeJAicAQWF4-unsplash.jpg" for ::1 at 2021-05-15 19:20:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/denise-jans-KeJAicAQWF4-unsplash.jpg"):
+  
+actionpack (5.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/denise-jans-KeJAicAQWF4-unsplash.jpg" for ::1 at 2021-05-15 19:20:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/denise-jans-KeJAicAQWF4-unsplash.jpg"):
+  
+actionpack (5.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-05-15 19:21:10 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 56ms (Views: 52.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 19:21:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 59ms (Views: 55.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 19:21:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 50ms (Views: 43.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 19:22:43 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 161ms (Views: 156.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 19:25:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 110ms (Views: 105.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 19:26:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 98ms (Views: 93.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 19:26:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 54ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 19:31:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 65ms (Views: 60.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 19:31:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 59ms (Views: 56.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 19:31:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 71ms (Views: 65.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2021-05-15 19:32:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 76ms (Views: 70.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/users" for ::1 at 2021-05-15 19:49:48 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 19:49:48 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started GET "/" for ::1 at 2021-05-15 19:56:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 514ms (Views: 506.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/users" for ::1 at 2021-05-15 19:56:43 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 19:56:43 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 19:56:43 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 19:56:43 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 19:56:43 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 19:56:44 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 19:56:44 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 19:56:44 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 19:56:44 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 19:56:45 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 20:37:41 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started POST "/api/users" for ::1 at 2021-05-15 20:37:43 -0400
+
+LoadError - Unable to autoload constant Api::UsersController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/users_controller.rb to define it:
+
+Started GET "/" for ::1 at 2021-05-15 20:57:03 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 98ms (Views: 75.9ms | ActiveRecord: 15.5ms)
+
+
+Started POST "/api/users" for ::1 at 2021-05-15 20:57:30 -0400
+
+TypeError - superclass mismatch for class UsersController:
+  app/controllers/api/users_controller.rb:1:in `<top (required)>'
+
+Started GET "/" for ::1 at 2021-05-15 21:02:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 50ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users" for ::1 at 2021-05-15 21:02:29 -0400
+
+TypeError - superclass mismatch for class UsersController:
+  app/controllers/api/users_controller.rb:1:in `<top (required)>'
+

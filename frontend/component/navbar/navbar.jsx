@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Nav = ({ user, logout }) => {
-    const display = user ? (
+export default ({ currentUser , logout }) => {
+    const display = currentUser ? (
         <div>
-            <p>Hello, {user.first_name}</p>
+            <p>Hello, {currentUser.first_name}</p>
             <button onClick={logout}>Log Out</button>
         </div>
     ) : (
@@ -15,7 +15,7 @@ const Nav = ({ user, logout }) => {
     );
 
     return(
-        <header className="nav-header">
+        <header className="nav-bar">
             <h1 className="logo">eventbite</h1>
             <div>
                 {display}
@@ -23,5 +23,3 @@ const Nav = ({ user, logout }) => {
         </header>
     )
 }
-
-export default Nav;
