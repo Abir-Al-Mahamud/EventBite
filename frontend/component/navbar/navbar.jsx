@@ -16,7 +16,7 @@ export default ({ currentUser , logout }) => {
 
     return(
         <header className="nav-bar">
-            <h1 className="logo">eventbite</h1>
+            <Link className="logo-home" to="/">eventbrite</Link>
             <div>
                 {display}
             </div>

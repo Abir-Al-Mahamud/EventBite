@@ -35,18 +35,22 @@
          background-color: gray;
          box-shadow: black;
      }
+     .logo-home{
+         text-decoration: none;
+         color: #f05537;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: large;
+     }
  
 
     .session-form{
         display: flex;
         flex-direction: column;
-        padding: 20px;
         width: 100%;
         height: 95vh;
         height: auto;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 20px;
         flex-wrap: wrap;
     }
     .first-last{
@@ -60,7 +64,6 @@
         flex-wrap: wrap;
     }
     label{
-        padding: 20px;
         display: block;
         display: flex;
         flex-direction: column;
@@ -97,3 +100,43 @@
         padding-left: 10px;
     }
  
+    .signup-image{
+        max-width: 50%;
+        height: auto;
+
+    }
+
+    .help{
+        display: flex;
+        align-items: flex-start;
+        
+    }
+
+    .future{
+        display: flex;
+        align-items: flex-start;
+        
+    }
+
+    .nav-bar-button{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .float-container{
+        padding: 0;
+    }
+
+    .float-child{
+        float: left;
+        height: 200px;
+        width: 600px;
+        background-color: lightgray;
+    }
+
+    .forest-image{
+        float: right;
+        height: 200px;
+        width: 600px;
+        
+    }

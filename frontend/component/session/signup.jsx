@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; 
-import FormUserDetails from './user_details'; 
 
 class Signup extends React.Component{
     constructor(props){
@@ -18,26 +16,19 @@ class Signup extends React.Component{
 
         this.handleChange = this.handleChange.bind(this);
         this.nextForm = this.nextForm.bind(this);
-        this.onSubmit = this.onSubmit.bind(this);
-        this.customErrorEmail = this.customErrorEmail;
     }
 
-    handleChange(type){
+    update(field){
         return (e) => {
-            e.preventDefault();
-            this.setState({ [type]: e.target.value })
+            this.setState({ [field]: e.target.value })
         }
     }
 
-    // checkInput(){
-    //     if (this.confirmEmail === this.email) {
-    //         return (e) => {
-    //             this.setState({ [type]: e.target.value })
-    //         };
-    //     } else {
-    //         return "Email does not match original email";
-    //     }
-    // }
+    handleChange(e){
+            e.preventDefault();
+            const user = Object.assign({}, this.state);
+            this.props.createNewUser(user)
+    }
 
     nextForm(num) {
         return (e) => {
@@ -49,14 +40,6 @@ class Signup extends React.Component{
         return (e) => {
             e.preventDefault();
             this.setState({ step: num})
-        }
-    }
-    
-    onSubmit(e){
-        e.preventDefault();
-        if(this.passwordErrors() === false){
-            this.setState({ passwordErrors: false })
-            this.props.createNewUser(this.state)
         }
     }
 
@@ -74,21 +57,32 @@ class Signup extends React.Component{
         return true;
     }
 
+    renderErrors(){
+        return(
+            <ul>
+                {this.props.errors.map((error, i) => (
+                    <li key={`error-${i}`}>
+                        {error}
+                    </li>
+                ))}
+            </ul>
+        )
+    }
+
     render(){
-        <ul>
-        </ul>
+     
         if (this.state.step === 0) {
-            <img src={window.signupPage}/>
+            <img className="signup-image" src={window.signupImage}/>
             return (
                 <div>
                     <form className="session-form">
-                        <h2>Create an Account</h2>
+                        <h1>Create an Account</h1>
                         <label>
                             <input className="input-box"
                                 type="text" 
                                 placeholder="Email Address" 
                                 value={this.state.email} 
-                                onChange={this.handleChange("email")}
+                                onChange={this.update("email")}
                             />
                             <button onClick={this.nextForm(1)} disabled={this.customErrorEmail()}>Continue</button>
                         </label>
@@ -102,7 +96,8 @@ class Signup extends React.Component{
                 <>
                     <h1>Create an </h1>
                     <h1>Account</h1>
-                    <form className="session-form">
+                    <form onSubmit={this.handleChange} className="session-form">
+                        
                         <label>
                             <input className="input-box-filled"
                                 type="text"
@@ -117,7 +112,7 @@ class Signup extends React.Component{
                                 type="text" 
                                 placeholder="Confirm email"
                                 value={this.state.confirmEmail}
-                                onChange={this.handleChange('confirmEmail')}
+                                onChange={this.update('confirmEmail')}
                             />
                         </label>
                         <br />
@@ -127,7 +122,7 @@ class Signup extends React.Component{
                                 type="text"
                                 placeholder="First Name"
                                 value={this.state.first_name}
-                                onChange={this.handleChange("first_name")}
+                                onChange={this.update("first_name")}
                             />
                         </label>
 
@@ -136,7 +131,7 @@ class Signup extends React.Component{
                                 type="text"
                                 placeholder="Last Name"
                                 value={this.state.last_name}
-                                onChange={this.handleChange("last_name")}
+                                onChange={this.update("last_name")}
                             />
                         </label>
                         </div>
@@ -146,12 +141,12 @@ class Signup extends React.Component{
                                 type="password"
                                 placeholder="Password"
                                 value={this.state.password}
-                                onChange={this.handleChange("password")}
+                                onChange={this.update("password")}
                             />
                         </label>
-                        <input type="submit" value="Create Account" onClick={this.onSubmit} />
+                        <input className="session-submit" type="submit" value={this.props.formType} />
                     </form>
-
+                    <p>{this.props.navLink}</p>
                 </>
             )
         }

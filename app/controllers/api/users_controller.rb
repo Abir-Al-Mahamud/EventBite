@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class Api::UsersController < ApplicationController
 
     before_action :ensure_logged_in, only: [:index, :show]
 
@@ -11,6 +11,7 @@ class UsersController < ApplicationController
         else
             render json: @user.errors.full_messages, status: 422
         end
+
     end
 
     private
