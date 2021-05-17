@@ -448,6 +448,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
 var Signup = /*#__PURE__*/function (_React$Component) {
   _inherits(Signup, _React$Component);
 
@@ -462,6 +463,7 @@ var Signup = /*#__PURE__*/function (_React$Component) {
     _this.state = {
       step: 0,
       email: '',
+      confirmEmail: '',
       first_name: '',
       last_name: '',
       password: '',
@@ -469,7 +471,7 @@ var Signup = /*#__PURE__*/function (_React$Component) {
     };
     _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
     _this.nextForm = _this.nextForm.bind(_assertThisInitialized(_this));
-    _this.signedUp = _this.signedUp.bind(_assertThisInitialized(_this));
+    _this.onSubmit = _this.onSubmit.bind(_assertThisInitialized(_this));
     _this.customErrorEmail = _this.customErrorEmail;
     return _this;
   }
@@ -484,7 +486,16 @@ var Signup = /*#__PURE__*/function (_React$Component) {
 
         _this2.setState(_defineProperty({}, type, e.target.value));
       };
-    }
+    } // checkInput(){
+    //     if (this.confirmEmail === this.email) {
+    //         return (e) => {
+    //             this.setState({ [type]: e.target.value })
+    //         };
+    //     } else {
+    //         return "Email does not match original email";
+    //     }
+    // }
+
   }, {
     key: "nextForm",
     value: function nextForm(num) {
@@ -512,14 +523,15 @@ var Signup = /*#__PURE__*/function (_React$Component) {
       };
     }
   }, {
-    key: "signedUp",
-    value: function signedUp(e) {
+    key: "onSubmit",
+    value: function onSubmit(e) {
       e.preventDefault();
 
       if (this.passwordErrors() === false) {
         this.setState({
           passwordErrors: false
         });
+        this.props.createNewUser(this.state);
       }
     }
   }, {
@@ -545,14 +557,22 @@ var Signup = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+      /*#__PURE__*/
+      react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null);
+
       if (this.state.step === 0) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
-          className: "form"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Create an Account"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+        /*#__PURE__*/
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+          src: window.signupPage
+        });
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
+          className: "session-form"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Create an Account"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+          className: "input-box",
           type: "text",
           placeholder: "Email Address",
-          onChange: this.handleChange("email"),
-          value: this.state.email
+          value: this.state.email,
+          onChange: this.handleChange("email")
         }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
           onClick: this.nextForm(1),
           disabled: this.customErrorEmail()
@@ -560,29 +580,45 @@ var Signup = /*#__PURE__*/function (_React$Component) {
       }
 
       if (this.state.step === 1) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Create an Account"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Create an "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Account"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
+          className: "session-form"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+          className: "input-box-filled",
           type: "text",
           placeholder: "Email Address",
           value: this.state.email,
           disabled: true
-        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+          className: "input-box",
+          type: "text",
+          placeholder: "Confirm email",
+          value: this.state.confirmEmail,
+          onChange: this.handleChange('confirmEmail')
+        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+          className: "first-last"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+          className: "input-box",
           type: "text",
           placeholder: "First Name",
           value: this.state.first_name,
           onChange: this.handleChange("first_name")
         })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+          className: "input-box",
           type: "text",
           placeholder: "Last Name",
           value: this.state.last_name,
           onChange: this.handleChange("last_name")
-        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+        }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+          className: "input-box",
           type: "password",
           placeholder: "Password",
           value: this.state.password,
           onChange: this.handleChange("password")
-        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-          onClick: this.signedUp
-        }, "Create Account"));
+        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+          type: "submit",
+          value: "Create Account",
+          onClick: this.onSubmit
+        })));
       }
     }
   }]);
