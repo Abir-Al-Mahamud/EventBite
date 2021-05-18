@@ -22,24 +22,79 @@
 
  .nav-bar {
      display: flex;
-     justify-content: left;
-     align-items: flex-start;
+     justify-content: flex-end;
  }
+ .logo-home {
+     position: absolute;
+    top: 3%;
+    left: 4%;
+    transform: translate(-30%, -25%);
+    text-align: left;
+ }
+     .drop-down-button{
+         background-color: white;
+         padding: 25px;
+         box-shadow: lightgray;
+         color: #39364F;
+         text-decoration: none;
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         font-weight: 400;
+         font-size: 13px;
+     }
+     .drop-down-button:hover{
+         background-color: lightgray;
+         box-shadow: #39364F;
+     }
+     .user-drop-down-button{
+         background-color: white;
+         padding: 25px;
+         box-shadow: lightgray;
+         color: #39364F;
+         text-decoration: none;
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         font-weight: 400;
+         font-size: 13px;
+     }
+     .user-drop-down-button:hover{
+         background-color: lightgray;
+         box-shadow: black;
+     }
      .button{
          background-color: white;
-         padding: 20px;
+         padding: 25px;
          box-shadow: lightgray;
-         text-decoration: black;
+         color: #39364F;
+         text-decoration: none;
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         font-weight: 400;
+         font-size: 13px;
+     }
+
+     .button-create{
+         background-color: white;
+         padding: 25px;
+         padding-top: 10px;
+         box-shadow: lightgray;
+         color: blue;
+         text-decoration: none;
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         font-weight: 400;
+         font-size: 13px;
      }
      .button:hover{
-         background-color: gray;
+         background-color: lightgray;
+         box-shadow: black;
+     }
+     .button-create:hover{
+         background-color: lightgray;
          box-shadow: black;
      }
      .logo-home{
          text-decoration: none;
+         font-weight: 600;
          color: #f05537;
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: large;
+        font-family: Neue Plak,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Helvetica,Tahoma,Arial,sans-serif;;
+        font-size: 26px;
      }
  
 
@@ -100,24 +155,32 @@
         padding-left: 10px;
     }
  
-    .signup-image{
-        max-width: 50%;
-        height: auto;
-
+    .forest-image{
+        // max-width: 100%;
+        // max-height: 100%;
+        width: 60%;
+        height: 30%;
     }
 
     .help{
+        font-size: 35px;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-left: 40px;
         display: flex;
         align-items: flex-start;
         
     }
-
+    
     .future{
+        font-size: 50px;
+        padding-top: 20px;
+        padding-left: 40px;
         display: flex;
         align-items: flex-start;
         
     }
-
+    
     .nav-bar-button{
         display: flex;
         align-items: flex-end;
@@ -126,17 +189,166 @@
     .float-container{
         padding: 0;
     }
-
     .float-child{
         float: left;
+        margin: 20px;
         height: 200px;
         width: 600px;
         background-color: lightgray;
     }
-
     .forest-image{
         float: right;
-        height: 200px;
-        width: 600px;
+        width: 100px;
+        height: 50px;
         
     }
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: navy;
+    height: 2rem;
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: x-small;
+}
+
+.errors-ul{
+    text-decoration: none;
+}
+
+.errors{
+    text-decoration: none;
+    
+}
+
+.box{
+    width: 500px;
+    padding: 8px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -25%);
+    background-color: white;
+    text-align: left;
+}
+
+.box h1{
+    color: #1e0a3c;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: left;
+    position: absolute;
+    top: -50%;
+    left: 0%;
+    
+}
+
+.box input[type = "text"], .box input[type = "password"]{
+    border: none;
+    appearance: none;
+    background: none;
+    display: block;
+    margin: 0;
+    text-align: left;
+    border: 1px solid lightgray;
+    padding: 18px 12px 2px;
+    width: 358px;
+    outline: none;
+    color: black;
+    border-radius: 3px;
+    transition: 0.20s;
+  
+}
+
+.input-box::placeholder{
+    color: gray;
+    font-size: 12px;
+    padding-bottom: -5px;
+}
+
+.space-between{
+    padding: 0px 0px 10px;
+}
+
+.box button{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 2px;
+    text-align: center;
+    border: 2px solid gray;
+    padding: 18px 10px 10px;
+    width: 386px;
+    outline: none;
+    color: white;
+    border-radius: 3px;
+    transition: 0.20s;
+    font-weight: 600;
+    background-color: #f05537;
+    position: absolute;
+    top: 100%;
+    left: 1%;
+    cursor: pointer;
+    
+    // color: white;
+}
+
+.box button:hover{
+    background-color: #f8692b;
+}
+
+.link-to-signup{
+    position: absolute;
+    top: 200px;
+    left: 2%;
+    text-align: left;
+    text-decoration: blue;
+    color: blue;
+}
+
+.link{
+    text-decoration: blue;
+    color: blue;
+}
+
+.signin-input{
+    border: none;
+    appearance: none;
+    background: none;
+    display: block;
+    margin: 0;
+    text-align: left;
+    border: 1px solid lightgray;
+    padding: 18px 12px 2px;
+    width: 358px;
+    outline: none;
+    color: black;
+    border-radius: 3px;
+    transition: 0.20s;
+}
+
+.session-form-two h1{
+    color: #1e0a3c;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: left;
+    position: absolute;
+    top: -150%;
+    left: 0%;
+}
+
+.link-to-login{
+    position: absolute;
+    top: 120px;
+    left: 2%;
+    text-align: left;
+    text-decoration: blue;
+    color: blue;
+}

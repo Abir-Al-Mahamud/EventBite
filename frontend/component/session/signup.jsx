@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Signup extends React.Component{
     constructor(props){
@@ -59,33 +60,37 @@ class Signup extends React.Component{
 
     renderErrors(){
         return(
-            <ul>
-                {this.props.errors.map((error, i) => (
-                    <li key={`error-${i}`}>
-                        {error}
-                    </li>
-                ))}
+            <ul className="errors-ul">
+                <li className="errors">
+                    {this.props.errors}
+                </li>
             </ul>
         )
     }
 
     render(){
-     
+        <img className="berry-image" src="berry.jpg" />
         if (this.state.step === 0) {
             <img className="signup-image" src={window.signupImage}/>
             return (
-                <div>
-                    <form className="session-form">
+                <div className="box">
+                    <form className="session-form-two">
                         <h1>Create an Account</h1>
                         <label>
+                            <div className="input-info">
                             <input className="input-box"
                                 type="text" 
                                 placeholder="Email Address" 
                                 value={this.state.email} 
                                 onChange={this.update("email")}
                             />
+                            
                             <button onClick={this.nextForm(1)} disabled={this.customErrorEmail()}>Continue</button>
+                            </div>
                         </label>
+                    <div className="link-to-login">
+                        <Link className="link" to="/login">Log in</Link>
+                    </div>
                     </form>
                 </div>
             )
@@ -97,7 +102,7 @@ class Signup extends React.Component{
                     <h1>Create an </h1>
                     <h1>Account</h1>
                     <form onSubmit={this.handleChange} className="session-form">
-                        
+                        <div className="signin-input">
                         <label>
                             <input className="input-box-filled"
                                 type="text"
@@ -114,6 +119,7 @@ class Signup extends React.Component{
                                 value={this.state.confirmEmail}
                                 onChange={this.update('confirmEmail')}
                             />
+                            
                         </label>
                         <br />
                         <div className="first-last">
@@ -124,6 +130,7 @@ class Signup extends React.Component{
                                 value={this.state.first_name}
                                 onChange={this.update("first_name")}
                             />
+                            
                         </label>
 
                         <label>
@@ -133,6 +140,7 @@ class Signup extends React.Component{
                                 value={this.state.last_name}
                                 onChange={this.update("last_name")}
                             />
+                            
                         </label>
                         </div>
                         <br />
@@ -143,10 +151,14 @@ class Signup extends React.Component{
                                 value={this.state.password}
                                 onChange={this.update("password")}
                             />
+                            
                         </label>
+                        </div>
                         <input className="session-submit" type="submit" value={this.props.formType} />
                     </form>
-                    <p>{this.props.navLink}</p>
+                    <div className="link-to-login">
+                        <Link className="link" to="/login">Log in</Link>
+                    </div>
                 </>
             )
         }

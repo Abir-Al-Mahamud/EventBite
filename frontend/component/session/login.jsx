@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 class Login extends React.Component {
     constructor(props) {
         super(props);
@@ -10,7 +10,6 @@ class Login extends React.Component {
         }
 
         this.handleChange = this.handleChange.bind(this);
-        this.nextForm = this.nextForm.bind(this);
     }
 
     update(field) {
@@ -21,18 +20,16 @@ class Login extends React.Component {
 
     handleChange(e) {
         e.preventDefault();
-        const user = Object.assign({}, this.state);
-        this.props.createNewUser(user)
+        // const user = Object.assign({}, this.state);
+        this.props.processForm(this.state)
     }
 
     renderErrors() {
         return (
             <ul>
-                {this.props.errors.map((error, i) => (
-                    <li key={`error-${i}`}>
-                        {error}
-                    </li>
-                ))}
+                <li >
+                    {this.props.errors}
+                </li>
             </ul>
         )
     }
@@ -41,30 +38,39 @@ class Login extends React.Component {
             
         <img className="signup-image" src={window.signupPage} />
         return (
-            <div>
-                <form className="session-form">
-                    <h1>Login </h1>
-                    <label>
+            <div className="box">
+                <form className="session-form" onSubmit={this.handleChange}>
+                    <h1>Log in </h1>
+                    <div className="input-info">
+                    <label class="custom-label">
                         <input className="input-box"
                             type="text"
                             placeholder="Email Address"
                             value={this.state.email}
                             onChange={this.update("email")}
                         />
-                        <button onClick={this.nextForm(1)} disabled={this.customErrorEmail()}>Continue</button>
+                        {/* {this.renderErrors()} */}
                     </label>
                     <br />
-                    <label>
+                    <label className="custom-label">
                         <input className="input-box"
                             type="password"
                             placeholder="Password"
                             value={this.state.password}
                             onChange={this.update("password")}
-                            />
+                        />
+                        {/* {this.renderErrors()} */}
                     </label>
-                    <input className="session-submit" type="submit" value={this.props.formType} />
+                    </div>
+                    <div className="space-between">
+
+                    </div>
+                    <button className="login-button" onClick={this.handleChange}>Log in</button>
                     </form>
-                        <p>{this.props.navLink}</p>
+
+                        <div className="link-to-signup">
+                            <Link className="link" to="/signup">Sign up for eventbite</Link>
+                        </div>
                     </div>
 
                 )
