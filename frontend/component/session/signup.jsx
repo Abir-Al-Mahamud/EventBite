@@ -58,15 +58,17 @@ class Signup extends React.Component{
         return true;
     }
 
-    renderErrors(){
-        return(
-            <ul className="errors-ul">
-                <li className="errors">
-                    {this.props.errors}
-                </li>
-            </ul>
-        )
-    }
+    // renderErrors(){
+    //         return(
+    //             <ul>
+    //                 {this.props.errors.map((error, i) => (
+    //                     <li key={`error: ${i}`}>
+    //                         {error}
+    //                     </li>
+    //                 ))}
+    //             </ul>
+    //         )
+    // }
 
     render(){
         <img className="berry-image" src="berry.jpg" />
@@ -84,8 +86,10 @@ class Signup extends React.Component{
                                 value={this.state.email} 
                                 onChange={this.update("email")}
                             />
-                            
-                            <button onClick={this.nextForm(1)} disabled={this.customErrorEmail()}>Continue</button>
+                            <p>
+                                {/* {this.renderErrors()} */}
+                            </p>
+                            <button className="login-button" onClick={this.nextForm(1)} >Continue</button>
                             </div>
                         </label>
                     <div className="link-to-login">
@@ -103,6 +107,7 @@ class Signup extends React.Component{
                     <h1>Account</h1>
                     <form onSubmit={this.handleChange} className="session-form">
                         <div className="signin-input">
+                            {/* {this.renderErrors()} */}
                         <label>
                             <input className="input-box-filled"
                                 type="text"
@@ -119,7 +124,9 @@ class Signup extends React.Component{
                                 value={this.state.confirmEmail}
                                 onChange={this.update('confirmEmail')}
                             />
-                            
+                            <p>
+                                {/* {this.renderErrors()} */}
+                            </p>
                         </label>
                         <br />
                         <div className="first-last">
@@ -130,7 +137,9 @@ class Signup extends React.Component{
                                 value={this.state.first_name}
                                 onChange={this.update("first_name")}
                             />
-                            
+                            <p>
+                                {/* {this.renderErrors()} */}
+                            </p>
                         </label>
 
                         <label>
@@ -140,7 +149,9 @@ class Signup extends React.Component{
                                 value={this.state.last_name}
                                 onChange={this.update("last_name")}
                             />
-                            
+                            <p>
+                                {/* {this.renderErrors()}   */}
+                            </p>
                         </label>
                         </div>
                         <br />
@@ -151,10 +162,11 @@ class Signup extends React.Component{
                                 value={this.state.password}
                                 onChange={this.update("password")}
                             />
-                            
+                            {/* <p>{this.renderErrors()}</p> */}
                         </label>
                         </div>
-                        <input className="session-submit" type="submit" value={this.props.formType} />
+                        <button className="session-submit">Continue</button>
+                        {/* <input className="session-submit" type="submit" value={this.props.formType} /> */}
                     </form>
                     <div className="link-to-login">
                         <Link className="link" to="/login">Log in</Link>

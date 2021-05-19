@@ -10,6 +10,7 @@ class Login extends React.Component {
         }
 
         this.handleChange = this.handleChange.bind(this);
+        this.handleDemoUser = this.handleDemoUser.bind(this)
     }
 
     update(field) {
@@ -22,6 +23,11 @@ class Login extends React.Component {
         e.preventDefault();
         // const user = Object.assign({}, this.state);
         this.props.processForm(this.state)
+    }
+
+    handleDemoUser(e){
+        e.preventDefault();
+        this.props.processForm({ email: 'abir.com', password: '123456' })
     }
 
     renderErrors() {
@@ -66,6 +72,7 @@ class Login extends React.Component {
 
                     </div>
                     <button className="login-button" onClick={this.handleChange}>Log in</button>
+                    <button className="demo-button" onClick={this.handleDemoUser}>Demo User</button>
                     </form>
 
                         <div className="link-to-signup">
