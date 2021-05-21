@@ -42,13 +42,13 @@ class Login extends React.Component {
 
     render(){
             
-        <img className="signup-image" src={window.signupPage} />
         return (
             <div className="box">
                 <form className="session-form" onSubmit={this.handleChange}>
-                    <h1>Log in </h1>
+                    <h1 className="h1">Log in </h1>
+                    <img class="dubai-image" src={window.signupImageThree} />
                     <div className="input-info">
-                    <label class="custom-label">
+                    <label className="custom-label">
                         <input className="input-box"
                             type="text"
                             placeholder="Email Address"
@@ -78,6 +78,7 @@ class Login extends React.Component {
                         <div className="link-to-signup">
                             <Link className="link" to="/signup">Sign up for eventbite</Link>
                         </div>
+
                     </div>
 
                 )

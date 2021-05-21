@@ -71,11 +71,11 @@ class Signup extends React.Component{
     // }
 
     render(){
-        <img className="berry-image" src="berry.jpg" />
         if (this.state.step === 0) {
-            <img className="signup-image" src={window.signupImage}/>
+            
             return (
                 <div className="box">
+                    <img class="burj-image"src={window.signupImageFour} />
                     <form className="session-form-two">
                         <h1>Create an Account</h1>
                         <label>
@@ -103,71 +103,77 @@ class Signup extends React.Component{
         if (this.state.step === 1) {
             return (
                 <>
+                <div className="title-signup">
                     <h1>Create an </h1>
                     <h1>Account</h1>
-                    <form onSubmit={this.handleChange} className="session-form">
-                        <div className="signin-input">
-                            {/* {this.renderErrors()} */}
-                        <label>
-                            <input className="input-box-filled"
-                                type="text"
-                                placeholder="Email Address"
-                                value={this.state.email}
-                                disabled
-                            />
-                        </label>
-                        <br />
-                        <label>
-                            <input className="input-box"
-                                type="text" 
-                                placeholder="Confirm email"
-                                value={this.state.confirmEmail}
-                                onChange={this.update('confirmEmail')}
-                            />
-                            <p>
-                                {/* {this.renderErrors()} */}
-                            </p>
-                        </label>
-                        <br />
-                        <div className="first-last">
-                        <label>
-                            <input className="input-box"
-                                type="text"
-                                placeholder="First Name"
-                                value={this.state.first_name}
-                                onChange={this.update("first_name")}
-                            />
-                            <p>
-                                {/* {this.renderErrors()} */}
-                            </p>
-                        </label>
+                </div>
+                    <img class="desert-image" src={window.signupImageFive} />
+                    <div className='signin-box'>
 
-                        <label>
-                            <input className="input-box"
-                                type="text"
-                                placeholder="Last Name"
-                                value={this.state.last_name}
-                                onChange={this.update("last_name")}
-                            />
-                            <p>
-                                {/* {this.renderErrors()}   */}
-                            </p>
-                        </label>
-                        </div>
-                        <br />
-                        <label>
-                            <input className="input-box"
-                                type="password"
-                                placeholder="Password"
-                                value={this.state.password}
-                                onChange={this.update("password")}
-                            />
-                            {/* <p>{this.renderErrors()}</p> */}
-                        </label>
-                        </div>
-                        <button className="session-submit">Continue</button>
-                        {/* <input className="session-submit" type="submit" value={this.props.formType} /> */}
-                    </form>
+                        <form onSubmit={this.handleChange} className="session-form">
+                            <div className="signin-input">
+                                {/* {this.renderErrors()} */}
+                            <label>
+                                <input className="input-box-filled"
+                                    type="text"
+                                    placeholder="Email Address"
+                                    value={this.state.email}
+                                    disabled
+                                />
+                            </label>
+                            <br />
+                            <label>
+                                <input className="input-box-two"
+                                    type="text" 
+                                    placeholder="Confirm email"
+                                    value={this.state.confirmEmail}
+                                    onChange={this.update('confirmEmail')}
+                                />
+                                <p>
+                                    {/* {this.renderErrors()} */}
+                                </p>
+                            </label>
+                            <br />
+                            <div className="first-last">
+                            <label>
+                                <input className="input-box-two"
+                                    type="text"
+                                    placeholder="First Name"
+                                    value={this.state.first_name}
+                                    onChange={this.update("first_name")}
+                                />
+                                <p>
+                                    {/* {this.renderErrors()} */}
+                                </p>
+                            </label>
+
+                            <label>
+                                <input className="input-box"
+                                    type="text"
+                                    placeholder="Last Name"
+                                    value={this.state.last_name}
+                                    onChange={this.update("last_name")}
+                                />
+                                <p>
+                                    {/* {this.renderErrors()}   */}
+                                </p>
+                            </label>
+                            </div>
+                            <br />
+                            <label>
+                                <input className="input-box"
+                                    type="password"
+                                    placeholder="Password"
+                                    value={this.state.password}
+                                    onChange={this.update("password")}
+                                />
+                                {/* <p>{this.renderErrors()}</p> */}
+                            </label>
+                            </div>
+                            <button className="session-submit">Continue</button>
+                            {/* <input className="session-submit" type="submit" value={this.props.formType} /> */}
+                        </form>
+                    </div>
                     <div className="link-to-login">
                         <Link className="link" to="/login">Log in</Link>
                     </div>
