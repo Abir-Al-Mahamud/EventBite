@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
             render json: ['That is the wrong credentials'], status: 401
         else
             login!(@user)
-            render 'api/users/show';
+            render 'api/users/show'
         end
     end
 
