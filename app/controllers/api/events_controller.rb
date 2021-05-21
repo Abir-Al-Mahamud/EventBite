@@ -22,7 +22,7 @@ class EventsController < ApplicationController
     def update 
         @event = Event.find_by(id: params[:id])
         if @event.update(event_params)
-            render: show 
+            render :show 
         else
             render json: @event.errors.full_messages, status: 422
         end

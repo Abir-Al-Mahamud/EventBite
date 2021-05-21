@@ -7,15 +7,15 @@ class Home extends React.Component{
     constructor(){
         super(props)
     }
-    const display = (
-        <div className="all">
-            <div className="square">Hello</div>
-            <div className="square">There</div>
-            <div className="square">Whats</div>
-            <div className="square">Up!</div>
-        </div>
+    // const display = (
+    //     <div className="all">
+    //         <div className="square">Hello</div>
+    //         <div className="square">There</div>
+    //         <div className="square">Whats</div>
+    //         <div className="square">Up!</div>
+    //     </div>
 
-);
+// );
     render(){
         // const all = <div className="square">HELLO!!!</div>
         const tabs = [
