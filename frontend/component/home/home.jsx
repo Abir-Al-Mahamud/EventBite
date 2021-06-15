@@ -4,7 +4,7 @@ import Search from '../search/search'
 import Tabs from '../tabs';
 
 class Home extends React.Component{
-    constructor(){
+    constructor(props){
         super(props)
     }
     // const display = (
@@ -19,7 +19,7 @@ class Home extends React.Component{
     render(){
         // const all = <div className="square">HELLO!!!</div>
         const tabs = [
-            { name: 'All', content: `${display}`},
+            { name: 'All', content: `Event1`},
             { name: 'For you', content: 'Event2' },
             { name: 'Religion', content: 'Event3' },
             { name: 'Online', content: 'Event4' },

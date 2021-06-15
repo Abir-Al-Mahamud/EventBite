@@ -10,6 +10,12 @@ export const fetchEvent = (eventId) => {
     })
 }
 
+export const fetchUserEvents = id => {
+    return $.ajax({
+        url: `/api/events/user/${id}`
+    })
+}
+
 export const createEvent = (event) => {
     return $.ajax({
         url: `/api/events`,

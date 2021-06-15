@@ -675,6 +675,9 @@ span, article, footer, time, small {
     .tab-header > li:hover{
         text-decoration: underline;
         color: black;
+        bottom: -3px;
+        
+
     }
     
     .active{
@@ -713,6 +716,7 @@ span, article, footer, time, small {
         // align-items: center;
         margin-top: 600px;
         margin-bottom: 200px;
+        bottom: -3px;
     }
     
 
