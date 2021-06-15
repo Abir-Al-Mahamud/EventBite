@@ -1,21 +1,21 @@
-import React from 'react';
+// import React from 'react';
 
-class EventIndex extends React.Component{
+// class EventIndex extends React.Component{
 
-    componentWillUnmount(){
-        const navBar = document.querySelector(".header");
-        navBar.classList.remove("white");
-    }
+//     componentWillUnmount(){
+//         const navBar = document.querySelector(".header");
+//         navBar.classList.remove("white");
+//     }
 
-    componentDidMount(){
-        this.props.fetchEvents();
-        const navBar = document.querySelector(".header")
-        navBar.classList.add("white");
-    }
+//     componentDidMount(){
+//         this.props.fetchEvents();
+//         const navBar = document.querySelector(".header")
+//         navBar.classList.add("white");
+//     }
 
-    render(){
+//     render(){
 
-    }
-}
+//     }
+// }
 
-export default EventIndex;
+// export default EventIndex;
