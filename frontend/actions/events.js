@@ -28,7 +28,7 @@ const receiveNewEvent = event => ({
     event: event 
 })
 
-const updateEvent = eventId => ({
+const alterEvent = eventId => ({
     type: EDIT_EVENT,
     eventId: eventId 
 })
