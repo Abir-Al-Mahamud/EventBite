@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
             logout! 
             render json: { message: 'Logged out successfully'}
         else
-            render json: ["Nobody signed in"], status 404
+            render json: ["Nobody signed in"], status: 404
         end
     end
 end
