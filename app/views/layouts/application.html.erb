@@ -7,10 +7,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= favicon_link_tag asset_path('favicon.ico') %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= favicon_link_tag asset_path('favicon-32x32.png') %>
     <script>
+      window.logo = '<%= image_url('icons8-letter-e-26.png') %>'
       window.signupImage = "<%= image_url('forest.png') %>"
       window.signupImageTwo = "<%= image_url('berry.jpg') %>"
       window.signupImageThree = "<%= image_url('dubai-beach.png') %>"
