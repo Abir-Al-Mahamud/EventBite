@@ -24462,3 +24462,32 @@ Processing by Api::SessionsController#create as JSON
 Completed 200 OK in 363ms (Views: 22.2ms | ActiveRecord: 52.4ms)
 
 
+Started GET "/" for ::1 at 2021-06-22 16:16:12 -0400
+  [1m[35m (9.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/abirmahamud/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.4ms)
+Started GET "/" for ::1 at 2021-06-22 16:16:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "UUX0T_NZbaoqgB5LRgm5nQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "UUX0T_NZbaoqgB5LRgm5nQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 4176ms (Views: 4125.5ms | ActiveRecord: 48.2ms)
+
+
+Completed 200 OK in 6789ms (Views: 6726.8ms | ActiveRecord: 48.9ms)
+
+
+Started GET "/" for ::1 at 2021-06-28 12:15:07 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (28.7ms)
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "UUX0T_NZbaoqgB5LRgm5nQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 265ms (Views: 196.6ms | ActiveRecord: 9.6ms)
+
+
