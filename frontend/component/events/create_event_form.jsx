@@ -66,8 +66,8 @@ class EventForm extends React.Component{
                             onChange={this.update('end_time')}
                         />
                     </label>
-                    <button className="modal-submit" onClick={this.handleSubmit}>Create Event</button>
-                    <button className="modal-close">Close</button>
+                    {/* <button className="modal-submit" onClick={this.handleSubmit}>Create Event</button>
+                    <button className="modal-close">Close</button> */}
                     </div>
                 </div>
             </form>

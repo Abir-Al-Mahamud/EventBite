@@ -7,17 +7,9 @@ class Home extends React.Component{
     constructor(props){
         super(props)
     }
-    // const display = (
-    //     <div className="all">
-    //         <div className="square">Hello</div>
-    //         <div className="square">There</div>
-    //         <div className="square">Whats</div>
-    //         <div className="square">Up!</div>
-    //     </div>
 
-// );
     render(){
-        // const all = <div className="square">HELLO!!!</div>
+        
         const tabs = [
             { name: 'All', content: `Event1`},
             { name: 'For you', content: 'Event2' },
