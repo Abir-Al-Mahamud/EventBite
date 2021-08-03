@@ -9,9 +9,10 @@ const Navbar = ({ currentUser , logout, ...otherProps }) => {
     const display = currentUser ? (
         <div className="navbar-right">
             <Link id="my-button" to="/events/new">Create Event</Link>
-            <Link className="button" to="/">Likes</Link>
-            <Link className="button" to="/login">Tickets</Link>
+            {/* <Link className="button" to="/">Likes</Link> */}
+            {/* <Link className="button" to="/login">Tickets</Link> */}
             <Link className="user-drop-down-button">{currentUser.email}</Link>
+            <button onClick={() => logout()}>Logout</button>
             <div className="search-bar-div">
                 <input className="search-bar" type="text" placeholder='  Search...' />
             </div>
@@ -22,11 +23,12 @@ const Navbar = ({ currentUser , logout, ...otherProps }) => {
         </div>
     ) : (
         <div className="navbar-right">
-            <button className="home-button"><Link className="to-events" to="/events">Browse Events</Link></button>
-            <Link className="drop-down-button" to="">Organize</Link>
-            <Link className="drop-down-button" to="">Help</Link>
-            <Link className="button-to-login" to="/login">Create Event</Link>
+            {/* <button className="home-button"><Link className="to-events" to="/events">Browse Events</Link></button> */}
+            {/* <Link className="drop-down-button" to="">Organize</Link> */}
+            {/* <Link className="drop-down-button" to="">Help</Link> */}
+            {/* <Link className="button-to-login" to="/login">Create Event</Link> */}
             <Link className="button" to="/login">Sign In</Link>
+            <Link className="button" to="/signup">Create Account</Link>
             <div className="search-bar-div">
                 <input className="search-bar" type="text" placeholder='  Search...' />
             </div>

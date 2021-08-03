@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 class EventIndexCard extends React.Component {
 
     render(){
-        const { title, location, description } = this.props.event;
+        const { title, location, description, date } = this.props.event;
         let desc = this.props.event.description;
 
         if (description.length > 40) {
@@ -13,9 +13,9 @@ class EventIndexCard extends React.Component {
 
         return(
             <div className="event-idx-small">
+                <li className="event-idx-small-date">{date}</li>
                 <li className="event-idx-small-title">{title}</li>
-                <li>{location}</li>
-                <li>{desc}</li>
+                <li className="event-idx-description">{desc}</li>
             </div>
         )
     }

@@ -7,8 +7,10 @@ class Login extends React.Component {
         this.state = {
             email: '',
             password: '',
+            errors: {}
         }
 
+        this.renderErrors = this.renderErrors.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleDemoUser = this.handleDemoUser.bind(this)
     }
@@ -27,7 +29,7 @@ class Login extends React.Component {
 
     handleDemoUser(e){
         e.preventDefault();
-        this.props.processForm({ email: 'abir.com', password: '123456' })
+        this.props.processForm({ email: 'abir@gmail.com', password: '123456' })
     }
 
     renderErrors() {
@@ -47,6 +49,9 @@ class Login extends React.Component {
                 <form className="session-form" onSubmit={this.handleChange}>
                     <h1 className="h1">Log in </h1>
                     <img class="dubai-image" src={window.signupImageThree} />
+                    <div className="errors-login">
+                        {this.renderErrors()}
+                    </div>
                     <div className="input-info">
                     <label className="custom-label">
                         <input className="input-box"
@@ -55,7 +60,6 @@ class Login extends React.Component {
                             value={this.state.email}
                             onChange={this.update("email")}
                         />
-                        {/* {this.renderErrors()} */}
                     </label>
                     <br />
                     <label className="custom-label">

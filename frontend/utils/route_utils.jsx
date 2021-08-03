@@ -3,15 +3,15 @@ import { connect } from 'react-redux';
 import { Redirect, Route, withRouter } from 'react-router-dom';
 
 const mSTP = state => ({
-    loggedIn: Boolean(state.session.currentUser)
+    loggedIn: Boolean(state.session.id)
 })
 
-const Auth = ({ exact, loggedIn, path, component: Component }) => (
+const Auth = ({ component: Component, path, loggedIn, exact }) => (
     <Route
-        exact={exact} 
         path={path}
-        render={props => (
-            !loggedIn ? <Component {...props} /> : <Redirect to="/" />
+        exact={exact} 
+        render={(props) => (
+            !loggedIn ? ( <Component {...props} /> ) : ( <Redirect to="/" /> )
         )} 
     />
 );
@@ -20,8 +20,8 @@ const Protected = ({ exact, loggedIn, path, component: Component }) => (
     <Route
         exact={exact}
         path={path}
-        render={props => (
-            loggedIn ? <Component {...props} /> : <Redirect to="/login"/>
+        render={(props) => (
+            loggedIn ? ( <Component {...props} /> ) : ( <Redirect to="/login"/> )
         )}
     />
 )

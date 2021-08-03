@@ -11,7 +11,7 @@ class CreateEvents < ActiveRecord::Migration[5.2]
       t.integer :category_id, null: false 
       t.timestamps
     end
-
+    
     add_index :events, :author_name 
     add_index :events, :author_id
     add_index :events, :category_id

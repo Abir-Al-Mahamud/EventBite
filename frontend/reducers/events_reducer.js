@@ -5,12 +5,13 @@ import {
 } from '../actions/events';
 
 
-const EventsReducer = (oldState = {}, action) => {
+const eventsReducer = (oldState = {}, action) => {
     Object.freeze(oldState);
     let nextState = Object.assign({}, oldState);
-
+    // debugger
     switch (action.type) {
         case RECEIVE_EVENTS:
+            // debugger
             return action.events;
         case RECEIVE_EVENT:
             nextState[action.event.id] = action.event;
@@ -23,4 +24,4 @@ const EventsReducer = (oldState = {}, action) => {
     }
 }
 
-export default EventsReducer;
+export default eventsReducer;

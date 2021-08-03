@@ -58,26 +58,35 @@ class Signup extends React.Component{
         return true;
     }
 
-    // renderErrors(){
-    //         return(
-    //             <ul>
-    //                 {this.props.errors.map((error, i) => (
-    //                     <li key={`error: ${i}`}>
-    //                         {error}
-    //                     </li>
-    //                 ))}
-    //             </ul>
-    //         )
-    // }
+    renderErrors(){
+        console.log(this.props)
+        if(this.props.errors.length > 0){
+            return(
+                <ul>
+                    {this.props.errors.map((error, i) => (
+                        <li key={`error: ${i}`}>
+                            {error}
+                        </li>
+                    ))}
+                </ul>
+            )
+        } else {
+            return null
+        }
+
+    }
 
     render(){
         if (this.state.step === 0) {
             
             return (
                 <div className="box">
-                    <img class="burj-image"src={window.signupImageFour} />
+                    <img className="burj-image"src={window.signupImageFour} />
                     <form className="session-form-two">
                         <h1>Create an Account</h1>
+                        <div className="errors-signup">
+                            {this.renderErrors()}
+                        </div>
                         <label>
                             <div className="input-info">
                             <input className="input-box"
@@ -107,7 +116,7 @@ class Signup extends React.Component{
                     <h1>Create an </h1>
                     <h1>Account</h1>
                 </div>
-                    <img class="desert-image" src={window.signupImageFive} />
+                    <img className="desert-image" src={window.signupImageFive} />
                     <div className='signin-box'>
 
                         <form onSubmit={this.handleChange} className="session-form">

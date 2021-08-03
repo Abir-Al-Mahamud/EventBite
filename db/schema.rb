@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_18_142141) do
+ActiveRecord::Schema.define(version: 2021_07_08_160224) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,11 @@ ActiveRecord::Schema.define(version: 2021_05_18_142141) do
     t.string "checksum", null: false
     t.datetime "created_at", null: false
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
+  end
+
+  create_table "add_columns", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "bookmarks", force: :cascade do |t|
@@ -61,12 +66,11 @@ ActiveRecord::Schema.define(version: 2021_05_18_142141) do
     t.integer "author_id", null: false
     t.datetime "start_time", null: false
     t.datetime "end_time", null: false
-    t.integer "category_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "category", null: false
     t.index ["author_id"], name: "index_events_on_author_id"
     t.index ["author_name"], name: "index_events_on_author_name"
-    t.index ["category_id"], name: "index_events_on_category_id"
   end
 
   create_table "interests", force: :cascade do |t|
@@ -74,6 +78,16 @@ ActiveRecord::Schema.define(version: 2021_05_18_142141) do
     t.integer "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "likes", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "event_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["event_id", "user_id"], name: "index_likes_on_event_id_and_user_id", unique: true
+    t.index ["event_id"], name: "index_likes_on_event_id"
+    t.index ["user_id"], name: "index_likes_on_user_id"
   end
 
   create_table "registrations", force: :cascade do |t|
@@ -92,6 +106,7 @@ ActiveRecord::Schema.define(version: 2021_05_18_142141) do
     t.string "session_token", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "event_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["first_name"], name: "index_users_on_first_name"
     t.index ["last_name"], name: "index_users_on_last_name"

@@ -3,7 +3,7 @@ import UserNavbar from './user_navbar';
 import { logout } from '../../actions/session'
 
 const mSTP = (state) => ({
-    currentUser: state.session.currentUser
+    currentUser: state.session.id
 })
 
 const mDTP = (dispatch) => ({

@@ -144,8 +144,8 @@ span, article, footer, time, small {
         grid-column: 1;
         border: 1px solid gray;
         border-radius: 2px;
-        line-height: 23px;
-        min-height: 23px;
+        line-height: 23%;
+        min-height: 23%;
         
         font-size: 16px;
     }
@@ -153,8 +153,8 @@ span, article, footer, time, small {
         grid-column: 1;
         border: 1px solid gray;
         border-radius: 2px;
-        line-height: 23px;
-        min-height: 23px;
+        line-height: 23%;
+        min-height: 23%;
         
         font-size: 16px;
     }
@@ -164,7 +164,7 @@ span, article, footer, time, small {
      display: flex;
      justify-content: center;
      align-items: flex-start;
-     min-height: 300px;
+     min-height: 300%;
  }
     .h1{
         grid-column-start: inherit;
@@ -174,7 +174,7 @@ span, article, footer, time, small {
         z-index: 1;
         text-align: left;
         width: 100%;
-        padding-left: 53px;
+        padding-left: 53%;
         margin: 15px -50px 30px;
     }
     h1{
@@ -229,20 +229,22 @@ span, article, footer, time, small {
 
 
 .footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    position: absolute;
+    margin-top: auto;
     width: 100%;
-    background-color: navy;
-    height: 2rem;
+    background-color: purple;
+    height: 50px;
     text-align: center;
+    bottom: 100%
 }
 
 .footer a{
     text-decoration: none;
     color: white;
-    font-size: x-small;
+    font-size: 20px;
+    // display: flex;
+    // align-items: stretch;
+    // justify-content: space-evenly;
 }
 
 .errors-ul{
@@ -563,7 +565,7 @@ span, article, footer, time, small {
         max-width: 600px;
         position: absolute;
         margin: 75px 10vw 100px;
-        left: -6vw;
+        left: 0%;
         background-color: rgb(230, 228, 228);
     }
 
@@ -764,3 +766,77 @@ span, article, footer, time, small {
         height: 100px;
         width: 100px;
     }
+
+    .main-event{
+        position: fixed;
+        bottom: 5%
+    }
+
+    .main-event{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        // margin: 150px auto 50px auto;
+        // padding: 0 30px;
+       
+    }
+
+    .event-index-card {
+        // display: flex;
+        // flex-wrap: wrap;
+        // flex-direction: row;
+        width: 22%;
+        min-width: 275px;
+        height: 250px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0px, 0px, 15px, 2px rgba(180, 180, 180, 0.4);
+        transition: box-shadow 0.25s;
+        padding-bottom: 20px;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        // align-items: center;
+        // justify-content: center;
+        &:hover {
+            box-shadow: 0px 0px 15px 8px rgba(110, 110, 110, 0.2);
+            transition: box-shadow 0.25s;
+        }
+        
+    }
+    
+    .event-index-card-comp{
+        // left: 50vw;
+        // outline-width: 10px;
+        // outline-color: gray;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+    }
+
+    .event-idx-small-title{
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .event-idx-small-date{
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: orange;
+
+    }
+
+    .events-near-you{
+        font-weight: 1000;
+        display: flex;
+        justify-content: center;
+        top: 75%;
+    }
+

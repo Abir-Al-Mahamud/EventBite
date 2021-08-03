@@ -23,15 +23,15 @@ const receiveUserEvents = events => ({
     events: events 
 })
 
-const receiveNewEvent = event => ({
-    type: RECEIVE_NEW_EVENT,
-    event: event 
-})
+// const receiveNewEvent = event => ({
+//     type: RECEIVE_NEW_EVENT,
+//     event: event 
+// })
 
-const alterEvent = eventId => ({
-    type: EDIT_EVENT,
-    eventId: eventId 
-})
+// const alterEvent = eventId => ({
+//     type: EDIT_EVENT,
+//     eventId: eventId 
+// })
 
 
 const removeEvent = eventId => ({
@@ -40,37 +40,38 @@ const removeEvent = eventId => ({
 })
 
 export const requestEvents = () => dispatch => {
+    // debugger
     return EventAPIUtil.fetchEvents()
         .then(events => dispatch(receiveEvents(events)))
-        .catch(err => console.log(err));
+        // .catch(err => console.log(err.responseJSON));
 }
 
 export const requestEvent = (eventId) => dispatch => {
     return EventAPIUtil.fetchEvent(eventId)
         .then(event => dispatch(receiveEvent(event)))
-        .catch(err => console.log(err));
+        // .catch(err => console.log(err.responseJSON));
 }
 
 export const requestUserEvents = (userId) => dispatch => {
     return EventAPIUtil.fetchUserEvents(userId)
         .then(events => dispatch(receiveUserEvents(events)))
-        .catch(err => console.log(err));
+        .catch(err => console.log(err.responseJSON));
 }
 
 export const createEvent = event => dispatch => {
     return EventAPIUtil.createEvent(event)
         .then(event => dispatch(receiveEvent(event)))
-        .catch(err => console.log(err.response));
+        .catch(err => console.log(err.responseJSON));
 }
 
 export const changeEvent = event => dispatch => {
     return EventAPIUtil.updateEvent(event)
         .then(event => dispatch(receiveEvent(event)))
-        .catch(err => console.log(err.response));
+        .catch(err => console.log(err.responseJSON));
 }
 
 export const deleteEvent = eventId => dispatch => {
     return EventAPIUtil.deleteEvent(eventId)
         .then(event => dispatch(removeEvent(event.id)))
-        .catch(err => console.log(err.response));
+        .catch(err => console.log(err.responseJSON));
 }

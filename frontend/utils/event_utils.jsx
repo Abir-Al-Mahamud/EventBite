@@ -1,18 +1,22 @@
 export const fetchEvents = () => {
+    // debugger
     return $.ajax({
-        url: '/api/events'
+        url: '/api/events',
+        method: 'GET'
     })
 }
 
 export const fetchEvent = (eventId) => {
     return $.ajax({
-        url: `/api/events/${eventId}`
+        url: `/api/events/${eventId}`,
+        method: 'GET'
     })
 }
 
 export const fetchUserEvents = id => {
     return $.ajax({
-        url: `/api/events/user/${id}`
+        url: `/api/events/user/${id}`,
+        method: 'GET'
     })
 }
 

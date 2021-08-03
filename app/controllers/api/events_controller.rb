@@ -1,7 +1,8 @@
-class EventsController < ApplicationController
+class Api::EventsController < ApplicationController
 
 
     def index 
+        # debugger
         @events = Event.all 
     end
 
@@ -11,7 +12,8 @@ class EventsController < ApplicationController
 
     def create 
         @event = User.new(event_params)
-
+        @event.author_id = @current_user.id 
+        @event.author_name = @current_user.first_name 
         if @event.save 
             render :show 
         else
@@ -38,6 +40,6 @@ class EventsController < ApplicationController
     private 
 
     def event_params
-        params.require(:event).permit(:title, :description, :date)
+        params.require(:event).permit(:title, :description, :date, :category, :author_id, :start_time, :end_time, :author_name)
     end
 end
