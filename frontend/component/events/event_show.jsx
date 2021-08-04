@@ -19,5 +19,7 @@ const EventShow = ({ event, eventId, fetchEvent }) => {
                 <EventDetail event={event}/>
             </div>
         </div>
-    )
-}
+    );
+};
+
+export default EventShow;

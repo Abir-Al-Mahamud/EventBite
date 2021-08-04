@@ -5,12 +5,13 @@ const EventDetail = ({ event }) => {
     return(
         <div>
             <ul className="event-list">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>{event.title}</li>
+                <li>{event.description}</li>
+                <li>{event.date}</li>
+                <li>{event.category}</li>
+                <li>{event.start_time}</li>
+                <li>{event.end_time}</li>
+                <li>{event.author_name}</li>
             </ul>
             <br/>
         </div>
