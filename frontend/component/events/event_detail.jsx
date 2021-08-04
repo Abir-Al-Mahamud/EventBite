@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class EventDetail extends React.Component {
     constructor(props){
