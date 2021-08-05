@@ -434,7 +434,7 @@ span, article, footer, time, small {
 }
 
 .modal{
-    display: none;
+    display: flex;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -775,7 +775,7 @@ span, article, footer, time, small {
     .main-event{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: left;
         align-items: center;
         // margin: 150px auto 50px auto;
