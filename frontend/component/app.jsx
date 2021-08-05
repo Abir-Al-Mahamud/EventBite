@@ -19,7 +19,7 @@ import LogInFormContainer from './session/login_form_container';
 import Navbar from './navbar/navbar_container';
 import CreateEventFormContainer from './events/create_event_form_container';
 import Footer from '../component/footer/footer';
-import EventDetailContainer from '../component/events/event_detail_container';
+import EventShowContainer from '../component/events/event_show_container';
 import EventIndexContainer from '../component/events/event_index_container';
 
 export default () => (
@@ -29,7 +29,7 @@ export default () => (
         <Route path="/" component={Navbar}/>
         <Route exact path="/" component={Home}/>
         <Route exact path="/events" component={EventIndexContainer}/>
-        <Route exact path="/events/:eventId" component={EventDetailContainer}/>
+        <Route exact path="/events/:eventId" component={EventShowContainer}/>
         <ProtectedRoute path="/events/new" component={CreateEventFormContainer}/>
         <AuthRoute exact path="/login" component={LogInFormContainer} />
         <AuthRoute exact path="/signup" component={SignupContainer}/>

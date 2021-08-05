@@ -5,6 +5,7 @@ const EventDetail = ({ event }) => {
     return(
         <div>
             <ul className="event-list">
+
                 <li>{event.title}</li>
                 <li>{event.description}</li>
                 <li>{event.date}</li>
