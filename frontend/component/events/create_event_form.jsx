@@ -47,7 +47,6 @@ class EventForm extends React.Component{
                     </label>
                     <label className="category-input">
                         <select name="category" 
-                            type="date" 
                             // value={this.state.category}
                             onChange={this.update('category')}
                         >Category</select>
