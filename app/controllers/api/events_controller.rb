@@ -11,9 +11,10 @@ class Api::EventsController < ApplicationController
     end
 
     def create 
-        @event = User.new(event_params)
-        @event.author_id = @current_user.id 
-        @event.author_name = @current_user.first_name 
+        # debugger
+        @event = Event.new(event_params)
+        @event.author_id = current_user.id 
+        @event.author_name = current_user.first_name 
         if @event.save 
             render :show 
         else

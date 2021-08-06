@@ -7,7 +7,8 @@ const mSTP = (state) => ({
         title: '',
         description: '',
         date: '',
-        author: '',
+        category: '',
+        author_name: '',
         start_time: '',
         end_time: ''
     },

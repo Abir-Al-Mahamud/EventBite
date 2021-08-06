@@ -26,7 +26,8 @@ class EventIndex extends React.Component{
         console.log(this.props.events)
         if(!this.props.events) {
             return ( <h2>Loading...</h2> )
-        } else {
+        } else { 
+            
                 return(
                     <div className="main-event">
                     {

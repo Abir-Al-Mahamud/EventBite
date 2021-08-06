@@ -32805,3 +32805,558 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 142ms (Views: 132.3ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for ::1 at 2021-08-05 18:12:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 2175ms (Views: 2160.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:12:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 1011ms (Views: 1003.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:13:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 968ms (Views: 954.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:13:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 580ms (Views: 572.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:13:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 570ms (Views: 562.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:15:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 826ms (Views: 818.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:15:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 943ms (Views: 938.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:15:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 643ms (Views: 634.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:16:07 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 104ms (Views: 99.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:16:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 562ms (Views: 540.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:16:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 581ms (Views: 572.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:16:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (5.1ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 592ms (Views: 580.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:17:07 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 722ms (Views: 716.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:17:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 617ms (Views: 605.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:17:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 106ms (Views: 100.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:18:06 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (5.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 1728ms (Views: 1722.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:18:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 100ms (Views: 90.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:49:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (40.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 6151ms (Views: 6084.6ms | ActiveRecord: 42.6ms)
+
+
+Started POST "/api/events" for ::1 at 2021-08-05 18:50:15 -0400
+Started GET "/" for ::1 at 2021-08-05 18:50:15 -0400
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "author"=>"", "start_time"=>"", "end_time"=>""}}
+Unpermitted parameter: :author
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:14:in `create'
+
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (408.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 1860ms (Views: 1439.8ms | ActiveRecord: 411.1ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:51:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (13.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 4180ms (Views: 4154.0ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/" for ::1 at 2021-08-05 18:51:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (44.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 329ms (Views: 275.1ms | ActiveRecord: 44.2ms)
+
+
+Started POST "/api/events" for ::1 at 2021-08-05 18:51:47 -0400
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "author"=>"", "start_time"=>"", "end_time"=>""}}
+Unpermitted parameter: :author
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:14:in `create'
+
+Started GET "/" for ::1 at 2021-08-05 18:54:11 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.6ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 5647ms (Views: 5635.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/events" for ::1 at 2021-08-05 18:54:31 -0400
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "author"=>"", "start_time"=>"", "end_time"=>""}}
+Unpermitted parameter: :author
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:14:in `create'
+
+Started GET "/" for ::1 at 2021-08-05 18:59:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (5.2ms)
+  [1m[36mUser Load (54.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 3179ms (Views: 3109.7ms | ActiveRecord: 54.6ms)
+
+
+Started POST "/api/events" for ::1 at 2021-08-05 18:59:52 -0400
+Started POST "/api/events" for ::1 at 2021-08-05 18:59:52 -0400
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "author"=>"", "start_time"=>"", "end_time"=>""}}
+Unpermitted parameter: :author
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:14:in `create'
+
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "author"=>"", "start_time"=>"", "end_time"=>""}}
+Unpermitted parameter: :author
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:14:in `create'
+
+Started GET "/" for ::1 at 2021-08-05 19:01:10 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (49.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 2470ms (Views: 2390.5ms | ActiveRecord: 69.8ms)
+
+
+Started POST "/api/events" for ::1 at 2021-08-05 19:01:31 -0400
+Started POST "/api/events" for ::1 at 2021-08-05 19:01:31 -0400
+Processing by Api::EventsController#create as JSON
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"hello", "description"=>"dfgdfg", "date"=>"", "author"=>"4564452435", "start_time"=>"", "end_time"=>""}}
+  Parameters: {"event"=>{"title"=>"hello", "description"=>"dfgdfg", "date"=>"", "author"=>"4564452435", "start_time"=>"", "end_time"=>""}}
+Unpermitted parameter: :author
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+Unpermitted parameter: :author
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:14:in `create'
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:14:in `create'
+
+Started GET "/" for ::1 at 2021-08-05 19:02:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (14.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 1002ms (Views: 416.3ms | ActiveRecord: 570.4ms)
+
+
+Started POST "/api/events" for ::1 at 2021-08-05 19:02:51 -0400
+Started POST "/api/events" for ::1 at 2021-08-05 19:02:51 -0400
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"asdas", "description"=>"asdasda", "date"=>"", "author"=>"12/12/1998", "start_time"=>"", "end_time"=>""}}
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"asdas", "description"=>"asdasda", "date"=>"", "author"=>"12/12/1998", "start_time"=>"", "end_time"=>""}}
+Unpermitted parameter: :author
+Unpermitted parameter: :author
+Unpermitted parameter: :author
+Unpermitted parameter: :author
+Completed 500 Internal Server Error in 186351ms (ActiveRecord: 0.0ms)
+
+
+Completed 500 Internal Server Error in 186373ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:15:in `create'
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:15:in `create'
+
+Started POST "/api/events" for ::1 at 2021-08-05 19:05:58 -0400
+Started POST "/api/events" for ::1 at 2021-08-05 19:05:58 -0400
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"asdas", "description"=>"asdasda", "date"=>"", "author"=>"12/12/1998", "start_time"=>"", "end_time"=>""}}
+Unpermitted parameter: :author
+Completed 500 Internal Server Error in 4911ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:15:in `create'
+
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"asdas", "description"=>"asdasda", "date"=>"", "author"=>"12/12/1998", "start_time"=>"", "end_time"=>""}}
+Unpermitted parameter: :author
+Completed 500 Internal Server Error in 6569ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:15:in `create'
+
+Started GET "/" for ::1 at 2021-08-05 19:06:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 4026ms (Views: 4003.0ms | ActiveRecord: 10.3ms)
+
+
+Started POST "/api/events" for ::1 at 2021-08-05 19:06:39 -0400
+Started POST "/api/events" for ::1 at 2021-08-05 19:06:39 -0400
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"sdfsdf", "description"=>"sdfsdf", "date"=>"", "author_name"=>"23/23/2333", "start_time"=>"", "end_time"=>""}}
+Completed 500 Internal Server Error in 48952ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/api/events" for ::1 at 2021-08-05 19:07:28 -0400
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"sdfsdf", "description"=>"sdfsdf", "date"=>"", "author_name"=>"23/23/2333", "start_time"=>"", "end_time"=>""}}
+Started POST "/api/events" for ::1 at 2021-08-05 19:07:33 -0400
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:15:in `create'
+
+Completed 500 Internal Server Error in 4944ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:15:in `create'
+
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"sdfsdf", "description"=>"sdfsdf", "date"=>"", "author_name"=>"23/23/2333", "start_time"=>"", "end_time"=>""}}
+Completed 500 Internal Server Error in 3704ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:15:in `create'
+
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"sdfsdf", "description"=>"sdfsdf", "date"=>"", "author_name"=>"23/23/2333", "start_time"=>"", "end_time"=>""}}
+Completed 500 Internal Server Error in 6090ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:15:in `create'
+
+Started GET "/" for ::1 at 2021-08-05 19:08:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (15.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 322ms (Views: 274.9ms | ActiveRecord: 39.6ms)
+
+
+Started POST "/api/events" for ::1 at 2021-08-05 19:08:22 -0400
+Started POST "/api/events" for ::1 at 2021-08-05 19:08:22 -0400
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "author_name"=>"", "start_time"=>"", "end_time"=>""}}
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "author_name"=>"", "start_time"=>"", "end_time"=>""}}
+Completed 500 Internal Server Error in 75724ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:15:in `create'
+
+Completed 500 Internal Server Error in 4702ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:15:in `create'
+
+Started GET "/" for ::1 at 2021-08-05 19:09:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (12.0ms)
+  [1m[36mUser Load (14.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 5658ms (Views: 5633.5ms | ActiveRecord: 14.0ms)
+
+
+Started POST "/api/events" for ::1 at 2021-08-05 19:10:09 -0400
+Started POST "/api/events" for ::1 at 2021-08-05 19:10:09 -0400
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "author_name"=>"", "start_time"=>"", "end_time"=>""}}
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "author_name"=>"", "start_time"=>"", "end_time"=>""}}
+Completed 500 Internal Server Error in 55612ms (ActiveRecord: 0.0ms)
+
+
+Completed 500 Internal Server Error in 5372ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:15:in `create'
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'title' for User.:
+  app/controllers/api/events_controller.rb:15:in `create'
+
+Started GET "/" for ::1 at 2021-08-05 19:13:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (24.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 795ms (Views: 441.6ms | ActiveRecord: 329.8ms)
+
+
+Started POST "/api/events" for ::1 at 2021-08-05 19:13:44 -0400
+Started POST "/api/events" for ::1 at 2021-08-05 19:13:44 -0400
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "author_name"=>"", "start_time"=>"", "end_time"=>""}}
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "author_name"=>"", "start_time"=>"", "end_time"=>""}}
+Completed 500 Internal Server Error in 41941ms (ActiveRecord: 32.2ms)
+
+
+
+NoMethodError - undefined method `id' for nil:NilClass:
+  app/controllers/api/events_controller.rb:16:in `create'
+
+Completed 500 Internal Server Error in 22462ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `id' for nil:NilClass:
+  app/controllers/api/events_controller.rb:16:in `create'
+
+Started POST "/api/events" for ::1 at 2021-08-05 19:16:07 -0400
+Started POST "/api/events" for ::1 at 2021-08-05 19:16:07 -0400
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"hello", "description"=>"description", "date"=>"2021-08-20", "author_name"=>"asdasdads", "start_time"=>"19:16", "end_time"=>"22:19"}}
+Processing by Api::EventsController#create as JSON
+Completed 500 Internal Server Error in 77668ms (ActiveRecord: 0.0ms)
+
+
+  Parameters: {"event"=>{"title"=>"hello", "description"=>"description", "date"=>"2021-08-20", "author_name"=>"asdasdads", "start_time"=>"19:16", "end_time"=>"22:19"}}
+
+NoMethodError - undefined method `id' for nil:NilClass:
+  app/controllers/api/events_controller.rb:16:in `create'
+
+Started GET "/" for ::1 at 2021-08-05 19:17:50 -0400
+Completed 500 Internal Server Error in 25405ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `id' for nil:NilClass:
+  app/controllers/api/events_controller.rb:16:in `create'
+
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (11.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 401ms (Views: 300.5ms | ActiveRecord: 94.9ms)
+
+
+Started POST "/api/events" for ::1 at 2021-08-05 19:18:21 -0400
+Started POST "/api/events" for ::1 at 2021-08-05 19:18:21 -0400
+Processing by Api::EventsController#create as JSON
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"adsfgf", "description"=>"asdfgdasfsdf", "date"=>"2021-08-21", "author_name"=>"asdafasdf", "start_time"=>"19:18", "end_time"=>"21:18"}}
+  Parameters: {"event"=>{"title"=>"adsfgf", "description"=>"asdfgdasfsdf", "date"=>"2021-08-21", "author_name"=>"asdafasdf", "start_time"=>"19:18", "end_time"=>"21:18"}}
+  [1m[36mUser Load (83.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (19070.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (1923.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:18
+  [1m[35m (135.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:18
+  [1m[35m (29.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/events_controller.rb:18
+  [1m[35m (6.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/events_controller.rb:18
+Completed 422 Unprocessable Entity in 96140ms (Views: 0.3ms | ActiveRecord: 2234.8ms)
+
+
+Completed 422 Unprocessable Entity in 96146ms (Views: 0.4ms | ActiveRecord: 19234.4ms)
+
+
+Started GET "/" for ::1 at 2021-08-06 18:23:12 -0400
+  [1m[35m (16.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/abirmahamud/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (7.8ms)
+  [1m[36mUser Load (16.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CnjJVf0yIBFXh2Fi5631sA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 23412ms (Views: 23323.9ms | ActiveRecord: 63.1ms)
+
+
+Started POST "/api/events" for ::1 at 2021-08-06 18:23:50 -0400
+Started POST "/api/events" for ::1 at 2021-08-06 18:23:50 -0400
+
+LoadError - Unable to autoload constant Api::EventsController, expected /Users/abirmahamud/Desktop/EventBiteFullStack/app/controllers/api/events_controller.rb to define it:
+
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "category"=>"", "author_name"=>"", "start_time"=>"", "end_time"=>""}}

@@ -25,49 +25,49 @@ class EventForm extends React.Component{
                 <div className="modal">
                     <div className="modal-content">
 
-                    <label>
+                    <label className="title-input">
                         <input className="event-input" 
                             type="text" 
                             value={this.state.title} 
                             onChange={this.update('title')}
                         />
                     </label>
-                    <label>
+                    <label className="title-input">
                         <textarea  className="event-input"
                             value={this.state.description}
                             onChange={this.update('description')}
                         />
                     </label>
-                    <label>
+                    <label className="date-input">
                         <input className="date-input" 
                             type="date" 
                             value={this.state.date}
                             onChange={this.update('date')}
                         />
                     </label>
-                    <label>
+                    <label className="author-input">
                         <input className="event-input" 
                             type="text" 
-                            value={this.state.author}
-                            onChange={this.update('author')}
+                            value={this.state.author_name}
+                            onChange={this.update('author_name')}
                         />
                     </label>
-                    <label>
+                    <label className="time-start-input">
                         <input className="time-input" 
                             type="time" 
                             value={this.state.start_time}
                             onChange={this.update('start_time')}
                         />
                     </label>
-                    <label>
+                    <label className="time-end-input">
                         <input className="time-input" 
                             type="time" 
                             value={this.state.end_time}
                             onChange={this.update('end_time')}
                         />
                     </label>
-                    {/* <button className="modal-submit" onClick={this.handleSubmit}>Create Event</button>
-                    <button className="modal-close">Close</button> */}
+                    <input type="submit" className="modal-submit" value="Create Event"  />
+                    <button className="modal-close">Close</button> 
                     </div>
                 </div>
             </form>

@@ -444,15 +444,21 @@ span, article, footer, time, small {
     overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-content{
     background-color: white;
     margin: 15% auto;
-    padding: 20px;
+    padding: 50;
     border: 1px, solid gray;
     border-radius: 5px;
     width: 80%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    
 }
 
   #my-button{
