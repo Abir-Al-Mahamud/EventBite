@@ -49,7 +49,7 @@ class EventForm extends React.Component{
                         <select name="category" 
                             // value={this.state.category}
                             onChange={this.update('category')}
-                        >Category</select>
+                        >Category</select> 
                     </label>
                     <label className="author-input">
                         <input className="author-input" 
