@@ -55,7 +55,7 @@ class EventForm extends React.Component{
                         <input className="author-input" 
                             type="text" 
                             value={this.state.author_name}
-                            onChange={this.update('author_name')}
+                            onChange={this.update('author_name')} 
                         />
                     </label>
                     <label className="time-start-input">
