@@ -30,6 +30,7 @@ class EventIndex extends React.Component{
             
                 return(
                     <div className="main-event">
+                        <h1 className="events-near-you">Events Near You </h1>
                     {
                     this.props.events.map(event => (
                         <Link className="event-index-card" key={event.id} to={`/events/${event.id}`}>

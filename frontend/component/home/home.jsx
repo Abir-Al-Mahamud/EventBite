@@ -43,7 +43,7 @@ class Home extends React.Component{
                     <img className="forest-image"src={window.signupImageSeven}/>
             </div>
             </div>
-            <h1 className="events-near-you">Events Near You </h1>
+            
             <div className="event-display">
                 <EventIndexContainer />
             </div>

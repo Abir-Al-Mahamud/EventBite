@@ -14,9 +14,9 @@
  *= require_self
  */
 
- html, body, header, nav, h1, a,
+ html, body, header, nav, a,
 ul, li, strong, main, button, i,
-section, img, div, h2, p, form,
+section, img, div, p, form,
 fieldset, label, input, textarea,
 span, article, footer, time, small {
   margin: 0;
@@ -177,18 +177,7 @@ span, article, footer, time, small {
         padding-left: 53%;
         margin: 15px -50px 30px;
     }
-    h1{
-        grid-column-start: inherit;
-        color: black;
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: large;
-        z-index: 1;
-        text-align: left;
-        width: 100%;
-        padding-left: 50px;
-        margin: 15px -80px 0px;
-    }
-
+    
     h2{
         grid-column-start: inherit;
         color: #f05537;
@@ -200,7 +189,18 @@ span, article, footer, time, small {
         padding-right: 10px;
         margin: 25px -80px 0px;
     }
- 
+    
+    h1{
+        grid-column-start: inherit;
+        color: black;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: large;
+        z-index: 1;
+        text-align: left;
+        width: 100%;
+        padding-left: 50px;
+        margin: 15px -80px 0px;
+    }
   
 
     .help{
@@ -781,9 +781,11 @@ span, article, footer, time, small {
     .main-event{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: left;
         align-items: center;
+        left: 10%;
+        top: 60%;
         // margin: 150px auto 50px auto;
         // padding: 0 30px;
        
@@ -791,6 +793,9 @@ span, article, footer, time, small {
 
     .event-index-card {
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 22%;
         min-width: 275px;
         height: 250px;
@@ -803,7 +808,6 @@ span, article, footer, time, small {
         font-family: sans-serif;
         font-size: 20px;
         font-weight: 700;
-        
         &:hover {
             box-shadow: 0px 0px 15px 8px rgba(110, 110, 110, 0.2);
             transition: box-shadow 0.25s;
@@ -840,6 +844,8 @@ span, article, footer, time, small {
         font-weight: 1000;
         display: flex;
         justify-content: center;
-        top: 75%;
+        align-items: center;
+        // bottom: 55%;
+        top: 50%;
     }
 
