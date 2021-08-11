@@ -19,7 +19,7 @@ const EventShow = ({ event, eventId, fetchEvent }) => {
             <div className="event-details">
                 <EventDetail event={event}/>
             </div>
-            <div className="edit-form-button">
+            <div className="edit-form-button" onClick={}>
                 <EditEventForm />
             </div>
         </div>
