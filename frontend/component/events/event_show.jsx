@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import EventDetail from './event_detail';
 import { ProtectedRoute } from '../../utils/route_utils';
+import EditEventForm from './edit_form_container';
 
 
 const EventShow = ({ event, eventId, fetchEvent }) => {
@@ -17,6 +18,9 @@ const EventShow = ({ event, eventId, fetchEvent }) => {
             </div>
             <div className="event-details">
                 <EventDetail event={event}/>
+            </div>
+            <div className="edit-form-button">
+                <EditEventForm />
             </div>
         </div>
     );
