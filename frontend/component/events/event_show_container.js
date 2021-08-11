@@ -8,7 +8,7 @@ import EventShow from './event_show';
 
 const mSTP = (state , { match }) => {
     const eventId = parseInt(match.params.eventId);
-    const even = selectEvent(state.entities, eventId);
+    const event = selectEvent(state.entities, eventId);
     
     return {
         eventId,
