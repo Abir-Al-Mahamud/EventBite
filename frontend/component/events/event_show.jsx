@@ -14,9 +14,17 @@ class EventShow extends React.Component{
     render(){
         const { event } = this.props 
         return(
-            <div>
-                
-            </div>
+            <div className="single-event-show">
+//             <div className="back-to-events">
+//                 <Link to="/">Back to Events</Link>
+//             </div>
+//             <div className="event-details">
+//                 <EventDetail event={event}/>
+//             </div>
+//             <div className="edit-form-button">
+//                 <EditEventForm />
+//             </div>
+//         </div>
         )
     }
 }

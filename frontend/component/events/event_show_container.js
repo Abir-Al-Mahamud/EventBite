@@ -1,23 +1,23 @@
 import { connect } from 'react-redux';
 
-import { requestEvent } from '../../actions/events';
+import { requestEvent, requestEvents } from '../../actions/events';
 
 import { selectEvent } from '../../reducers/selectors';
 
 import EventShow from './event_show';
 
-const mSTP = (state , { match }) => {
+const mSTP = (state, ownProps, { match }) => {
     const eventId = parseInt(match.params.eventId);
     const event = selectEvent(state.entities, eventId);
     
     return {
         eventId,
-        event 
+        event: state.events[ownProps.match.params.eventId] 
     };
 };
 
 const mDTP = dispatch => ({
-    fetchEvent: id => dispatch(fetchEvent(id))
+    fetchEvent: id => dispatch(requestEvent(id))
 });
 
 export default connect(mSTP, mDTP)(EventShow);
