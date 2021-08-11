@@ -13,6 +13,7 @@ class EventIndexCard extends React.Component {
 
         return(
             <div className="event-idx-small">
+                <img src="" alt="" />
                 <li className="event-idx-small-date">{date}</li>
                 <li className="event-idx-small-title">{title}</li>
                 <li className="event-idx-description">{desc}</li>
