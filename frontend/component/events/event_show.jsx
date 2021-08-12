@@ -20,8 +20,12 @@ class EventShow extends React.Component{
                 <Link to="/">Back to home page</Link>
             </div>
             <div className="event-details">
-                <p>{event.description}</p>
-                <p>{event.date}</p>
+                <p className="desc">{event.description}</p>
+                <p className="date">{event.date}</p>
+                <p className="categ">{event.category}</p>
+                <p className="author">{event.author}</p>
+                <p className="start">{event.start_time}</p>
+                <p className="end">{event.end_time}</p>
             </div>
             {/* <div className="event-details">
                 <EventDetail event={event}/>
