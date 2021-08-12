@@ -2,11 +2,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import CreateEventForm from './create_event_form';
-import { requestEvent, updateEvent } from '../../actions/events';
+import { requestEvent, changeEvent } from '../../actions/events';
 
 class EditEventForm extends React.Component {
     constructor(props){
-        super(props);
+        super(props); 
     }
 
     componentDidMount(){
@@ -41,7 +41,7 @@ const mSTP = (state, ownProps) => {
 const mDTP = (dispatch) => {
     return {
         fetchEvent: eventId => dispatch(requestEvent(eventId)),
-        submitEvent: (data, eventId) => dispatch(updateEvent(data, eventId)),
+        submitEvent: (data, eventId) => dispatch(changeEvent(data, eventId)),
         //Might only require event
     }
 }

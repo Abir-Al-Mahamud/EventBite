@@ -59,10 +59,10 @@ export const requestUserEvents = (userId) => dispatch => {
 }
 
 export const createEvent = event => dispatch => {
-    console.log(EventAPIUtil.createEvent(event))
+    // console.log(EventAPIUtil.createEvent(event))
     return EventAPIUtil.createEvent(event)
         .then(event => dispatch(receiveEvent(event)))
-        .catch(err => console.log(err.responseJSON));
+        // .catch(err => console.log(err.responseJSON));
 }
 
 export const changeEvent = event => dispatch => {

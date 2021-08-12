@@ -21,6 +21,7 @@ export const fetchUserEvents = id => {
 }
 
 export const createEvent = (event) => {
+    // debugger
     return $.ajax({
         url: `/api/events`,
         method: 'POST',
