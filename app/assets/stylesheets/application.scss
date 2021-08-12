@@ -16,7 +16,7 @@
 
  html, body, header, nav, a,
 ul, li, strong, main, button, i,
-section, img, div, p, form,
+section, img, div, form,
 fieldset, label, input, textarea,
 span, article, footer, time, small {
   margin: 0;
@@ -163,7 +163,7 @@ span, article, footer, time, small {
  .home{
      display: flex;
      justify-content: center;
-     align-items: flex-start;
+     align-items: center;
      min-height: 300%;
  }
     .h1{
@@ -190,37 +190,39 @@ span, article, footer, time, small {
         margin: 25px -80px 0px;
     }
     
-    h1.future{
-        grid-column-start: inherit;
+    h1.future-events{
+        // grid-column-start: inherit;
+        display: flex;
         color: black;
         font-family: Helvetica, Arial, sans-serif;
         font-size: large;
         z-index: 1;
         text-align: left;
         width: 100%;
-        padding-left: 50px;
+        left: 35%;
+        // padding-left: 50px;
         margin: 15px -80px 0px;
+        font-size: 50px;
     }
   
 
     .help{
         font-size: 35px;
         font-weight: bold;
-        padding-top: 20px;
-        padding-left: 40px;
+        padding: 10px;
         display: flex;
         align-items: flex-start;
     }
     
-    .future{
-        font-size: 50px;
-        padding-top: 20px;
-        padding-left: 40px;
-        margin-bottom: 100px;
-        display: flex;
-        align-items: flex-start;
+    // .future-events{
+    //     font-size: 50px;
+    //     padding: 10px;
+    //     left: 40%;
+    //     // margin-bottom: 90%;
+    //     display: flex;
+    //     // align-items: left;
         
-    }
+    // }
     
     .nav-bar-button{
         display: flex;
@@ -716,6 +718,7 @@ h1.create-event-form-type{
 
 
     .float-container{
+        
         width: 50%;
         max-width: 600px;
         position: absolute;
@@ -729,25 +732,28 @@ h1.create-event-form-type{
         max-width: 600px;
         position: absolute;
         margin: 75px 10vw 100px;
-        left: 0%;
+        left: 10%;
         background-color: rgb(230, 228, 228);
+        height: 300px;
     }
 
     .forest-image{
         width: 140%;
-        max-width: 750px;
-        height: 450px;
+        max-width: 600px;
+        height: 400px;
         position: absolute;
         margin: 10px 10vw 100px;
-        left: 30vw;
+        left: 83%;
+        // right: 80%;
         box-shadow: 10px 10px 5px grey;
     }
     .home-button{
         display: flex;
         justify-content: center;
-        position: absolute;
-        right: 390px;
-        top: 200px;
+        // position: absolute;
+        // right: -10%;
+        left: 40%;
+        top: 60%;
         align-items: center;
         width: 250px;
         height: 25px;
@@ -755,10 +761,12 @@ h1.create-event-form-type{
         padding-bottom: 10px;
         margin-top: 20px;
         margin-bottom: 60px;
+        margin-right: 60px;
         background-color: #f05537;
         color: white;
         border-radius: 20px;
     }
+
 
     .home-button:hover{
         background-color: lightsalmon;

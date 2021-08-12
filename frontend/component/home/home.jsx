@@ -34,9 +34,11 @@ class Home extends React.Component{
             <div className="float-container">
                 <div className="float-child">
                     <h2 className="help">Help shape the</h2>
-                    <h1 className="future">future of your events</h1>
+                    <h1 className="future-events">future of your events</h1>
                     <br />
+
                     <Link className="home-button" to="/events">Browse Events</Link>
+  
                     
                 </div>
             <div className="forest-image-main">
