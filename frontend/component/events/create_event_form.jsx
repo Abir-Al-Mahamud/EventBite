@@ -33,46 +33,47 @@ class EventForm extends React.Component{
                             onChange={this.update('title')}
                         />
                     </label>
-                    <label className="description-input">
+                    <label className="description-input">Description
                         <textarea  className="desc-input"
                             value={this.state.description}
                             onChange={this.update('description')}
                         />
                     </label>
-                    <label className="date-input">
+                    <label className="date-input">Date 
                         <input className="date-input" 
                             type="date" 
                             value={this.state.date}
                             onChange={this.update('date')}
                         />
                     </label>
-                    <label className="category-input">
+                    <label className="category-input">Category
                         <select name="category" onChange={this.update('category')}>Category
-                            <option value="all">All</option>
-                            <option value="for you">For you</option>
+
+                            <option value="Select one">Select One</option>
                             <option value="religion">Religion</option>
                             <option value="online">Online</option>
                             <option value="today">Today</option>
                             <option value="free">Free</option>
                             <option value="charity and causes">Charity and Causes</option>
                             <option value="free">Free</option>
+                            <option value="other">Other</option>
                         </select> 
                     </label>
-                    <label className="author-input">
+                    <label className="author-input">Author
                         <input className="author-input" 
                             type="text" 
                             value={this.state.author_name}
                             onChange={this.update('author_name')}
                         />
                     </label>
-                    <label className="time-start-input">
+                    <label className="time-start-input">Start Time
                         <input className="time-input" 
                             type="time" 
                             value={this.state.start_time}
                             onChange={this.update('start_time')}
                         />
                     </label>
-                    <label className="time-end-input">
+                    <label className="time-end-input">End Time
                         <input className="time-input" 
                             type="time" 
                             value={this.state.end_time}
