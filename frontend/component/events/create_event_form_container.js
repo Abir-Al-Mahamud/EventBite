@@ -10,7 +10,8 @@ const mSTP = (state) => ({
         category: '', 
         author_name: '', 
         start_time: '',
-        end_time: ''
+        end_time: '',
+        pic_url: ''
     },
     formType: 'Create Event'
 })
