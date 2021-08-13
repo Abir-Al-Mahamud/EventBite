@@ -1016,3 +1016,65 @@ h1.create-event-form-type{
         top: 50%; 
     }
 
+
+    .event-index {
+        display: flex;
+        max-width: 1200px;
+        top: 70%;
+        flex-direction: column;
+        margin: 150px auto 50px auto;
+        padding: 0 30px;
+
+        h2{
+            font-family: sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: black;
+            margin-bottom: 10px;
+            margin-left: 15px;
+        }
+    }
+
+    .event-index-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-right: -15px;
+    }
+
+    .event-index-item {
+        width: 22%;
+        min-width: 275px;
+        height: 280px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0px 0px 15px 2px rgba(180, 180, 180, 0.2);
+        transition: box-shadow 0.25s;
+        padding-bottom: 20px;
+
+        &:hover{
+            box-shadow: 0px 0px 15px 8px rgba(110, 110, 110, 0.2);
+            transition: box-shadow 0.25s;
+        }
+    }
+
+    .event-index-date{
+        margin-top: -10px;
+        padding: 0 15px;
+        color: #f05537;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .event-index-title{
+        margin-top: 10px;
+        padding: 0 15px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .blue {
+        color: blue
+    }

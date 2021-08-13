@@ -1,6 +1,6 @@
 import React from 'react';
 import EventIndexCard from './event_index_card';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 
 class EventIndex extends React.Component{
@@ -28,8 +28,8 @@ class EventIndex extends React.Component{
     }
 
     render(){
-        const { event } = this.props;
-        const indexTime = DateTimeUtil.indexTime(event);
+        // const { event } = this.props;
+        
         // debugger
         // console.log(this.props.events)
         if(!this.props.events) {
@@ -37,28 +37,24 @@ class EventIndex extends React.Component{
         } else { 
             
             return(
-                <div className="event-index-item">
-                    <h1 className="events-near-you">Events Near You </h1>
-                    <div className="event-index-image">
-                        <img src={event.pic_url} alt={event.title} onClick={this.handleClick}/>
-                    </div>
-                    <div className="event-index-like">
-
-                    </div>
-                    <div className="event-index-time">
-                        {indexTime}
-                    </div>
-                    <div className="event-index-title">
-                        {event.title}
-                    </div>
-
+                <div className="event-index">
+                    <h2>Events in <span className="blue">New York</span></h2>
+                    <ul className="event-index-list">
+                        {this.props.events.map((event, idx) => (
+                            <EventIndexCard
+                                event={event}
+                                // currentUserId={currentUserId}
+                                key={idx}
+                            />
+                        ))}
+                    </ul>
                 </div>
-                    )
+            )
                 }
             }
         }
         
-        export default EventIndex;
+        export default withRouter(EventIndex);
         
         
         
