@@ -19,7 +19,7 @@ class EventIndexCard extends React.Component {
         let desc = this.props.event.description;
 
         if (description.length > 40) {
-            desc = description.slice(0,30) + "...";
+            desc = description.slice(0,30) + "..."; 
         }
 
         return (
