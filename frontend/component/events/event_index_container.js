@@ -8,7 +8,7 @@ const mSTP = (state) => {
     // signedIn: state.session.isAuthenticated,
     // userId: state.session.user.id,
 
-    events: Object.values(state.entities.events),
+    events: Object.values(state.entities.events)
     // currentUserId
 }
 }

@@ -10,13 +10,13 @@ class EventIndexCard extends React.Component {
     }
 
     handleClick() {
-        const { event } = this.props;
-        this.props.history.push(`/events/${event.id}`)
+        const { test } = this.props;
+        this.props.history.push(`/events/${test.id}`)
     }
 
     render(){
-        const { title, location, description, date, pic_url } = this.props.event;
-        let desc = this.props.event.description;
+        const { title, location, description, date, pic_url } = this.props.test;
+        // let desc = this.props.test.description;
 
         if (description.length > 40) {
             desc = description.slice(0,30) + "..."; 
@@ -26,16 +26,16 @@ class EventIndexCard extends React.Component {
             <div className="event-index-item">
                 {/* <h1 className="events-near-you">Events Near You </h1> */}
                 <div className="event-index-image">
-                    <img src={event.pic_url} alt={event.title} onClick={this.handleClick}/>
+                    <img src={pic_url} alt={title} onClick={this.handleClick}/>
                 </div>
                 <div className="event-index-like">
 
                 </div>
                 <div className="event-index-date">
-                    {event.date}
+                    {date}
                 </div>
                 <div className="event-index-title">
-                    {event.title}
+                    {title}
                 </div>
 
             </div>

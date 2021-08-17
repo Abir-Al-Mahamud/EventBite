@@ -13,17 +13,17 @@ class Home extends React.Component{
 
     render(){
         //Have the content key pointing to a react component
-        const tabs = [
-            { name: 'All', content: 'Event1'},
-            { name: 'For you', content: 'Event2' },
-            { name: 'Religion', content: 'Event3' },
-            { name: 'Online', content: 'Event4' },
-            { name: 'Today', content: 'Event5' },
-            { name: 'This weekend', content: 'Event6' },
-            { name: 'Free', content: 'Event7' },
-            { name: 'Charity & Causes', content: 'Event8' },
-            { name: 'Free', content: 'Event9' }
-        ]
+        // const tabs = [
+        //     { name: 'All', content: 'Event1'},
+        //     { name: 'For you', content: 'Event2' },
+        //     { name: 'Religion', content: 'Event3' },
+        //     { name: 'Online', content: 'Event4' },
+        //     { name: 'Today', content: 'Event5' },
+        //     { name: 'This weekend', content: 'Event6' },
+        //     { name: 'Free', content: 'Event7' },
+        //     { name: 'Charity & Causes', content: 'Event8' },
+        //     { name: 'Free', content: 'Event9' }
+        // ]
         // const EventComponent = EventIndex();
 
     return (

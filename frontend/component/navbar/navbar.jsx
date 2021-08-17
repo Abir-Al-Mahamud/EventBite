@@ -11,8 +11,8 @@ const Navbar = ({ currentUser , logout, ...otherProps }) => {
             <Link id="my-button" to="/events/new">Create Event</Link>
             {/* <Link className="button" to="/">Likes</Link> */}
             {/* <Link className="button" to="/login">Tickets</Link> */}
-            <Link className="user-drop-down-button">{currentUser.email}</Link>
-            <button onClick={() => logout()}>Logout</button>
+            {/* <Link className="user-drop-down-button">{currentUser.email}</Link> */}
+            <input className="logout-button" onClick={() => logout()} value="Logout" />
             <div className="search-bar-div">
                 <input className="search-bar" type="text" placeholder='  Search...' />
             </div>
