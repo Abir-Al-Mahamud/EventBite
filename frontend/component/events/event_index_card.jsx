@@ -10,12 +10,12 @@ class EventIndexCard extends React.Component {
     }
 
     handleClick() {
-        const { test } = this.props;
+        const { event } = this.props;
         this.props.history.push(`/events/${test.id}`)
     }
 
     render(){
-        const { title, location, description, date, pic_url } = this.props.test;
+        const { title, location, description, date, pic_url } = this.props.event;
         // let desc = this.props.test.description;
 
         if (description.length > 40) {

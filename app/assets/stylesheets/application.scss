@@ -1071,8 +1071,12 @@ h1.create-event-form-type{
     }
 
     .event-index-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
         width: 22%;     
-
         min-width: 275px;
         height: 280px;
         margin-right: 25px;
@@ -1087,10 +1091,13 @@ h1.create-event-form-type{
             transition: box-shadow 0.25s;
         }
     }
+    .event-index-image{
+        padding-bottom: 110px;
+    }
 
     .event-index-date{
         margin-top: -10px;
-        padding: 0 15px;
+        padding-bottom: 5px;
         color: #f05537;
         font-size: 14px;
         font-weight: 500;
@@ -1104,5 +1111,5 @@ h1.create-event-form-type{
     }
 
     .blue {
-        color: navy
+        color: blue;
     }
