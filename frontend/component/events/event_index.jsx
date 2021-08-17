@@ -43,6 +43,7 @@ class EventIndex extends React.Component{
                         {this.props.events.map((test, idx) => (
                             <Link key={test.id} to={`/events/${test.id}`}>
                                 <EventIndexCard
+                                    className="event-index-card-comp"
                                     test={test}
                                     // currentUserId={currentUserId}
                                     key={idx}
