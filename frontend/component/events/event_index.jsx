@@ -31,7 +31,7 @@ class EventIndex extends React.Component{
         // const { event } = this.props;
         
         // debugger
-        console.log(this.props.events)
+        // console.log(this.props.events)
         if(!this.props.events) {
             return ( <h2>Loading...</h2> )
         } else { 
@@ -41,11 +41,13 @@ class EventIndex extends React.Component{
                     <h2>Events in <span className="blue">New York</span></h2>
                     <ul className="event-index-list">
                         {this.props.events.map((test, idx) => (
-                            <EventIndexCard
-                                test={test}
-                                // currentUserId={currentUserId}
-                                key={idx}
-                            />
+                            <Link key={test.id} to={`/events/${test.id}`}>
+                                <EventIndexCard
+                                    test={test}
+                                    // currentUserId={currentUserId}
+                                    key={idx}
+                                />
+                            </Link>
                         ))}
                     </ul>
                 </div>

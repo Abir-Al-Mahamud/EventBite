@@ -23,7 +23,7 @@ class EventIndexCard extends React.Component {
         }
 
         return (
-            <div className="event-index-item" onClick={}>
+            <div className="event-index-item">
                 {/* <h1 className="events-near-you">Events Near You </h1> */}
                 <div className="event-index-image">
                     <img src={pic_url} alt={title} onClick={this.handleClick}/>
