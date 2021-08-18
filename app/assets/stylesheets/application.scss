@@ -43,11 +43,13 @@ span, article, footer, time, small {
      display: flex;
      justify-content: flex-end;
      padding: 0px;
- }
- .navbar-right-second {
-     display: flex;
-     justify-content: flex-end;
-     padding: 0px;
+     
+    }
+.navbar-right-second {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+    
  }
  .logo-home {
      position: absolute;
@@ -93,7 +95,7 @@ span, article, footer, time, small {
          color: #39364F;
          text-decoration: none;
          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-         font-weight: 400;
+         font-weight: 600;
          font-size: 13px;
         //  margin: 20px 20px 20px 20px;
      }
@@ -107,7 +109,7 @@ span, article, footer, time, small {
          color: #39364F;
          text-decoration: none;
          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-         font-weight: 400;
+         font-weight: 600;
          font-size: 13px;
         //  margin: 20px 20px 20px 20px;
      }
@@ -501,7 +503,7 @@ span, article, footer, time, small {
     flex-direction: column;
     // width: 100%;
     margin: 40px;
-    height: 1000px;
+    height: 900px;
 }
 
 .modal-content{
@@ -603,20 +605,20 @@ select.category{
         font-size: 16px;
         width: 400px;
 }
-input.author-input{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-column: 1;
-        border: 1px solid gray;
-        border-radius: 5px;
-        line-height: 23%;
-        min-height: 23%;
-        padding: 20px;
-        // margin: 20%;
-        font-size: 16px;
-        width: 400px;
-}
+// input.author-input{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         grid-column: 1;
+//         border: 1px solid gray;
+//         border-radius: 5px;
+//         line-height: 23%;
+//         min-height: 23%;
+//         padding: 20px;
+//         // margin: 20%;
+//         font-size: 16px;
+//         width: 400px;
+// }
 input.time-start-input{
         display: flex;
         justify-content: center;
@@ -629,7 +631,7 @@ input.time-start-input{
         // min-height: 23%;
         // margin: 20%;
         font-size: 16px;
-        width: 400px;
+        width: 420px;
         // cursor: pointer;
 }
 input[type="time" i] {
@@ -643,7 +645,7 @@ input[type="time" i] {
     padding: 5px;
     border: 2px solid gray;
     border-radius: 5px;
-    width: 400px;
+    width: 420px;
 }
 input.time-end-input{
         display: flex;
@@ -653,7 +655,7 @@ input.time-end-input{
         border: 1px solid gray;
         border-radius: 5px;
         padding: 20px;
-        width: 400px;
+        width: 420px;
         // line-height: 23%;
         // min-height: 23%;
         // margin: 20%;
@@ -682,7 +684,7 @@ h1.create-event-form-type{
          color: blue;
          text-decoration: none;
          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-         font-weight: 400;
+         font-weight: 600;
          font-size: 13px;
          border: none;
          cursor: pointer;
@@ -749,8 +751,9 @@ h1.create-event-form-type{
     align-items: center;
     justify-content: center;
     border: 2px solid gray;
-    padding: 18px 8px 8px;
-    width: 380px;
+    padding: 15px 10px 15px;
+    margin-left: -25px;
+    width: 420px;
     outline: none;
     color: white;
     border-radius: 5px;

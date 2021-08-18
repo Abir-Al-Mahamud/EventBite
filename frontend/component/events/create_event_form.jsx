@@ -66,13 +66,13 @@ class EventForm extends React.Component{
                             onChange={this.update('pic_url')}
                         />
                     </label>
-                    <label className="author-input">Author
+                    {/* <label className="author-input">Author
                         <input className="author-input" 
                             type="text" 
                             value={this.state.author_name}
                             onChange={this.update('author_name')}
                         />
-                    </label>
+                    </label> */}
                     <label className="time-start-input">Start Time
                         <input className="time-input" 
                             type="time" 
