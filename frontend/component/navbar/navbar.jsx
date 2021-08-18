@@ -8,8 +8,8 @@ const Navbar = ({ currentUser , logout, ...otherProps }) => {
     // console.log(otherProps.location.pathname);
     const display = currentUser ? (
         <div className="navbar-right">
-            <Link id="my-button" to="/events/new">Create Event</Link>
-            {/* <Link className="button" to="/">Likes</Link> */}
+            <Link id="my-button" to="/events/create">Create Event</Link>
+            <Link className="button" to="/users/:userId/events">Events</Link>
             {/* <Link className="button" to="/login">Tickets</Link> */}
             {/* <Link className="user-drop-down-button">{currentUser.email}</Link> */}
             <input className="logout-button" onClick={() => logout()} value="Logout" />
@@ -22,7 +22,7 @@ const Navbar = ({ currentUser , logout, ...otherProps }) => {
             </div>
         </div>
     ) : (
-        <div className="navbar-right">
+        <div className="navbar-right-second">
             {/* <button className="home-button"><Link className="to-events" to="/events">Browse Events</Link></button> */}
             {/* <Link className="drop-down-button" to="">Organize</Link> */}
             {/* <Link className="drop-down-button" to="">Help</Link> */}

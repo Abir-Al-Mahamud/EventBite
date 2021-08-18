@@ -13,9 +13,9 @@ export const fetchEvent = (eventId) => {
     })
 }
 
-export const fetchUserEvents = id => {
+export const fetchUserEvents = author_id => {
     return $.ajax({
-        url: `/api/events/user/${id}`,
+        url: `/api/users/${author_id}/events`,
         method: 'GET'
     })
 }

@@ -98,7 +98,7 @@ class Signup extends React.Component{
                             <p>
                                 {/* {this.renderErrors()} */}
                             </p>
-                            <button className="login-button" onClick={this.nextForm(1)} >Continue</button>
+                            <button className="signup-button" onClick={this.nextForm(1)} >Continue</button>
                             </div>
                         </label>
                     <div className="link-to-login">

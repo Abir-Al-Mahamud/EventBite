@@ -3,7 +3,14 @@ class Api::EventsController < ApplicationController
 
     def index 
         # debugger
-        @events = Event.all 
+        if params.has_key?(:author_id)
+            # @events = Event.where(author_id: params[:author_id])
+            @events = current_user.events 
+        else
+            @events = Event.all 
+        end
+
+        render :index
     end
 
     def show 

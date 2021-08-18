@@ -39,10 +39,15 @@ span, article, footer, time, small {
      font-family: 'Times New Roman', Times, serif;
  }
 
- .nav-bar {
+ .navbar-right {
      display: flex;
      justify-content: flex-end;
-     padding: 20px;
+     padding: 0px;
+ }
+ .navbar-right-second {
+     display: flex;
+     justify-content: flex-end;
+     padding: 0px;
  }
  .logo-home {
      position: absolute;
@@ -95,7 +100,7 @@ span, article, footer, time, small {
 
      .logout-button{
          height: 20px;
-         width: 80px;
+         width: 43px;
          background-color: white;
          padding: 30px 30px 30px 30px;
          box-shadow: lightgray;
@@ -346,11 +351,34 @@ span, article, footer, time, small {
     font-weight: 600;
     background-color: #f05537;
     position: absolute;
-    top: 90%;
+    top: 100%;
     left: 1%;
     cursor: pointer;
     
     // color: white;
+}
+
+.signup-button{
+     border: 0;
+    background: none;
+    display: block;
+    margin: 2px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gray;
+    padding: 18px 8px 8px;
+    width: 365px;
+    outline: none;
+    color: white;
+    border-radius: 3px;
+    transition: 0.20s;
+    font-weight: 600;
+    background-color: #f05537;
+    position: absolute;
+    top: 90%;
+    left: 1%;
+    cursor: pointer;
 }
 .to-events{
     text-decoration: none;
@@ -438,13 +466,14 @@ span, article, footer, time, small {
 
 
 .session-form-two h1{
+    font-family: Helvetica, Arial, sans-serif;
     color: #1e0a3c;
     font-weight: 600;
     font-size: 32px;
     text-align: left;
     position: absolute;
-    top: -150%;
-    left: 0%;
+    top: -100%;
+    left: -10%;
 }
 
 .link-to-login{
@@ -472,6 +501,7 @@ span, article, footer, time, small {
     flex-direction: column;
     // width: 100%;
     margin: 40px;
+    height: 1000px;
 }
 
 .modal-content{
@@ -510,6 +540,27 @@ input.title-input{
         font-size: 16px;
         width: 400px;
 }
+
+select{
+    width: 440px;
+    height: 60px;
+    text-align: center;
+}
+
+input.img-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1;
+        border: 1px solid gray;
+        border-radius: 5px;
+        line-height: 23%;
+        min-height: 23%;
+        // margin: 20%;
+        padding: 20px;
+        font-size: 16px;
+        width: 400px;
+}
 textarea.desc-input{
         display: flex;
         justify-content: center;
@@ -535,6 +586,7 @@ input.date-input{
         // line-height: 23%;
         // min-height: 23%;
         // margin: 20%;
+        margin-right: 13%;
         font-size: 16px;
 }
 select.category{
@@ -634,7 +686,7 @@ h1.create-event-form-type{
          font-size: 13px;
          border: none;
          cursor: pointer;
-         margin: 20px 20px 20px 20px;
+        //  margin: 20px 20px 20px 20px;
      }
 
      #my-button:hover{
@@ -661,19 +713,16 @@ h1.create-event-form-type{
     }
 
 .event-input{
-    border: none;
-    appearance: none;
-    background: none;
-    // display: block;
-    margin: 0;
-    text-align: left;
-    border: 1px solid lightgray;
-    padding: 18px 12px 2px;
-    width: 358px;
-    outline: none;
-    color: black;
-    border-radius: 3px;
-    transition: 0.20s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // grid-column: 1;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 400px;
+    min-height: 23%;
+    padding: 20px;
+    font-size: 16px;
 
 }
 

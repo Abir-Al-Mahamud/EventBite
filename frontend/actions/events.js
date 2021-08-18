@@ -76,3 +76,4 @@ export const deleteEvent = eventId => dispatch => {
         .then(event => dispatch(removeEvent(event.id)))
         .catch(err => console.log(err.responseJSON));
 }
+

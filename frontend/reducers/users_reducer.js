@@ -1,6 +1,6 @@
 import { RECEIVE_CURRENT_USER } from '../actions/session';
 
-import { RECEIVE_EVENTS } from '../actions/events';
+import { RECEIVE_EVENTS, RECEIVE_USER_EVENTS } from '../actions/events';
 
 const usersReducer = (state = {}, action) => {
     Object.freeze(state);

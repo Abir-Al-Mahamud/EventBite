@@ -4,8 +4,12 @@ Rails.application.routes.draw do
   namespace :api, defaults: {format: :json} do
     resources :users, only: [:create]
     resources :events, only: [:create, :update, :destroy, :show, :index ]
+    resources :users do 
+        resources :events, only: [:index]
+    end
     resource :session, only: [:create, :destroy, :show]
   end
+
 
   # root to: "root#root"
   
