@@ -47,9 +47,9 @@ class EventForm extends React.Component{
                         />
                     </label>
                     <label className="category-input">Category
-                        <select name="category" onChange={this.update('category')}>Category
+                            <select name="category" onChange={this.update('category')} >Category
 
-                            <option value="Select one">Select One</option>
+                            <option value="Select one" selected disabled>Select One</option>
                             <option value="religion">Religion</option>
                             <option value="online">Online</option>
                             <option value="today">Today</option>

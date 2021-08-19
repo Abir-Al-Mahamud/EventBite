@@ -17,7 +17,7 @@
  html, body, header, nav, a,
 ul, li, strong, main, button, i,
 section, img, div, form,
-fieldset, label, input, textarea,
+fieldset, label, textarea,
 span, article, footer, time, small {
   margin: 0;
   padding: 0;
@@ -150,6 +150,7 @@ span, article, footer, time, small {
     .first-last{
         display: flex;
         flex-direction: row;
+        width: 358px;
     }
     .form{
         display: flex;
@@ -164,7 +165,14 @@ span, article, footer, time, small {
     }
     .input-box-filled{
         display: flex;
-        background-color: gray;
+        background-color: darkgray;
+        grid-column: 1;
+        border: 1px solid gray;
+        border-radius: 2px;
+        line-height: 23%;
+        min-height: 23%;
+        
+        font-size: 16px;
     }
     .input-box {
         grid-column: 1;
@@ -288,12 +296,13 @@ span, article, footer, time, small {
     width: 500px;
     padding: 8px;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 30%;
     transform: translate(-50%, -25%);
-    background-color: white;
+    // background-color: white;
     text-align: left;
 }
+
 
 .box h1{
     color: #1e0a3c;
@@ -308,10 +317,23 @@ span, article, footer, time, small {
     
 }
 
+.box-two h1{
+    color: #1e0a3c;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: left;
+    position: absolute;
+    top: -20%;
+    left: 0%;
+    // padding: 25%;
+    padding-left: 55px;
+    margin-bottom: 70%;
+}
+
 .box input[type = "text"], .box input[type = "password"]{
     border: none;
     appearance: none;
-    background: none;
+    // background: none;
     display: block;
     margin: 0;
     text-align: left;
@@ -443,11 +465,21 @@ span, article, footer, time, small {
     text-decoration: blue;
     color: blue;
 }
-
-.link{
+.link-to-login-two{
+    position: absolute;
+    // top: 70%;
+    left: 6%;
+    text-align: left;
     text-decoration: blue;
     color: blue;
+    width: 45px;
+    margin-top: 35%;
 }
+
+// .link{
+//     text-decoration: blue;
+//     color: blue;
+// }
 
 .signin-input{
     border: none;
@@ -465,7 +497,28 @@ span, article, footer, time, small {
     transition: 0.20s;
     right: -10vw;
 }
-
+.session-submit{
+      border: 0;
+    background: none;
+    display: block;
+    margin: 2px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gray;
+    padding: 18px 8px 8px;
+    width: 365px;
+    outline: none;
+    color: white;
+    border-radius: 3px;
+    transition: 0.20s;
+    font-weight: 600;
+    background-color: #f05537;
+    position: absolute;
+    top: 100%;
+    left: 1%;
+    cursor: pointer;
+}
 
 .session-form-two h1{
     font-family: Helvetica, Arial, sans-serif;
@@ -475,12 +528,30 @@ span, article, footer, time, small {
     text-align: left;
     position: absolute;
     top: -100%;
-    left: -10%;
+    left: -9%;
+}
+.session-form-three h1{
+    font-family: Helvetica, Arial, sans-serif;
+    color: #1e0a3c;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: left;
+    position: absolute;
+    top: -35%;
+    left: -9%;
 }
 
 .link-to-login{
     position: absolute;
     top: 130px;
+    left: 2%;
+    text-align: left;
+    text-decoration: blue;
+    color: blue;
+}
+.link-to-login-two{
+    position: relative;
+    top: 70%;
     left: 2%;
     text-align: left;
     text-decoration: blue;
@@ -503,7 +574,7 @@ span, article, footer, time, small {
     flex-direction: column;
     // width: 100%;
     margin: 40px;
-    height: 900px;
+    height: 850px;
 }
 
 .modal-content{
@@ -590,6 +661,7 @@ input.date-input{
         // margin: 20%;
         margin-right: 13%;
         font-size: 16px;
+        cursor: pointer;
 }
 select.category{
         display: flex;
@@ -604,7 +676,12 @@ select.category{
         // margin: 20%;
         font-size: 16px;
         width: 400px;
+               
+        &:hover{
+            cursor: pointer;
+        }
 }
+
 // input.author-input{
 //         display: flex;
 //         justify-content: center;
@@ -861,22 +938,22 @@ h1.create-event-form-type{
         width: 300%;
         height: 1350%;
         max-inline-size: inherit;
-        max-width: 800px;
-        margin: 0px 0vw 0px 0px;
+        max-width: 150%;
+        margin: 0px 0px 0px 0px;
         position: absolute;
-        right: -55vw;
-        bottom: -36vw;
+        left: 95.5%;
+        top: -660%;
     }
 
     .desert-image{
          position: absolute;
-        width: 300%;
+        width: 250%;
         height: 100%;
         max-inline-size: inherit;
         max-width: 800px;
         margin: 0px 0vw 0px 0px;
         position: absolute;
-        right: 0vw;
+        right: -5%;
         bottom: 0vw;
     }
 
@@ -1001,9 +1078,18 @@ h1.create-event-form-type{
         right: 100vw;
     }
 
-    .title-signup{
+    .title-signup h1{
         position: absolute;
         left: -200px;
+         color: #1e0a3c;
+        font-weight: 600;
+        font-size: 32px;
+        text-align: left;
+        position: absolute;
+        top: -50%;
+        left: 0%;
+        // padding: 25%;
+        padding-left: 55px;
     }
 
     .square{

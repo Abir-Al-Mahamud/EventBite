@@ -111,40 +111,38 @@ class Signup extends React.Component{
 
         if (this.state.step === 1) {
             return (
+                // <div className="box">
                 <>
-                <div className="title-signup">
-                    <h1>Create an </h1>
-                    <h1>Account</h1>
-                </div>
+                
+                
                     <img className="desert-image" src={window.signupImageFive} />
                     <div className='signin-box'>
+                <div className="box">
 
-                        <form onSubmit={this.handleChange} className="session-form">
-                            <div className="signin-input">
+                        <form onSubmit={this.handleChange} className="session-form-three">
+                            <h1>Create an Account</h1>
+                            <div className="input-info">
                                 {/* {this.renderErrors()} */}
-                            <label>
+                            
                                 <input className="input-box-filled"
                                     type="text"
                                     placeholder="Email Address"
                                     value={this.state.email}
                                     disabled
-                                />
-                            </label>
+                                    />
+                            
                             <br />
-                            <label>
                                 <input className="input-box-two"
                                     type="text" 
                                     placeholder="Confirm email"
                                     value={this.state.confirmEmail}
                                     onChange={this.update('confirmEmail')}
-                                />
+                                    />
                                 <p>
                                     {/* {this.renderErrors()} */}
                                 </p>
-                            </label>
                             <br />
                             <div className="first-last">
-                            <label>
                                 <input className="input-box-two"
                                     type="text"
                                     placeholder="First Name"
@@ -154,37 +152,34 @@ class Signup extends React.Component{
                                 <p>
                                     {/* {this.renderErrors()} */}
                                 </p>
-                            </label>
-
-                            <label>
-                                <input className="input-box"
+                                <input className="input-box-two"
                                     type="text"
                                     placeholder="Last Name"
                                     value={this.state.last_name}
                                     onChange={this.update("last_name")}
-                                />
+                                    />
                                 <p>
                                     {/* {this.renderErrors()}   */}
                                 </p>
-                            </label>
                             </div>
                             <br />
-                            <label>
-                                <input className="input-box"
+                                <input className="input-box-two"
                                     type="password"
                                     placeholder="Password"
                                     value={this.state.password}
                                     onChange={this.update("password")}
-                                />
+                                    />
                                 {/* <p>{this.renderErrors()}</p> */}
-                            </label>
+
+                            <button className="session-submit">Create account</button>
                             </div>
-                            <button className="session-submit">Continue</button>
                             {/* <input className="session-submit" type="submit" value={this.props.formType} /> */}
                         </form>
                     </div>
-                    <div className="link-to-login">
-                        <Link className="link" to="/login">Log in</Link>
+                    <div className="link-to-login-two">
+                        <Link className="link-to" to="/login">Log in</Link>
+                    </div>
+                {/* // </div> */}
                     </div>
                 </>
             )
