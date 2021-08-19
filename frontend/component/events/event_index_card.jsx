@@ -22,7 +22,7 @@ class EventIndexCard extends React.Component {
         if (event.description.length > 40) {
             desc = description.slice(0 ,30) + "..."; 
         }
-
+        console.log("HELLO", event.pic_url);
         return (
             <div className="event-index-item">
                 {/* <h1 className="events-near-you">Events Near You </h1> */}

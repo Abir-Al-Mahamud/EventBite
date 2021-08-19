@@ -31,11 +31,11 @@ class EventIndex extends React.Component{
         // const { event } = this.props;
         
         // debugger
-        // console.log(this.props.events)
         if(!this.props.events) {
             return ( <h2>Loading...</h2> )
         } else { 
             
+            console.log(this.props.events)
             return(
                 <div className="event-index">
                     <h2>Events in <span className="blue">New York</span></h2>
