@@ -480,3 +480,4 @@ Processing by Api::EventsController#index as JSON
 Completed 200 OK in 42ms (Views: 22.4ms | ActiveRecord: 9.7ms)
 
 
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m

@@ -1,0 +1,146 @@
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 67]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 68]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 69]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 70]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 71]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 72]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "abir@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "abir@gmail.com"], ["first_name", "Abir"], ["last_name", "Mahamud"], ["password_digest", "$2a$12$OxeeYw44/.r6pIIjKRPdfuSyZ8l0Dn8gyDecby618wjMVz33Hj1ra"], ["session_token", "D8XyIJDxthUd0001OUh-OQ"], ["created_at", "2021-08-21 00:49:08.891003"], ["updated_at", "2021-08-21 00:49:08.891003"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "hello@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "hello@gmail.com"], ["first_name", "Joe"], ["last_name", "BlackSmith"], ["password_digest", "$2a$12$GtwSYXwfp2aRJY0pHeiAJObanmkl3q3rLHMq35HJmAjr0wFYkLvIq"], ["session_token", "VIAJG89Hl2zGC7TtriQRlw"], ["created_at", "2021-08-21 00:49:09.109572"], ["updated_at", "2021-08-21 00:49:09.109572"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "whatsup@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (4.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "whatsup@gmail.com"], ["first_name", "Bob"], ["last_name", "Bradword"], ["password_digest", "$2a$12$ybjoNBuJ6yYb29vheLfjB.aNY4xY5Oo2hDH5L0gNQ904/Gqe5JuEa"], ["session_token", "w7A_EMpVI9isVHLUZ3ctmg"], ["created_at", "2021-08-21 00:49:09.334688"], ["updated_at", "2021-08-21 00:49:09.334688"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "up@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (2.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "up@gmail.com"], ["first_name", "Tom"], ["last_name", "Hilfiger"], ["password_digest", "$2a$12$khOIoNDu7oEqfJ3SAOfuv.GNfLig7pcnfUNC2tUbamYn3kU8.qz7q"], ["session_token", "R2J8QzZsH4rnvhrg2BwjRA"], ["created_at", "2021-08-21 00:49:09.580978"], ["updated_at", "2021-08-21 00:49:09.580978"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "down@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "down@gmail.com"], ["first_name", "John"], ["last_name", "Rohn"], ["password_digest", "$2a$12$DMPxqVkBseJ5krI4fQRGbeG.vyVbT8uTsOSqHn1ZwPQwtLfcGPWDW"], ["session_token", "OXH3xUniNjTULbbIYsDMxg"], ["created_at", "2021-08-21 00:49:09.816809"], ["updated_at", "2021-08-21 00:49:09.816809"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "left@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "left@gmail.com"], ["first_name", "Ron"], ["last_name", "Bant"], ["password_digest", "$2a$12$Zb8df56fXq1p9VZslgMeIeQsFIjEpoMFmayVRd1CuzD4G60V6l65O"], ["session_token", "TC5DJIEIoikVIJsPHHo5iQ"], ["created_at", "2021-08-21 00:49:10.125010"], ["updated_at", "2021-08-21 00:49:10.125010"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mEvent Create (3.6ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Biking with Bikers"], ["description", "Enjoy riding bikes? This is the perfect event for you to come show off your skills"], ["date", "1990-12-12 06:06:06"], ["author_name", "Abir"], ["author_id", 73], ["start_time", "1990-12-12 06:06:06"], ["end_time", "1990-12-12 07:07:07"], ["created_at", "2021-08-21 00:49:10.190958"], ["updated_at", "2021-08-21 00:49:10.190958"], ["category", "Today"], ["pic_url", "dubai-beach.png"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mEvent Create (1.6ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Spiritual Retreat"], ["description", "Feeling down and depressed? Relieve your sadness by reading the Holy Quran"], ["date", "1991-12-12 06:06:06"], ["author_name", "Joe"], ["author_id", 74], ["start_time", "1991-12-12 06:06:06"], ["end_time", "1991-12-12 07:07:07"], ["created_at", "2021-08-21 00:49:10.200536"], ["updated_at", "2021-08-21 00:49:10.200536"], ["category", "Religion"], ["pic_url", "dubai-beach.png"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (1.1ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Learn Python in 5 Minutes!"], ["description", "Python in 5 minutes?? Is that even possible?? Maybe, the least we can do is try."], ["date", "1992-12-12 06:06:06"], ["author_name", "Bob"], ["author_id", 75], ["start_time", "1992-12-12 06:06:06"], ["end_time", "1992-12-12 07:07:07"], ["created_at", "2021-08-21 00:49:10.213751"], ["updated_at", "2021-08-21 00:49:10.213751"], ["category", "Online"], ["pic_url", "adam-kool-ndN00KmbJ1c-unsplash.jpg"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mEvent Create (1.1ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Help Plant Trees!"], ["description", "We  need to help our ecosystems but using less and planting more!"], ["date", "1994-12-12 06:06:06"], ["author_name", "Tom"], ["author_id", 76], ["start_time", "1994-12-12 06:06:06"], ["end_time", "1994-12-12 07:07:07"], ["created_at", "2021-08-21 00:49:10.218796"], ["updated_at", "2021-08-21 00:49:10.218796"], ["category", "Today"], ["pic_url", "adam-kool-ndN00KmbJ1c-unsplash.jpg"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mEvent Create (1.2ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Summer Camp for Children"], ["description", "The perfect time for children to de-stress and take a break from their devices to enjoy nature"], ["date", "1995-12-12 06:06:06"], ["author_name", "Abir"], ["author_id", 73], ["start_time", "1995-12-12 06:06:06"], ["end_time", "1995-12-12 07:07:07"], ["created_at", "2021-08-21 00:49:10.226099"], ["updated_at", "2021-08-21 00:49:10.226099"], ["category", "This weekend"], ["pic_url", "adam-kool-ndN00KmbJ1c-unsplash.jpg"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mEvent Create (0.6ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Dinner on the Beach"], ["description", "Dinner with a view? Sign me up!"], ["date", "1996-12-12 06:06:06"], ["author_name", "John"], ["author_id", 77], ["start_time", "1996-12-12 06:06:06"], ["end_time", "1996-12-12 07:07:07"], ["created_at", "2021-08-21 00:49:10.231164"], ["updated_at", "2021-08-21 00:49:10.231164"], ["category", "Free"], ["pic_url", "adam-kool-ndN00KmbJ1c-unsplash.jpg"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Help Feed the Needy"], ["description", "It is very important that we give back to those who are in need."], ["date", "1998-12-12 06:06:06"], ["author_name", "Ron"], ["author_id", 78], ["start_time", "1998-12-12 06:06:06"], ["end_time", "1998-12-12 07:07:07"], ["created_at", "2021-08-21 00:49:10.235245"], ["updated_at", "2021-08-21 00:49:10.235245"], ["category", "Charity & Causes"], ["pic_url", "adam-kool-ndN00KmbJ1c-unsplash.jpg"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
