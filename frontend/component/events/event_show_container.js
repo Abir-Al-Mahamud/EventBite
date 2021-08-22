@@ -6,11 +6,14 @@ import { selectEvent } from '../../reducers/selectors';
 
 import EventShow from './event_show';
 
-const mSTP = ({state, ownProps}) => ({
+const mSTP = ({state, ownProps}) => {
+    debugger
+    return{
     // const eventId = parseInt(match.params.eventId);
     // const event = selectEvent(state.entities, eventId);
-    event: state.events[ownProps.match.params.eventId] 
-})
+    event: state.entities.events[ownProps.match.params.eventId] 
+    }
+}
     
 
 const mDTP = dispatch => ({

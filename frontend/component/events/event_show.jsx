@@ -27,6 +27,7 @@ class EventShow extends React.Component{
                 <p className="author">{event.author}</p>
                 <p className="start">{event.start_time}</p>
                 <p className="end">{event.end_time}</p>
+                <div className="pic-show">{event.pic_url}</div>
             </div>
             {/* <div className="event-details">
                 <EventDetail event={event}/>
@@ -34,7 +35,8 @@ class EventShow extends React.Component{
             <div className="edit-form-button">
                 <EditEventForm />
             </div>
-            <button className="delete-button" onClick={() => this.props.deleteEvent()} />
+            {/* <button className="delete-button" onClick={() => this.props.deleteEvent()} /> */}
+            <input type="button" value="Delete Event" onclick={deleteEvent()} />
 
         </div>
         )
