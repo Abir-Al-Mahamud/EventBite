@@ -7,7 +7,7 @@ import { selectEvent } from '../../reducers/selectors';
 import EventShow from './event_show';
 
 const mSTP = (state, ownProps) => {
-    debugger
+    // debugger
     return{
     // const eventId = parseInt(match.params.eventId);
     // const event = selectEvent(state.entities, eventId);
