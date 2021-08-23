@@ -18,12 +18,13 @@ class EditEventForm extends React.Component {
         const { action, event, formType, errors } = this.props;
 
         if(!event) return null;
+        
 
         return (
             <CreateEventForm 
                 event={event}
                 formType={formType}
-                submitEvent={submitEvent}
+                // submitEvent={submitEvent}
             />
         )
     }
@@ -40,8 +41,8 @@ const mSTP = (state, ownProps) => {
 
 const mDTP = (dispatch) => {
     return {
-        fetchEvent: eventId => dispatch(requestEvent(eventId)),
-        submitEvent: (data, eventId) => dispatch(changeEvent(data, eventId)),
+        fetchEvent: eventId => dispatch(requestEvent(eventId))
+        // submitEvent: (data, eventId) => dispatch(changeEvent(data, eventId)),
         //Might only require event
     }
 }

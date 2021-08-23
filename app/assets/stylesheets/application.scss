@@ -18,7 +18,7 @@
 ul, li, strong, main, button, i,
 section, img, div, form,
 fieldset, label, textarea,
-span, article, footer, time, small {
+span, article, time, small {
   margin: 0;
   padding: 0;
   border: 0;
@@ -100,7 +100,7 @@ span, article, footer, time, small {
         //  margin: 20px 20px 20px 20px;
      }
 
-     .logout-button{
+     button.button{
          height: 20px;
          width: 43px;
          background-color: white;
@@ -114,7 +114,7 @@ span, article, footer, time, small {
         //  margin: 20px 20px 20px 20px;
      }
 
-     .logout-button:hover{
+     button.button:hover{
          background-color: lightgray;
          box-shadow: black;
          cursor: pointer;
@@ -265,22 +265,33 @@ span, article, footer, time, small {
 
 
 .footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     position: absolute;
     margin-top: auto;
     width: 100%;
     background-color: purple;
     height: 50px;
     text-align: center;
-    bottom: 100%
+    // bottom: 0%
+}
+a.linked{
+    margin-right: 20px;
+}
+
+a.github{
+    margin-left: 20px;
 }
 
 .footer a{
     text-decoration: none;
     color: white;
     font-size: 20px;
-    // display: flex;
-    // align-items: stretch;
-    // justify-content: space-evenly;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
 }
 
 .errors-ul{
@@ -863,7 +874,7 @@ h1.create-event-form-type{
     margin: 0px 0vw 0px 0px;
     position: absolute;
     right: -55vw;
-    bottom: -35vw;
+    bottom: -27vw;
 }
 
 

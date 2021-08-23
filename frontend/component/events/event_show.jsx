@@ -13,6 +13,7 @@ class EventShow extends React.Component{
     }
 
     render(){
+        console.log("HELLOOO", event);
         const { event } = this.props 
         return(
             <div className="single-event-show">

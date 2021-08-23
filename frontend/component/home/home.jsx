@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Search from '../search/search'
 // import Tabs from '../tabs';
 // import AllEvents from '../tabs/all'
+import Footer from '../footer/footer'
 import EventIndex from '../events/event_index';
 import EventIndexContainer from '../events/event_index_container';
 
@@ -52,7 +53,10 @@ class Home extends React.Component{
             {/* <div className="interacting"> */}
                 {/* <Tabs tabs={tabs}/> */}
             {/* </div> */}
-           
+
+            {/* <div className="footer"> */}
+            {/* </div> */}
+            {/* <Footer/> */}
         </div>
     )
 
