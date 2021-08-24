@@ -13,8 +13,9 @@ class EventShow extends React.Component{
     }
 
     render(){
-        console.log("HELLOOO", event);
+        // console.log("HELLOOO", event);
         const { event } = this.props 
+        debugger
         return(
             <div className="single-event-show">
             <div className="back-to-events">

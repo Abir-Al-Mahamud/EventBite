@@ -2,13 +2,14 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import Search from '../search/search';
 
-const Navbar = ({ currentUser , logout, ...otherProps }) => {
+const Navbar = ({ history, currentUser , logout, ...otherProps }) => {
     // debugger
     const onAuthPage = otherProps.location.pathname !== '/login' && otherProps.location.pathname !== '/signup';
     // console.log(otherProps.location.pathname);
     const display = currentUser ? (
         <div className="navbar-right">
             <Link id="my-button" to="/events/create">Create Event</Link>
+            {/* <button onClick={() => history.push("/events/create")}>Create Event</button> */}
             <Link className="button" to="/users/:userId/events">Events</Link>
             {/* <Link className="button" to="/login">Tickets</Link> */}
             {/* <Link className="user-drop-down-button">{currentUser.email}</Link> */}

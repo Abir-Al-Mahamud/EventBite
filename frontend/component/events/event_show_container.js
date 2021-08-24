@@ -11,7 +11,7 @@ const mSTP = (state, ownProps) => {
     return{
     // const eventId = parseInt(match.params.eventId);
     // const event = selectEvent(state.entities, eventId);
-    event: state.events[ownProps.match.params.eventId] 
+    event: state.entities.events[ownProps.match.params.eventId] 
     }
 }
     
