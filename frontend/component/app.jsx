@@ -29,12 +29,14 @@ export default () => (
     <div>
         <Route path="/" component={Navbar}/>
         <Route exact path="/" component={Home}/>
-        <Route exact path="/events" component={EventIndexContainer}/>
-        <ProtectedRoute path="/events/create" component={CreateEventFormContainer}/>
-        <ProtectedRoute path="/events/:eventId/edit" component={EditEventFormContainer}/>
-        <Route exact path="/events/:eventId" component={EventShowContainer}/>
-        <AuthRoute exact path="/login" component={LogInFormContainer} />
-        <AuthRoute exact path="/signup" component={SignupContainer}/>
+        <switch>
+            <Route exact path="/events" component={EventIndexContainer}/>
+            <ProtectedRoute exact path="/create" component={CreateEventFormContainer}/>
+            <ProtectedRoute exact path="/:eventId/edit" component={EditEventFormContainer}/>
+            <Route exact path="/events/:eventId" component={EventShowContainer}/>
+            <AuthRoute exact path="/login" component={LogInFormContainer} />
+            <AuthRoute exact path="/signup" component={SignupContainer}/>
+        </switch>
         <Route path="/" component={Footer}/>
     </div>
 )

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import EventDetail from './event_detail';
-import { ProtectedRoute } from '../../utils/route_utils';
+// import { ProtectedRoute } from '../../utils/route_utils';
 import EditEventForm from './edit_form_container';
 import { deleteEvent } from '../../utils/event_utils';
 
@@ -15,7 +15,7 @@ class EventShow extends React.Component{
     render(){
         // console.log("HELLOOO", event);
         const { event } = this.props 
-        debugger
+        // debugger
         return(
             <div className="single-event-show">
             <div className="back-to-events">
@@ -34,9 +34,9 @@ class EventShow extends React.Component{
             {/* <div className="event-details">
                 <EventDetail event={event}/>
             </div> */}
-            <div className="edit-form-button">
-                <EditEventForm />
-            </div>
+            
+                <Link className="edit-event-button" to="/:eventId/edit">Edit Event</Link>
+
             {/* <button className="delete-button" onClick={() => this.props.deleteEvent()} /> */}
             <input type="button" value="Delete Event" onclick={deleteEvent()} />
 

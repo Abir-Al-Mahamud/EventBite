@@ -8,7 +8,7 @@ const Navbar = ({ history, currentUser , logout, ...otherProps }) => {
     // console.log(otherProps.location.pathname);
     const display = currentUser ? (
         <div className="navbar-right">
-            <Link id="my-button" to="/events/create">Create Event</Link>
+            <Link id="my-button" to="/create">Create Event</Link>
             {/* <button onClick={() => history.push("/events/create")}>Create Event</button> */}
             <Link className="button" to="/users/:userId/events">Events</Link>
             {/* <Link className="button" to="/login">Tickets</Link> */}
