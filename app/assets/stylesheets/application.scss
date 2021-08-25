@@ -1227,7 +1227,7 @@ h1.create-event-form-type{
         flex-direction: column;
         width: 22%;     
         min-width: 275px;
-        height: 280px;
+        height: 265px;
         margin-right: 25px;
         margin-bottom: 25px;
         box-shadow: 0px 0px 15px 2px rgba(180, 180, 180, 0.2);
@@ -1240,27 +1240,27 @@ h1.create-event-form-type{
             transition: box-shadow 0.25s;
         }
         img{
-            height: 50%;
-            width: 40%;
+            height: 100%;
+            width: 100%;
         }
 
     }
     .event-index-image{
-        padding-bottom: 110px;
+        padding-bottom: 10%;
         
     }
 
     .event-index-date{
-        margin-top: -10px;
-        padding-bottom: 5px;
+        // margin-top: -10px;
+        padding-bottom: 25px;
         color: #f05537;
         font-size: 14px;
         font-weight: 500;
     }
 
     .event-index-title{
-        margin-top: 10px;
-        padding: 0 15px;
+        // margin-top: 10px;
+        padding-bottom: 30px;
         font-size: 20px;
         font-weight: 700;
     }

@@ -27,16 +27,16 @@ class EventIndexCard extends React.Component {
             <div className="event-index-item">
                 {/* <h1 className="events-near-you">Events Near You </h1> */}
                 <div className="event-index-image">
-                    <img src={window.signupImageSix} alt={event.title} onClick={this.handleClick}/>
+                    <img src={event.pic_url} alt={event.title} onClick={this.handleClick}/>
                 </div>
                 <div className="event-index-like">
 
                 </div>
-                <div className="event-index-date">
-                    {event.date}
-                </div>
                 <div className="event-index-title">
                     {event.title}
+                </div>
+                <div className="event-index-date">
+                    {event.date}
                 </div>
 
             </div>
