@@ -46284,3 +46284,616 @@ Completed 404 Not Found in 5ms (ActiveRecord: 3.0ms)
 ActiveRecord::RecordNotFound - Couldn't find Event with 'id'=undefined:
   app/controllers/api/events_controller.rb:42:in `destroy'
 
+Started GET "/" for ::1 at 2021-08-25 13:45:58 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (26.8ms)
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "p245fHfTDONiKGkgQgrjyw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 1901ms (Views: 1874.6ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for ::1 at 2021-08-25 13:46:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "p245fHfTDONiKGkgQgrjyw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 57ms (Views: 49.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2021-08-25 13:46:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "p245fHfTDONiKGkgQgrjyw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 63ms (Views: 56.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2021-08-25 13:46:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "p245fHfTDONiKGkgQgrjyw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 53ms (Views: 47.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/events" for ::1 at 2021-08-25 13:46:51 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (26.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (1.5ms)
+  Rendered api/events/index.json.jbuilder (38.6ms)
+Completed 200 OK in 53ms (Views: 25.0ms | ActiveRecord: 26.9ms)
+
+
+Started GET "/" for ::1 at 2021-08-25 13:47:10 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "p245fHfTDONiKGkgQgrjyw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 65ms (Views: 61.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/events" for ::1 at 2021-08-25 13:47:10 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  Rendered api/events/index.json.jbuilder (4.9ms)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/api/events/undefined" for ::1 at 2021-08-25 13:47:13 -0400
+Started GET "/api/events/16" for ::1 at 2021-08-25 13:47:13 -0400
+Processing by Api::EventsController#destroy as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mEvent Load (24.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:42
+Completed 404 Not Found in 64ms (ActiveRecord: 24.5ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Event with 'id'=undefined:
+  app/controllers/api/events_controller.rb:42:in `destroy'
+
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"16"}
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  Rendered api/events/show.json.jbuilder (2.7ms)
+Completed 200 OK in 27ms (Views: 17.1ms | ActiveRecord: 2.2ms)
+
+
+Started DELETE "/api/events/undefined" for ::1 at 2021-08-25 13:47:13 -0400
+Processing by Api::EventsController#destroy as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:42
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Event with 'id'=undefined:
+  app/controllers/api/events_controller.rb:42:in `destroy'
+
+Started GET "/api/events" for ::1 at 2021-08-25 13:47:18 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/index.json.jbuilder (3.5ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/api/events/undefined" for ::1 at 2021-08-25 13:47:20 -0400
+Started GET "/api/events/16" for ::1 at 2021-08-25 13:47:20 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"16"}
+Processing by Api::EventsController#destroy as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mEvent Load (28.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  [1m[36mEvent Load (33.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:42
+Completed 404 Not Found in 36ms (ActiveRecord: 33.8ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Event with 'id'=undefined:
+  app/controllers/api/events_controller.rb:42:in `destroy'
+
+  Rendered api/events/_event.json.jbuilder (1.3ms)
+  Rendered api/events/show.json.jbuilder (11.5ms)
+Completed 200 OK in 51ms (Views: 18.5ms | ActiveRecord: 28.6ms)
+
+
+Started DELETE "/api/events/undefined" for ::1 at 2021-08-25 13:47:20 -0400
+Processing by Api::EventsController#destroy as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:42
+Completed 404 Not Found in 5ms (ActiveRecord: 0.6ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Event with 'id'=undefined:
+  app/controllers/api/events_controller.rb:42:in `destroy'
+
+Started GET "/api/events/:eventId" for ::1 at 2021-08-25 13:47:22 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>":eventId"}
+  [1m[36mEvent Load (12.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+Completed 404 Not Found in 15ms (ActiveRecord: 12.5ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Event with 'id'=:eventId:
+  app/controllers/api/events_controller.rb:17:in `show'
+
+Started GET "/api/events" for ::1 at 2021-08-25 13:47:26 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  Rendered api/events/index.json.jbuilder (4.0ms)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/api/events/undefined" for ::1 at 2021-08-25 13:47:44 -0400
+Started GET "/api/events/16" for ::1 at 2021-08-25 13:47:44 -0400
+Processing by Api::EventsController#destroy as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mEvent Load (19.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:42
+Completed 404 Not Found in 22ms (ActiveRecord: 19.6ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Event with 'id'=undefined:
+  app/controllers/api/events_controller.rb:42:in `destroy'
+
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"16"}
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  Rendered api/events/show.json.jbuilder (2.2ms)
+Completed 200 OK in 19ms (Views: 13.3ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/api/events/undefined" for ::1 at 2021-08-25 13:47:44 -0400
+Processing by Api::EventsController#destroy as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mEvent Load (1.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:42
+Completed 404 Not Found in 4ms (ActiveRecord: 1.7ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Event with 'id'=undefined:
+  app/controllers/api/events_controller.rb:42:in `destroy'
+
+Started GET "/api/events/:eventId" for ::1 at 2021-08-25 13:47:46 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>":eventId"}
+  [1m[36mEvent Load (1.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+Completed 404 Not Found in 4ms (ActiveRecord: 1.8ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Event with 'id'=:eventId:
+  app/controllers/api/events_controller.rb:17:in `show'
+
+Started GET "/api/events" for ::1 at 2021-08-25 13:48:10 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (5.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/index.json.jbuilder (9.1ms)
+Completed 200 OK in 28ms (Views: 22.1ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/api/events/16" for ::1 at 2021-08-25 13:48:12 -0400
+Started DELETE "/api/events/undefined" for ::1 at 2021-08-25 13:48:12 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"16"}
+Processing by Api::EventsController#destroy as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mEvent Load (18.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.9ms)
+  Rendered api/events/show.json.jbuilder (5.2ms)
+Completed 200 OK in 44ms (Views: 20.5ms | ActiveRecord: 18.2ms)
+
+
+Started DELETE "/api/events/undefined" for ::1 at 2021-08-25 13:48:12 -0400
+  [1m[36mEvent Load (78.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:42
+Completed 404 Not Found in 81ms (ActiveRecord: 78.1ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Event with 'id'=undefined:
+  app/controllers/api/events_controller.rb:42:in `destroy'
+
+Processing by Api::EventsController#destroy as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:42
+Completed 404 Not Found in 5ms (ActiveRecord: 0.8ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Event with 'id'=undefined:
+  app/controllers/api/events_controller.rb:42:in `destroy'
+
+Started GET "/api/events" for ::1 at 2021-08-25 13:48:14 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/index.json.jbuilder (3.4ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-08-25 13:49:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "p245fHfTDONiKGkgQgrjyw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 627ms (Views: 620.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/events" for ::1 at 2021-08-25 13:49:56 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (7.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  Rendered api/events/index.json.jbuilder (12.3ms)
+Completed 200 OK in 30ms (Views: 21.5ms | ActiveRecord: 7.8ms)
+
+
+Started DELETE "/api/events/undefined" for ::1 at 2021-08-25 13:50:00 -0400
+Started GET "/api/events/16" for ::1 at 2021-08-25 13:50:00 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"16"}
+Processing by Api::EventsController#destroy as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  [1m[36mEvent Load (5.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:42
+Completed 404 Not Found in 8ms (ActiveRecord: 5.3ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Event with 'id'=undefined:
+  app/controllers/api/events_controller.rb:42:in `destroy'
+
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (1.2ms)
+  Rendered api/events/show.json.jbuilder (3.5ms)
+Completed 200 OK in 35ms (Views: 24.9ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/api/events/undefined" for ::1 at 2021-08-25 13:50:00 -0400
+Processing by Api::EventsController#destroy as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:42
+Completed 404 Not Found in 6ms (ActiveRecord: 1.1ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Event with 'id'=undefined:
+  app/controllers/api/events_controller.rb:42:in `destroy'
+
+Started GET "/api/events" for ::1 at 2021-08-25 13:50:04 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/index.json.jbuilder (6.5ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-08-25 13:53:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "p245fHfTDONiKGkgQgrjyw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 522ms (Views: 511.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2021-08-25 13:55:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "p245fHfTDONiKGkgQgrjyw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 366ms (Views: 360.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-08-25 13:55:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "p245fHfTDONiKGkgQgrjyw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 418ms (Views: 413.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/events" for ::1 at 2021-08-25 14:04:45 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (3.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (1.1ms)
+  Rendered api/events/index.json.jbuilder (11.8ms)
+Completed 200 OK in 24ms (Views: 17.8ms | ActiveRecord: 3.1ms)
+
+
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 92]]
+  ↳ db/seeds.rb:9
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (1.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 93]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 94]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 95]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 96]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 91]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[36mEvent Load (1.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (11.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (4.4ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 16]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (5.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Exists (2.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "abir@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "abir@gmail.com"], ["first_name", "Abir"], ["last_name", "Mahamud"], ["password_digest", "$2a$12$.JHYJMz2rILWXoDRHN4qY.UJAeKpWJTO0N0AFXS8Q7qrtZrM1PIzm"], ["session_token", "3wNeiuUaTYoJ8-4QXTmhUQ"], ["created_at", "2021-08-25 18:05:10.557442"], ["updated_at", "2021-08-25 18:05:10.557442"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (3.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "hello@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "hello@gmail.com"], ["first_name", "Joe"], ["last_name", "BlackSmith"], ["password_digest", "$2a$12$QmL4w5.ylny53EPudPUpxODbWuwgMMaRL//LQN8f7bgnVjZommQPm"], ["session_token", "hTegcrEsvrMB7hYZmxmkEw"], ["created_at", "2021-08-25 18:05:10.851922"], ["updated_at", "2021-08-25 18:05:10.851922"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "whatsup@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "whatsup@gmail.com"], ["first_name", "Bob"], ["last_name", "Bradword"], ["password_digest", "$2a$12$SEQRtBSN1xN73RASDilp1.B..8fPCU0DGDc.LQpwlvPWcAP0jTFfK"], ["session_token", "4SRnVgEdq7nTvPcrYxINIA"], ["created_at", "2021-08-25 18:05:11.121078"], ["updated_at", "2021-08-25 18:05:11.121078"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "up@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "up@gmail.com"], ["first_name", "Tom"], ["last_name", "Hilfiger"], ["password_digest", "$2a$12$cFkl4lWAxck9w85VwrmAYenFDZK2Yp5Hm8aM3XAxOJBOxzYfqggnO"], ["session_token", "dGxZGJeydsJ92FybimxqFg"], ["created_at", "2021-08-25 18:05:11.400352"], ["updated_at", "2021-08-25 18:05:11.400352"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "down@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "down@gmail.com"], ["first_name", "John"], ["last_name", "Rohn"], ["password_digest", "$2a$12$ITX5FYGprw8JVPjlcmzo2.iPFHSY2KAGn2g6p9V/yEnE6PZVo02ea"], ["session_token", "8MhB9Vya_Mg-6GCafJBj8g"], ["created_at", "2021-08-25 18:05:11.721054"], ["updated_at", "2021-08-25 18:05:11.721054"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "left@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "left@gmail.com"], ["first_name", "Ron"], ["last_name", "Bant"], ["password_digest", "$2a$12$OXP4p2GWPJ7UprTP/zrwC.WYZrEv71tvaDzJGAcQ7MoFMAVwCuTkS"], ["session_token", "TKqOtPDLAfrwBkE9GJrwPw"], ["created_at", "2021-08-25 18:05:11.977101"], ["updated_at", "2021-08-25 18:05:11.977101"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Biking with Bikers"], ["description", "Enjoy riding bikes? This is the perfect event for you to come show off your skills"], ["date", "1990-12-12 06:06:06"], ["author_name", "Abir"], ["author_id", 97], ["start_time", "1990-12-12 06:06:06"], ["end_time", "1990-12-12 07:07:07"], ["created_at", "2021-08-25 18:05:11.997814"], ["updated_at", "2021-08-25 18:05:11.997814"], ["category", "Today"], ["pic_url", "compass.jpg"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Spiritual Retreat"], ["description", "Feeling down and depressed? Relieve your sadness by reading the Holy Quran"], ["date", "1991-12-12 06:06:06"], ["author_name", "Joe"], ["author_id", 98], ["start_time", "1991-12-12 06:06:06"], ["end_time", "1991-12-12 07:07:07"], ["created_at", "2021-08-25 18:05:12.002425"], ["updated_at", "2021-08-25 18:05:12.002425"], ["category", "Religion"], ["pic_url", "compass.jpg"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Learn Python in 5 Minutes!"], ["description", "Python in 5 minutes?? Is that even possible?? Maybe, the least we can do is try."], ["date", "1992-12-12 06:06:06"], ["author_name", "Bob"], ["author_id", 99], ["start_time", "1992-12-12 06:06:06"], ["end_time", "1992-12-12 07:07:07"], ["created_at", "2021-08-25 18:05:12.006197"], ["updated_at", "2021-08-25 18:05:12.006197"], ["category", "Online"], ["pic_url", "compass.jpg"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Help Plant Trees!"], ["description", "We  need to help our ecosystems but using less and planting more!"], ["date", "1994-12-12 06:06:06"], ["author_name", "Tom"], ["author_id", 100], ["start_time", "1994-12-12 06:06:06"], ["end_time", "1994-12-12 07:07:07"], ["created_at", "2021-08-25 18:05:12.009963"], ["updated_at", "2021-08-25 18:05:12.009963"], ["category", "Today"], ["pic_url", "compass.jpg"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Summer Camp for Children"], ["description", "The perfect time for children to de-stress and take a break from their devices to enjoy nature"], ["date", "1995-12-12 06:06:06"], ["author_name", "Abir"], ["author_id", 97], ["start_time", "1995-12-12 06:06:06"], ["end_time", "1995-12-12 07:07:07"], ["created_at", "2021-08-25 18:05:12.013729"], ["updated_at", "2021-08-25 18:05:12.013729"], ["category", "This weekend"], ["pic_url", "compass.jpg"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 101], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mEvent Create (0.6ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Dinner on the Beach"], ["description", "Dinner with a view? Sign me up!"], ["date", "1996-12-12 06:06:06"], ["author_name", "John"], ["author_id", 101], ["start_time", "1996-12-12 06:06:06"], ["end_time", "1996-12-12 07:07:07"], ["created_at", "2021-08-25 18:05:12.018091"], ["updated_at", "2021-08-25 18:05:12.018091"], ["category", "Free"], ["pic_url", "compass.jpg"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 102], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Help Feed the Needy"], ["description", "It is very important that we give back to those who are in need."], ["date", "1998-12-12 06:06:06"], ["author_name", "Ron"], ["author_id", 102], ["start_time", "1998-12-12 06:06:06"], ["end_time", "1998-12-12 07:07:07"], ["created_at", "2021-08-25 18:05:12.022497"], ["updated_at", "2021-08-25 18:05:12.022497"], ["category", "Charity & Causes"], ["pic_url", "compass.jpg"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+Started GET "/" for ::1 at 2021-08-25 14:05:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "p245fHfTDONiKGkgQgrjyw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 84ms (Views: 71.5ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/api/events" for ::1 at 2021-08-25 14:05:16 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (14.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (27.3ms)
+Completed 200 OK in 41ms (Views: 25.3ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/compass.jpg" for ::1 at 2021-08-25 14:05:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/compass.jpg"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/api/events/undefined" for ::1 at 2021-08-25 14:05:22 -0400
+Processing by Api::EventsController#destroy as JSON
+  Parameters: {"id"=>"undefined"}
+Started GET "/api/events/18" for ::1 at 2021-08-25 14:05:22 -0400
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:42
+Completed 404 Not Found in 9ms (ActiveRecord: 1.4ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Event with 'id'=undefined:
+  app/controllers/api/events_controller.rb:42:in `destroy'
+
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"18"}
+  [1m[36mEvent Load (2.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  Rendered api/events/show.json.jbuilder (4.3ms)
+Completed 200 OK in 38ms (Views: 24.8ms | ActiveRecord: 2.9ms)
+
+
+Started DELETE "/api/events/undefined" for ::1 at 2021-08-25 14:05:22 -0400
+Processing by Api::EventsController#destroy as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:42
+Completed 404 Not Found in 8ms (ActiveRecord: 2.0ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Event with 'id'=undefined:
+  app/controllers/api/events_controller.rb:42:in `destroy'
+

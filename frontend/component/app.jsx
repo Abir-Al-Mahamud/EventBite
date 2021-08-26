@@ -32,7 +32,7 @@ export default () => (
         <switch>
             <Route exact path="/events" component={EventIndexContainer}/>
             <ProtectedRoute exact path="/create" component={CreateEventFormContainer}/>
-            <ProtectedRoute exact path="/:eventId/edit" component={EditEventFormContainer}/>
+            <ProtectedRoute exact path="/events/:eventId/edit" component={EditEventFormContainer}/>
             <Route exact path="/events/:eventId" component={EventShowContainer}/>
             <AuthRoute exact path="/login" component={LogInFormContainer} />
             <AuthRoute exact path="/signup" component={SignupContainer}/>

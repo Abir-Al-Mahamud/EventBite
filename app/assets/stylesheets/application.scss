@@ -595,6 +595,7 @@ a.github{
     border: 1px, solid gray;
     border-radius: 5px;
     width: 400px;
+    padding-bottom: 20%;
     // display: flex;
     // justify-content: center;
     // align-items: center;
@@ -666,11 +667,12 @@ input.date-input{
         border: 1px solid gray;
         border-radius: 5px;
         padding: 20px;
+        padding-right: 20px;
         width: 400px;
         // line-height: 23%;
         // min-height: 23%;
         // margin: 20%;
-        margin-right: 13%;
+        margin-right: 15%;
         font-size: 16px;
         cursor: pointer;
 }
@@ -840,8 +842,8 @@ h1.create-event-form-type{
     justify-content: center;
     border: 2px solid gray;
     padding: 15px 10px 15px;
-    margin-left: -25px;
-    width: 420px;
+    margin-left: -20px;
+    width: 440px;
     outline: none;
     color: white;
     border-radius: 5px;
@@ -1268,3 +1270,5 @@ h1.create-event-form-type{
     .blue {
         color: blue;
     }
+
+    

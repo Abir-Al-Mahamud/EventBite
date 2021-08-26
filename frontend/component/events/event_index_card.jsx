@@ -39,6 +39,7 @@ class EventIndexCard extends React.Component {
                     {event.date}
                 </div>
 
+                
             </div>
         )
         // if (pic_url.length == 0){
