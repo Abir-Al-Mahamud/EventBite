@@ -1271,4 +1271,13 @@ h1.create-event-form-type{
         color: blue;
     }
 
-    
+    .event-details{
+        padding-left: 0;
+        list-style-position: inside;
+        margin-top: 0;
+    }
+
+    .pic-show{
+        max-height: 200px;
+        max-width: 100px;
+    }
