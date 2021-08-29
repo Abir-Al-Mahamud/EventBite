@@ -42,7 +42,7 @@ class EventShow extends React.Component{
 
         </div>
         )
-    }
+    } 
 }
 
 
