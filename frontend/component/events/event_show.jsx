@@ -25,7 +25,7 @@ class EventShow extends React.Component{
                 <Link className="button" to="/login">Sign In to Register</Link>
             </div>
         );
-
+ 
         // debugger
         return(
             <div className="single-event-show">
