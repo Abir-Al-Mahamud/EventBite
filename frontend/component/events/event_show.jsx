@@ -13,33 +13,44 @@ class EventShow extends React.Component{
     }
 
     render(){
-        // console.log("HELLOOO", event);
-        const { event } = this.props 
+
+        const { event, currentUser } = this.props 
+        
+        const register = currentUser ? (
+            <div>
+                <button className="registering">Register</button>
+            </div>
+        ) : (
+            <div>
+                <Link className="button" to="/login">Sign In to Register</Link>
+            </div>
+        );
+
         // debugger
         return(
             <div className="single-event-show">
             <div className="back-to-events">
                 <Link to="/">Back to home page</Link>
             </div>
-            <div className="event-details">
+            <ul className="event-details">
                 <h1 className="title">{event.title}</h1>
-                <p className="desc">{event.description}</p>
-                <p className="date">{event.date}</p>
-                <p className="categ">{event.category}</p>
-                <p className="author">{event.author}</p>
-                <p className="start">{event.start_time}</p>
-                <p className="end">{event.end_time}</p>
-                <div className="pic-show">{event.pic_url}</div>
-            </div>
+                <li className="desc">{event.description}</li>
+                <li className="date">{event.date}</li>
+                <li className="categ">{event.category}</li>
+                <li className="author">{event.author}</li>
+                <li className="start">{event.start_time}</li>
+                <li className="end">{event.end_time}</li>
+                <img className="pic-show" src={event.pic_url}/>
+            </ul>
             {/* <div className="event-details">
                 <EventDetail event={event}/>
             </div> */}
             
-                <Link className="edit-event-button" to="/:eventId/edit">Edit Event</Link>
+            <Link className="edit-event-button" to="/:eventId/edit">Edit Event</Link>
 
             {/* <button className="delete-button" onClick={() => this.props.deleteEvent()} /> */}
             <input type="button" value="Delete Event" onclick={deleteEvent()} />
-
+            {register}
         </div>
         )
     } 
