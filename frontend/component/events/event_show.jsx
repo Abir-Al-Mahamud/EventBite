@@ -47,7 +47,6 @@ class EventShow extends React.Component{
             </div> */}
             
             <Link className="edit-event-button" to="/:eventId/edit">Edit Event</Link>
-
             {/* <button className="delete-button" onClick={() => this.props.deleteEvent()} /> */}
             <input type="button" value="Delete Event" onclick={deleteEvent()} />
             {register}
