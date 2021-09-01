@@ -14,6 +14,7 @@ class EventShow extends React.Component{
 
     render(){
 
+
         const { event, currentUser } = this.props 
         
         const register = currentUser ? (
@@ -22,36 +23,42 @@ class EventShow extends React.Component{
             </div>
         ) : (
             <div>
-                <Link className="button" to="/login">Sign In to Register</Link>
+                <Link className="regis-button" to="/login">Sign In to Register</Link>
             </div>
         );
  
         // debugger
-        return(
-            <div className="single-event-show">
-            <div className="back-to-events">
-                <Link to="/">Back to home page</Link>
+        if (!event) {
+            return null 
+        } else {
+            return(
+                <div className="single-event-show">
+                <div className="back-to-events">
+                        <Link to="/"><i class="far fa-arrow-alt-circle-left"></i></Link>
+                    
+                </div>
+                <ul className="event-details">
+                    <img className="pic-show" src={event.pic_url}/>
+                    <h1 className="title">{event.title}</h1>
+                    <li className="desc">{event.description}</li>
+                    <li className="date">{event.date}</li>
+                    <li className="categ">{event.category}</li>
+                    <li className="author">{event.author}</li>
+                    <li className="start">{event.start_time}</li>
+                    <li className="end">{event.end_time}</li>
+                </ul>
+                {/* <div className="event-details">
+                    <EventDetail event={event}/>
+                </div> */}
+                
+                <Link className="edit-event-button" to="/:eventId/edit">Edit Event</Link>
+                <input className="delete-button" type="button" value="Delete Event" onClick={() => deleteEvent()} />
+                <div className="register">
+                    {register}
+                </div>
             </div>
-            <ul className="event-details">
-                <h1 className="title">{event.title}</h1>
-                <li className="desc">{event.description}</li>
-                <li className="date">{event.date}</li>
-                <li className="categ">{event.category}</li>
-                <li className="author">{event.author}</li>
-                <li className="start">{event.start_time}</li>
-                <li className="end">{event.end_time}</li>
-                <img className="pic-show" src={event.pic_url}/>
-            </ul>
-            {/* <div className="event-details">
-                <EventDetail event={event}/>
-            </div> */}
-            
-            <Link className="edit-event-button" to="/:eventId/edit">Edit Event</Link>
-            {/* <button className="delete-button" onClick={() => this.props.deleteEvent()} /> */}
-            <input type="button" value="Delete Event" onclick={deleteEvent()} />
-            {register}
-        </div>
-        )
+            )
+        }
     } 
 }
 

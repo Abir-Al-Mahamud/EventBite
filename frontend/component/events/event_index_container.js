@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { requestEvents } from '../../actions/events';
+import { requestEvents, requestUserEvents } from '../../actions/events';
 import EventIndex from './event_index';
 
 const mSTP = (state) => {
@@ -14,7 +14,8 @@ const mSTP = (state) => {
 }
 
 const mDTP = (dispatch) => ({
-    requestEvents: () => dispatch(requestEvents())
+    requestEvents: () => dispatch(requestEvents()),
+    requestUserEvents: () => dispatch(requestUserEvents())
 });
 
 export default connect(mSTP, mDTP)(EventIndex);

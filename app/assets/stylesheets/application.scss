@@ -15,7 +15,7 @@
  */
 
  html, body, header, nav, a,
-ul, li, strong, main, button, i,
+ul, strong, main, button, i,
 section, img, div, form,
 fieldset, label, textarea,
 span, article, time, small {
@@ -270,10 +270,10 @@ span, article, time, small {
     flex-direction: row;
     align-items: center;
     position: absolute;
-    margin-top: auto;
+    margin-top: 90%;
     width: 100%;
     background-color: purple;
-    height: 50px;
+    height: 100px;
     text-align: center;
     // bottom: 0%
 }
@@ -1275,6 +1275,10 @@ h1.create-event-form-type{
         padding-left: 0;
         list-style-position: inside;
         margin-top: 0;
+        display: block;
+        position: absolute;
+        top: 60%;
+        left: 10%;
     }
 
     .pic-show{
@@ -1286,4 +1290,127 @@ h1.create-event-form-type{
         display: flex;
         justify-content: center;
         margin-top: 20px;
+    }
+
+    .delete-button{
+        border: 0;
+        background: none;
+        display: block;
+        margin: 2px;
+        text-align: center;
+        border: 2px solid gray;
+        padding: 18px 8px 11px;
+        width: 150px;
+        outline: none;
+        color: white;
+        border-radius: 3px;
+        transition: 0.20s;
+        font-weight: 600;
+        background-color: #f05537;
+        position: absolute;
+        top: 70%;
+        left: 47%;
+        cursor: pointer;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+
+    .edit-event-button{
+        border: 0;
+        background: none;
+        display: block;
+        margin: 2px;
+        text-align: center;
+        border: 2px solid gray;
+        padding: 18px 8px 8px;
+        width: 145px;
+        outline: none;
+        color: white;
+        border-radius: 3px;
+        transition: 0.20s;
+        font-weight: 600;
+        background-color: #f05537;
+        position: absolute;
+        top: 70%;
+        left: 60%;
+        cursor: pointer;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+
+
+    .regis-button{
+        border: 0;
+        background: none;
+        display: block;
+        margin: 3px;
+        text-align: center;
+        border: 2px solid gray;
+        padding: 18px 8px 8px;
+        width: 145px;
+        outline: none;
+        color: white;
+        border-radius: 3px;
+        transition: 0.20s;
+        font-weight: 600;
+        background-color: #f05537;
+        position: absolute;
+        top: 70%;
+        left: 74%;
+        cursor: pointer;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+
+    .registering{
+        border: 0;
+        background: none;
+        display: block;
+        margin: 3px;
+        text-align: center;
+        border: 2px solid gray;
+        padding: 18px 8px 8px;
+        width: 145px;
+        outline: none;
+        color: white;
+        border-radius: 3px;
+        transition: 0.20s;
+        font-weight: 700;
+        background-color: #f05537;
+        position: absolute;
+        top: 70%;
+        left: 74%;
+        cursor: pointer;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+
+    .event-details li {
+        padding-bottom: 20px;
+    }
+
+    .back-to-events-link{
+        display: block;
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        // font-family: "FontAwesome";
+        // content: "/f359";
+        // font-weight: 900;
+        // content: ;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .far.fa-arrow-alt-circle-left{
+        display: block;
+        position: absolute;
+        left: 5%;
+        top: 15%;
+        font-size: 80px;
+    }
+
+    .fab.fa-github{
+        font-size: 80px;
+    }
+
+    .fab.fa-linkedin{
+        font-size: 80px;
     }

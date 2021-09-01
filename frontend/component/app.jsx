@@ -22,6 +22,7 @@ import Footer from '../component/footer/footer';
 import EventShowContainer from '../component/events/event_show_container';
 import EventIndexContainer from '../component/events/event_index_container';
 import EditEventFormContainer from '../component/events/edit_form_container';
+import UserEventsContainer from '../component/events/user_events_container';
 
 export default () => (
     
@@ -29,14 +30,15 @@ export default () => (
     <div>
         <Route path="/" component={Navbar}/>
         <Route exact path="/" component={Home}/>
-        <switch>
+        <Switch>
             <Route exact path="/events" component={EventIndexContainer}/>
             <ProtectedRoute exact path="/create" component={CreateEventFormContainer}/>
-            <ProtectedRoute exact path="/events/:eventId/edit" component={EditEventFormContainer}/>
+            <ProtectedRoute path="/:eventId/edit" component={EditEventFormContainer}/>
             <Route exact path="/events/:eventId" component={EventShowContainer}/>
+            <Route exact path="/users/:userId/events" component={UserEventsContainer}></Route>
             <AuthRoute exact path="/login" component={LogInFormContainer} />
             <AuthRoute exact path="/signup" component={SignupContainer}/>
-        </switch>
+        </Switch>
         <Route path="/" component={Footer}/>
     </div>
 )

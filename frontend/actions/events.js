@@ -55,7 +55,7 @@ export const requestEvent = (eventId) => dispatch => {
 export const requestUserEvents = (userId) => dispatch => {
     return EventAPIUtil.fetchUserEvents(userId)
         .then(events => dispatch(receiveUserEvents(events)))
-        .catch(err => console.log(err.responseJSON));
+        // .catch(err => console.log(err.responseJSON));
 }
 
 export const createEvent = event => dispatch => {
