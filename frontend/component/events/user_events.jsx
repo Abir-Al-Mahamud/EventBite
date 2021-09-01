@@ -32,6 +32,7 @@ class UserEvents extends React.Component {
         //make a function that filters over the events and selects that events that match the current_user_id 
         //utilize a loop
         
+
     }
 
     render() {
