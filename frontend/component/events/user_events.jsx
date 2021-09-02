@@ -8,6 +8,7 @@ class UserEvents extends React.Component {
         super(props);
 
         this.handleClick = this.handleClick.bind(this);
+        this.filterEvents = this.filterEvents.bind(this);
     }
 
     handleClick() {
@@ -31,8 +32,16 @@ class UserEvents extends React.Component {
     filterEvents(){
         //make a function that filters over the events and selects that events that match the current_user_id 
         //utilize a loop
-        
+        let result = [];
+        let eventCount = this.props.events 
+        for(let i = 0; i < eventCount.length; i++){
+            let event = eventCount[i];
+            if (event.author_id == this.props.currentUser){
+                result.push(event)
+            }
+        }
 
+        return result;
     }
 
     render() {
@@ -49,7 +58,7 @@ class UserEvents extends React.Component {
                 <div className="user-event-index">
                     {/* <h2>Events in <span className="blue">New York</span></h2> */}
                     <ul className="event-index-list">
-                        {this.props.events.map((event, idx) => (
+                        {this.filterEvents().map((event, idx) => (
                             <Link key={event.id} to={`/events/${event.id}`}>
                                 <EventIndexCard
                                     className="event-index-card-comp"
