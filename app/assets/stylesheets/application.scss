@@ -1227,6 +1227,19 @@ h1.create-event-form-type{
         margin-right: -15px; 
     }
 
+    .user-event-index-list{
+        display: flex;
+        flex-wrap: wrap;
+        
+        justify-content: flex-start;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-right: -15px; 
+        position: absolute;
+        left: 10%;
+        top: 40%;
+    }
+
     .event-index-item {
         display: flex;
         justify-content: center;
@@ -1419,4 +1432,18 @@ h1.create-event-form-type{
 
     .fab.fa-linkedin{
         font-size: 80px;
+    }
+
+    .chart-horizontal{
+        background-color: black;
+        width: 90%;
+        display: block;
+        position: absolute;
+        left: 5%;
+        top: 30%;
+        height: 10px;
+    }
+
+    .chart-vertical{
+
     }

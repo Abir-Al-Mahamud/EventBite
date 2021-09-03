@@ -44,10 +44,10 @@ export default class Tabs extends React.Component{
 
     render(){
         const tab = this.props.tabs[this.state.clickedTab]
-
+        
         return(
             <div className="tabs-div">
-                <h1 className="title-header">Popular in New York</h1>
+                {/* <h1 className="title-header">Popular in New York</h1> */}
                 <div className="tabs">
                     <Headings
                         clickTab={this.state.clickedTab}

@@ -23,6 +23,7 @@ import EventShowContainer from '../component/events/event_show_container';
 import EventIndexContainer from '../component/events/event_index_container';
 import EditEventFormContainer from '../component/events/edit_form_container';
 import UserEventsContainer from '../component/events/user_events_container';
+import UsersTabsContainer from '../component/tabs/all_container'
 
 export default () => (
     
@@ -34,8 +35,8 @@ export default () => (
             <Route exact path="/events" component={EventIndexContainer}/>
             <ProtectedRoute exact path="/create" component={CreateEventFormContainer}/>
             <ProtectedRoute path="/:eventId/edit" component={EditEventFormContainer}/>
+            <ProtectedRoute exact path="/users/:userId/events" component={UsersTabsContainer}/>
             <Route exact path="/events/:eventId" component={EventShowContainer}/>
-            <Route exact path="/users/:userId/events" component={UserEventsContainer}></Route>
             <AuthRoute exact path="/login" component={LogInFormContainer} />
             <AuthRoute exact path="/signup" component={SignupContainer}/>
         </Switch>
