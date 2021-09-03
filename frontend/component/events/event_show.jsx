@@ -16,7 +16,7 @@ class EventShow extends React.Component{
 
 
         const { event, currentUser } = this.props 
-        
+        console.log(event)
         const register = currentUser ? (
             <div>
                 <button className="registering">Register</button>
