@@ -30,7 +30,7 @@ class EventIndexCard extends React.Component {
                     <img src={event.pic_url} alt={event.title} onClick={this.handleClick}/>
                 </div>
                 <div className="event-index-like">
-
+                    <i class="far fa-heart"></i>
                 </div>
                 <div className="event-index-title">
                     {event.title}
