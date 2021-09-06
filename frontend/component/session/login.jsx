@@ -48,7 +48,7 @@ class Login extends React.Component {
             <div className="box">
                 <form className="session-form" onSubmit={this.handleChange}>
                     <h1 className="h1">Log in </h1>
-                    <img class="dubai-image" src={window.signupImageThree} />
+                    <img className="dubai-image" src={window.signupImageThree} />
                     <div className="errors-login">
                         {this.renderErrors()}
                     </div>

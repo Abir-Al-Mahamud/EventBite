@@ -34,7 +34,7 @@ class EventShow extends React.Component{
             return(
                 <div className="single-event-show">
                 <div className="back-to-events">
-                        <Link to="/"><i class="far fa-arrow-alt-circle-left"></i></Link>
+                        <Link to="/"><i className="far fa-arrow-alt-circle-left"></i></Link>
                     
                 </div>
                 <ul className="event-details">
@@ -51,7 +51,7 @@ class EventShow extends React.Component{
                     <EventDetail event={event}/>
                 </div> */}
                 
-                <Link className="edit-event-button" to="/:eventId/edit">Edit Event</Link>
+                <Link className="edit-event-button" to={`/${currentUser}/edit`}>Edit Event</Link>
                 <input className="delete-button" type="button" value="Delete Event" onClick={() => deleteEvent()} />
                 <div className="register">
                     {register}

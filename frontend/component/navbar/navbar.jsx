@@ -38,7 +38,7 @@ const Navbar = ({ history, currentUser , logout, ...otherProps }) => {
             </div>
         </div>
     );
-    const searchLogo = (<div><i class="fas fa-search"></i></div>)
+    const searchLogo = (<div><i className="fas fa-search"></i></div>)
     
     return(
         <div className="nav-bar-logo">
