@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../footer/footer'
 class Login extends React.Component {
     constructor(props) {
         super(props);
@@ -45,6 +46,7 @@ class Login extends React.Component {
     render(){
             
         return (
+            <div>
             <div className="box">
                 <form className="session-form" onSubmit={this.handleChange}>
                     <h1 className="h1">Log in </h1>
@@ -82,7 +84,10 @@ class Login extends React.Component {
                         <div className="link-to-signup">
                             <Link className="link" to="/signup">Sign up for eventbite</Link>
                         </div>
-
+                    </div>
+                        {/* <div className="footer">
+                            <Footer/>
+                        </div> */}
                     </div>
 
                 )

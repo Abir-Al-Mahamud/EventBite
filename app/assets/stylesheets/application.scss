@@ -266,11 +266,12 @@ span, article, time, small {
 
 .footer{
     display: flex;
-    justify-content: center;
     flex-direction: row;
+    position: relative;
+    justify-content: center;
     align-items: center;
-    position: absolute;
-    margin-top: 90%;
+    margin-top: auto;
+    top: 100%;
     width: 100%;
     background-color: purple;
     height: 100px;
@@ -279,6 +280,12 @@ span, article, time, small {
 }
 a.linked{
     margin-right: 30px; 
+}
+
+.app-comp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 a.github{
@@ -1336,8 +1343,12 @@ h1.create-event-form-type{
     }
 
     .pic-show{
-        max-height: 200px;
-        max-width: 100px; 
+        max-height: 140%;
+        max-width: 200%; 
+        display: block;
+        position: absolute;
+        top: -150%;
+        left: 55%;
     }
 
     .single-event-show{
