@@ -1,3 +1,4 @@
+import event_index from '../component/events/event_index';
 import * as EventAPIUtil from '../utils/event_utils';
 
 export const RECEIVE_EVENTS = "RECEIVE_EVENTS";
@@ -77,3 +78,21 @@ export const deleteEvent = eventId => dispatch => {
         .catch(err => console.log(err.responseJSON));
 }
 
+export const createRegistration = eventId => dispatch => {
+    return  EventAPIUtil.createRegistration(eventId)
+        .then(event => {
+            dispatch(receiveEvents(event))
+        })
+}
+
+export const deleteRegistration = (eventId, registrationId) => dispatch => {
+    return EventAPIUtil.deleteRegistration(eventId, registrationId)
+        .then(events => {
+            dispatch(receiveEvents(events))
+        })
+}
+
+export const fetchRegistrations = userId => dispatch => {
+    return EventAPIUtil.fetchRegistrations(userId)
+        .then(events => dispatch(receiveEvents(events)))
+}
