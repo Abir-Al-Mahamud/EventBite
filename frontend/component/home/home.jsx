@@ -55,8 +55,8 @@ class Home extends React.Component{
             {/* </div> */}
 
             {/* <div className="footer"> */}
+                {/* <Footer/> */}
             {/* </div> */}
-            {/* <Footer/> */}
         </div>
     )
 

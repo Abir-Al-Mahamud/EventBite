@@ -85,9 +85,9 @@ class Login extends React.Component {
                             <Link className="link" to="/signup">Sign up for eventbite</Link>
                         </div>
                     </div>
-                        {/* <div className="footer">
-                            <Footer/>
-                        </div> */}
+                        {/* <div className="footer"> */}
+                            {/* <Footer/> */}
+                        {/* </div> */}
                     </div>
 
                 )

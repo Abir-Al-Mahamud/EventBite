@@ -6,6 +6,9 @@ import { Link, withRouter } from 'react-router-dom';
 class EventIndex extends React.Component{
     constructor(props){
         super(props);
+        this.state = {
+            liked: true
+        }
 
         this.handleClick = this.handleClick.bind(this);
     }

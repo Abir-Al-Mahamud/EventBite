@@ -5,7 +5,9 @@ class EventIndexCard extends React.Component {
 
     constructor(props) {
         super(props);
-
+        this.state = {
+            liked: true
+        } 
         this.handleClick = this.handleClick.bind(this);
     }
 
@@ -27,11 +29,14 @@ class EventIndexCard extends React.Component {
         return (
             <div className="event-index-item">
                 {/* <h1 className="events-near-you">Events Near You </h1> */}
-                <div className="event-index-image">
+                <div className="event-index-image">  
                     <img src={event.pic_url} alt={event.title} onClick={this.handleClick}/>
                 </div>
-                <div className="event-index-like">
-                    <i className="far fa-heart"></i>
+                <div className="event-index-like" onClick={() => this.setState({ liked: !this.state.liked })}>
+                    { this.state.liked
+                    ? <i className="far fa-heart"></i>
+                    : <i class="fas fa-heart"></i>
+                    }
                 </div>
                 <div className="event-index-title">
                     {event.title}

@@ -61,7 +61,7 @@ class UserEvents extends React.Component {
                     {/* <h2>Events in <span className="blue">New York</span></h2> */}
                     <ul className="user-event-index-list">
                         {this.filterEvents().map((event, idx) => (
-                            <Link key={event.id} to={`/events/${event.id}`}>
+                            <Link className="event-index-links" key={event.id} to={`/events/${event.id}`}>
                                 <EventIndexCard
                                     className="event-index-card-comp"
                                     event={event}

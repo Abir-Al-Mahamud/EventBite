@@ -28,7 +28,7 @@ import UsersTabsContainer from '../component/tabs/all_container'
 export default () => (
     
 
-    <div className="app-comp">
+    <div>
         <Route path="/" component={Navbar}/>
         <Route exact path="/" component={Home}/>
         <Switch>

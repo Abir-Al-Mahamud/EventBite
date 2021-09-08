@@ -270,7 +270,7 @@ span, article, time, small {
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-top: auto;
+    margin-top: 50%;
     top: 100%;
     width: 100%;
     background-color: purple;
@@ -597,15 +597,15 @@ a.github{
 
 .modal-content{
     background-color: white;
-    margin: 15% auto;
+    // margin: 15% auto;
     padding: 50;
     border: 1px, solid gray;
     border-radius: 5px;
     width: 400px;
     padding-bottom: 20%;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    display: block;
+    position: absolute;
+    top: 30%;
     
 }
 .modal-content label{
@@ -1261,7 +1261,7 @@ h1.create-event-form-type{
     .user-event-index-list{
         display: flex;
         flex-wrap: wrap;
-        
+        flex-direction: row;
         justify-content: flex-start;
         max-width: 100%;
         margin: 0 auto;
