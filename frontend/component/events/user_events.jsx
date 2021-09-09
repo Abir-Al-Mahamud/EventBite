@@ -31,8 +31,6 @@ class UserEvents extends React.Component {
     }
 
     filterEvents(){
-        //make a function that filters over the events and selects that events that match the current_user_id 
-        //utilize a loop
         let result = [];
         let eventCount = this.props.events 
         for(let i = 0; i < eventCount.length; i++){

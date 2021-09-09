@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { requestEvent, requestEvents, deleteEvent } from '../../actions/events';
 
 import { selectEvent } from '../../reducers/selectors';
+import { createRegistration } from '../../utils/event_utils';
 
 import EventShow from './event_show';
 
@@ -19,7 +20,8 @@ const mSTP = (state, ownProps) => {
 
 const mDTP = dispatch => ({
     fetchEvent: id => dispatch(requestEvent(id)), 
-    deleteEvent: () => dispatch(deleteEvent())
+    deleteEvent: () => dispatch(deleteEvent()),
+    createRegistration: eventId => dispatch(createRegistration(eventId))
 });
 
 export default connect(mSTP, mDTP)(EventShow);

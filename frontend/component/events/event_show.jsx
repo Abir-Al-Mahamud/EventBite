@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import EventDetail from './event_detail';
 // import { ProtectedRoute } from '../../utils/route_utils';
 import EditEventForm from './edit_form_container';
-import { deleteEvent } from '../../utils/event_utils';
+import { createRegistration, deleteEvent } from '../../actions/events';
 
 
 class EventShow extends React.Component{
@@ -19,7 +19,7 @@ class EventShow extends React.Component{
         console.log(event)
         const register = currentUser ? (
             <div>
-                <button className="registering">Register</button>
+                <input className="registering" type="button" value="Register" onClick={createRegistration(event.id)} />
             </div>
         ) : (
             <div>
