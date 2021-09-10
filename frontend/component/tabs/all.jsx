@@ -1,6 +1,7 @@
 import React from 'react';
 import Tabs from '../tabs';
 import UserEvents from '../events/user_events_container';
+import Registration from '../events/registration_container';
 
 class AllEvents extends React.Component {
     constructor(props){
@@ -11,7 +12,7 @@ class AllEvents extends React.Component {
     render(){
         const usersEventTab = [
             { name: 'Events by You', content: <UserEvents/> },
-            { name: 'Events Registered', content: '...' }
+            { name: 'Events Registered', content: <Registration/> }
 
         ]
 

@@ -79,7 +79,7 @@ export const deleteEvent = eventId => dispatch => {
 }
 
 export const createRegistration = eventId => dispatch => {
-    return  EventAPIUtil.createRegistration(eventId)
+    return EventAPIUtil.createRegistration(eventId)
         .then(event => {
             dispatch(receiveEvents(event))
         })
