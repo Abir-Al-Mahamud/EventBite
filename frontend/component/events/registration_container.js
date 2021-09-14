@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { createRegistration, deleteRegistration, fetchRegistrations } from '../../actions/events';
 import { requestEvent, requestEvents, deleteEvent } from '../../actions/events';
 import Registration from './registration';
+import { withRouter } from 'react-router-dom'
 
 const mSTP = (state, ownProps) => {
     debugger
@@ -19,4 +20,4 @@ const mDTP = dispatch => ({
     fetchRegistrations: userId => dispatch(fetchRegistrations(userId))
 })
 
-export default connect(mSTP, mDTP)(Registration)
+export default withRouter(connect(mSTP, mDTP)(Registration))
