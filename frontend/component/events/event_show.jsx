@@ -17,20 +17,21 @@ class EventShow extends React.Component{
 
         const { event, currentUser } = this.props 
         console.log(event)
-        const register = currentUser ? (
-            <div>
-                <input className="registering" type="button" value="Register" onClick={createRegistration(event.id)} />
-            </div>
-        ) : (
-            <div>
-                <Link className="regis-button" to="/login">Sign In to Register</Link>
-            </div>
-        );
- 
+
+        
         // debugger
         if (!event) {
             return null 
         } else {
+            const register = currentUser ? (
+                <div>
+                    <input className="registering" type="button" value="Register" onClick={createRegistration(event.id)} />
+                </div>
+            ) : (
+                <div>
+                    <Link className="regis-button" to="/login">Sign In to Register</Link>
+                </div>
+            );
             return(
                 <div className="single-event-show">
                 <div className="back-to-events">
@@ -51,7 +52,7 @@ class EventShow extends React.Component{
                     <EventDetail event={event}/>
                 </div> */}
                 
-                <Link className="edit-event-button" to={`/${currentUser}/edit`}>Edit Event</Link>
+                <Link className="edit-event-button" to={`/${event.id}/edit`}>Edit Event</Link>
                 <input className="delete-button" type="button" value="Delete Event" onClick={() => deleteEvent()} />
                 <div className="register">
                     {register}
