@@ -15,7 +15,7 @@ class Api::Registration < ApplicationController
             @registration = Registration.create(buyer_id: current_user.id, event_id: @event.id)
             render "api/events/show"
         end
-    end
+    end 
 
     def destroy 
         @registration = current_user.registrations.find_by(id: params[:id])
