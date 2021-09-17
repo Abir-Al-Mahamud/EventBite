@@ -12,7 +12,7 @@ class Api::RegistrationsController < ApplicationController
         if @event.attendees.include?(current_user)
             render "api/events/show", status: 422
         else
-            @registration = Registration.create(buyer_id: current_user.id, event_id: @event.id)
+            @registration = Registrati on.create(buyer_id: current_user.id, event_id: @event.id)
             render "api/events/show"
         end  
     end 
