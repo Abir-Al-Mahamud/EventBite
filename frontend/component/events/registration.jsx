@@ -63,7 +63,7 @@ class Registration extends React.Component{
         e.preventDefault();
         this.props.deleteRegistration(this.props.event.id, this.props.registration_id)
     }
-
+ 
     render(){
         const actbutton = this.props.currentUserId ? 
         <button className="register-button" onClick={this.handleSubmit}>Register</button> :
