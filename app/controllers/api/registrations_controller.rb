@@ -14,7 +14,7 @@ class Api::RegistrationsController < ApplicationController
         else
             @registration = Registration.create(buyer_id: current_user.id, event_id: @event.id)
             render "api/events/show"
-        end
+        end 
     end 
 
     def destroy 
