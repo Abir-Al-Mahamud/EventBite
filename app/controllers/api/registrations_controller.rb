@@ -4,6 +4,8 @@ class Api::RegistrationsController < ApplicationController
 
     def index 
         @registrations = User.find_by(id: params[:buyer_id]).registrations
+        #try to mmake it user_id instead of buyer_id
+        #deal with registrationns mmethod onn line 6
         render :index
     end
 

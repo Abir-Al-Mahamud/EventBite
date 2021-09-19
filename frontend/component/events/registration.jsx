@@ -67,11 +67,11 @@ class Registration extends React.Component{
     render(){
         const actbutton = this.props.currentUserId ? 
         <button className="register-button" onClick={this.handleSubmit}>Register</button> :
-        <button className="register-redirect" onClick={this.handleRedirect}>Register</button>
+        <button className="register-redirect" onClick={this.handleRedirect}>Sign In to Register</button>
 
         const userChoice = (
             <div>
-                <button className="register-delete" onClick={this.handleDelete}></button>
+                <button className="register-delete" onClick={this.handleDelete}>Cancel Registration</button>
             </div>
         )
         console.log(this.state)
