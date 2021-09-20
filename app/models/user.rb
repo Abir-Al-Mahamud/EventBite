@@ -11,9 +11,7 @@ class User < ApplicationRecord
 
     after_initialize :ensure_session_token 
 
-    has_many :registrations,
-        class_name: :Registration,
-        foreign_key: :buyer_id 
+    has_many :registrations, dependent: :destroy
 
     has_many :events,
         class_name: :Event,
