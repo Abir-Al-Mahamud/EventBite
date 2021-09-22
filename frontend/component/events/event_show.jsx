@@ -12,6 +12,11 @@ class EventShow extends React.Component{
         this.props.fetchEvent(this.props.match.params.eventId);
     }
 
+    completeRegistration(e){
+        e.preventDefault();
+        
+    }
+
     render(){
 
 
@@ -23,6 +28,11 @@ class EventShow extends React.Component{
         if (!event) {
             return null 
         } else {
+            const userChoice = (
+                <div>
+                    <button className="register-delete" onClick={this.handleDelete}>Cancel Registration</button>
+                </div>
+            )
             const register = currentUser ? (
                 <div>
                     <input className="registering" type="button" value="Register" onClick={createRegistration(event.id)} />
