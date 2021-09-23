@@ -29,7 +29,7 @@ class EventShow extends React.Component{
             return null 
         } else {
             const userChoice = (
-                <div>
+                <div> ß
                     <button className="register-delete" onClick={this.handleDelete}>Cancel Registration</button>
                 </div>
             )
