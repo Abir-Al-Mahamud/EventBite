@@ -20,8 +20,8 @@ class EventShow extends React.Component{
     render(){
 
 
-        const { event, currentUser } = this.props 
-        console.log(event)
+        const { event, currentUser, createRegistration } = this.props 
+        console.log(event.id)
 
         
         // debugger
@@ -29,7 +29,7 @@ class EventShow extends React.Component{
             return null 
         } else {
             const userChoice = (
-                <div> ß
+                <div> 
                     <button className="register-delete" onClick={this.handleDelete}>Cancel Registration</button>
                 </div>
             )

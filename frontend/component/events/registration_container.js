@@ -6,7 +6,7 @@ import Registration from './registration';
 import { withRouter } from 'react-router-dom'
 
 const mSTP = (state, ownProps) => {
-    debugger
+    // debugger
     return {
         currentUserId: state.session.id,
         events: Object.values(state.entities.events),

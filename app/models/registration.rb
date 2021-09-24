@@ -7,7 +7,10 @@ class Registration < ApplicationRecord
 
     }
 
-    belongs_to :user
+    belongs_to :user,
+        foreign_key: :buyer_id,
+        class_name: :User
+        
     belongs_to :event
 
 end

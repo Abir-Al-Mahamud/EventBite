@@ -3,7 +3,9 @@ class Api::RegistrationsController < ApplicationController
     before_action :ensure_logged_in, only: [:index, :create, :destroy]
 
     def index 
-        @registrations = User.find_by(id: params[:buyer_id]).registrations
+        # debugger
+        @user = User.find_by(id: params[:user_id])
+        @registrations = @user.registrations
         #try to mmake it user_id instead of buyer_id
         #deal with registrationns mmethod onn line 6
         render :index
@@ -14,13 +16,13 @@ class Api::RegistrationsController < ApplicationController
         if @event.attendees.include?(current_user)
             render "api/events/show", status: 422
         else
-            @registration = Registrati on.create(buyer_id: current_user.id, event_id: @event.id)
+            @registration = Registration.create(user_id: current_user.id, event_id: @event.id)
             render "api/events/show"
         end  
     end 
 
     def destroy 
-        @registration = current_user.registrations.find_by(id: params[:id])
+        @registration = current_user.registrations.find_by(id: params[:buyer_id])
         @event = Event.find_by(id: params[:event_id])
    
         if @registration && @registration.destroy 
