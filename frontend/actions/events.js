@@ -98,7 +98,7 @@ export const fetchRegistrations = userId => dispatch => {
             debugger
             return dispatch(receiveEvents(registrations))
             
-                }
+                } 
             )
 
 }
