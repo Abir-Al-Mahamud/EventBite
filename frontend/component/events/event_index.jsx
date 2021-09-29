@@ -29,7 +29,7 @@ class EventIndex extends React.Component{
 
     render(){
         // const { event } = this.props;
-        console.log(this.props.events)
+        // console.log(this.props.events)
         // debugger
         if(!this.props.events) {
             return ( <h2>Loading...</h2> )

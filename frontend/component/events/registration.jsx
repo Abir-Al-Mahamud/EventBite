@@ -19,17 +19,7 @@ class Registration extends React.Component{
     componentDidMount(){
         // debugger
         this.props.fetchRegistrations(this.props.currentUserId)
-        // .then(regs => {
-        //         let result = []
-        //         for (let i = 0; i < regs.length; i++) {
-        //             let reg = regs[i];
-        //             if (reg.buyer_id == this.props.currentUserId) {
-        //                 result.push(reg)
-        //             }
-        //         }
-        //         debugger
-        //         this.setState({registrations: result})
-        //     })
+       
     }
 
     filterEvents(){
@@ -64,7 +54,7 @@ class Registration extends React.Component{
     }
  
     render(){
-        debugger
+        // debugger
         const actbutton = this.props.currentUserId ? 
         <button className="register-button" onClick={this.handleSubmit}>Register</button> :
         <button className="register-redirect" onClick={this.handleRedirect}>Sign In to Register</button>
@@ -74,7 +64,7 @@ class Registration extends React.Component{
                 <button className="register-delete" onClick={this.handleDelete}>Cancel Registration</button>
             </div>
         )
-        console.log(this.state)
+        // console.log(this.state)
         if (!this.props.events) {
             return (<h2>Loading...</h2>)
         } else {

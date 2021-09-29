@@ -95,7 +95,7 @@ export const deleteRegistration = (eventId, registrationId) => dispatch => {
 export const fetchRegistrations = userId => dispatch => {
     return EventAPIUtil.fetchRegistrations(userId)
         .then(registrations => { 
-            debugger
+            // debugger
             return dispatch(receiveEvents(registrations))
             
                 }  
