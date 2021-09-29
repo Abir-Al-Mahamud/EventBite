@@ -19,12 +19,15 @@ const mSTP = (state, ownProps) => {
 }
     
 
-const mDTP = dispatch => ({
-    fetchEvent: id => dispatch(requestEvent(id)), 
-    deleteEvent: () => dispatch(deleteEvent()),
-    createRegistration: eventId => dispatch(createRegistration(eventId)),
-    deleteRegistration: (eventId, registrationId) => dispatch(deleteRegistration(eventId, registrationId)),
-    fetchRegistrations: userId => dispatch(fetchRegistrations(userId))
-});
+const mDTP = dispatch => {
+    // debugger
+    return{
+        fetchEvent: id => dispatch(requestEvent(id)), 
+        deleteEvent: () => dispatch(deleteEvent()),
+        createRegistration: eventId => dispatch(createRegistration(eventId)),
+        deleteRegistration: (eventId, registrationId) => dispatch(deleteRegistration(eventId, registrationId)),
+        fetchRegistrations: userId => dispatch(fetchRegistrations(userId))
+    }
+};
 
 export default connect(mSTP, mDTP)(EventShow);

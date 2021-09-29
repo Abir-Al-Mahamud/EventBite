@@ -9,6 +9,7 @@ import { createRegistration, deleteEvent } from '../../actions/events';
 
 class EventShow extends React.Component{
     componentDidMount(){
+        // debugger
         this.props.fetchEvent(this.props.match.params.eventId);
     }
 
@@ -19,12 +20,11 @@ class EventShow extends React.Component{
 
     render(){
 
-
+        // debugger
         const { event, currentUser, createRegistration } = this.props 
-        console.log(event.id)
+        // console.log(event.id)
 
         
-        // debugger
         if (!event) {
             return null 
         } else {
@@ -35,7 +35,7 @@ class EventShow extends React.Component{
             )
             const register = currentUser ? (
                 <div>
-                    <input className="registering" type="button" value="Register" onClick={createRegistration(event.id)} />
+                    <input className="registering" type="button" value="Register" onClick={() => createRegistration(event.id)} />
                 </div>
             ) : (
                 <div>
