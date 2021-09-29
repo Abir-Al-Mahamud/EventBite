@@ -20,19 +20,16 @@ class EventIndex extends React.Component{
  
     // componentWillMount(){
         // this.props.requestEvents();
-        // const navBar = document.querySelector(".header");
-        // navBar.classList.remove("white");
+
     // }
 
     componentDidMount(){
         this.props.requestEvents();
-        // const navBar = document.querySelector(".header")
-        // navBar.classList.add("white");
     }
 
     render(){
         // const { event } = this.props;
-        // console.log(this.props.requestEvents())
+        console.log(this.props.events)
         // debugger
         if(!this.props.events) {
             return ( <h2>Loading...</h2> )
