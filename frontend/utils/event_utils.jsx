@@ -42,7 +42,7 @@ export const deleteEvent = (eventId) => {
         url: `/api/events/${eventId}`,
         method: 'DELETE'
     })
-}
+} 
 
 export const createRegistration = (eventId) => {
     return $.ajax({

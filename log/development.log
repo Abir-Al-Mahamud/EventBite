@@ -2079,3 +2079,116 @@ Processing by Api::RegistrationsController#index as JSON
 Completed 200 OK in 73ms (Views: 33.3ms | ActiveRecord: 33.8ms)
 
 
+Started GET "/api/users/181/events" for ::1 at 2021-09-24 19:37:01 -0400
+Processing by Api::EventsController#index as JSON
+  Parameters: {"user_id"=>"181"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (8.9ms)
+  Rendered api/events/index.json.jbuilder (19.3ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 2.0ms)
+
+
+
+NoMethodError - undefined method `category' for "Today":String:
+  app/views/api/events/_event.json.jbuilder:4:in `block (2 levels) in _app_views_api_events__event_json_jbuilder__4268863338220008222_70159715571360'
+  app/views/api/events/_event.json.jbuilder:2:in `block in _app_views_api_events__event_json_jbuilder__4268863338220008222_70159715571360'
+  app/views/api/events/_event.json.jbuilder:1:in `_app_views_api_events__event_json_jbuilder__4268863338220008222_70159715571360'
+  app/views/api/events/index.json.jbuilder:3:in `block (2 levels) in _app_views_api_events_index_json_jbuilder__1947645560412095770_70159715638440'
+  app/views/api/events/index.json.jbuilder:2:in `block in _app_views_api_events_index_json_jbuilder__1947645560412095770_70159715638440'
+  app/views/api/events/index.json.jbuilder:1:in `_app_views_api_events_index_json_jbuilder__1947645560412095770_70159715638440'
+  app/controllers/api/events_controller.rb:13:in `index'
+
+Started GET "/api/users/181/events" for ::1 at 2021-09-24 19:37:02 -0400
+Processing by Api::EventsController#index as JSON
+  Parameters: {"user_id"=>"181"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (6.0ms)
+  Rendered api/events/index.json.jbuilder (10.9ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.5ms)
+
+
+
+NoMethodError - undefined method `category' for "Today":String:
+  app/views/api/events/_event.json.jbuilder:4:in `block (2 levels) in _app_views_api_events__event_json_jbuilder__4268863338220008222_70159677442060'
+  app/views/api/events/_event.json.jbuilder:2:in `block in _app_views_api_events__event_json_jbuilder__4268863338220008222_70159677442060'
+  app/views/api/events/_event.json.jbuilder:1:in `_app_views_api_events__event_json_jbuilder__4268863338220008222_70159677442060'
+  app/views/api/events/index.json.jbuilder:3:in `block (2 levels) in _app_views_api_events_index_json_jbuilder__1947645560412095770_70159665124960'
+  app/views/api/events/index.json.jbuilder:2:in `block in _app_views_api_events_index_json_jbuilder__1947645560412095770_70159665124960'
+  app/views/api/events/index.json.jbuilder:1:in `_app_views_api_events_index_json_jbuilder__1947645560412095770_70159665124960'
+  app/controllers/api/events_controller.rb:13:in `index'
+
+Started GET "/api/users/181/registrations" for ::1 at 2021-09-24 19:37:04 -0400
+Processing by Api::RegistrationsController#index as JSON
+  Parameters: {"user_id"=>"181"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "VAF7Ehr5Zib8rqNupTJUiQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 181], ["LIMIT", 1]]
+  ↳ app/controllers/api/registrations_controller.rb:7
+  Rendering api/registrations/index.json.jbuilder
+  [1m[36mRegistration Load (0.5ms)[0m  [1m[34mSELECT "registrations".* FROM "registrations" WHERE "registrations"."buyer_id" = $1[0m  [["buyer_id", 181]]
+  ↳ app/views/api/registrations/index.json.jbuilder:1
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  [1m[36mEvent Load (2.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  Rendered api/registrations/index.json.jbuilder (12.2ms)
+Completed 200 OK in 30ms (Views: 19.7ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/api/users/181/events" for ::1 at 2021-09-24 19:37:06 -0400
+Processing by Api::EventsController#index as JSON
+  Parameters: {"user_id"=>"181"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (6.8ms)
+  Rendered api/events/index.json.jbuilder (9.8ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.5ms)
+
+
+
+NoMethodError - undefined method `category' for "Today":String:
+  app/views/api/events/_event.json.jbuilder:4:in `block (2 levels) in _app_views_api_events__event_json_jbuilder__4268863338220008222_70159743090280'
+  app/views/api/events/_event.json.jbuilder:2:in `block in _app_views_api_events__event_json_jbuilder__4268863338220008222_70159743090280'
+  app/views/api/events/_event.json.jbuilder:1:in `_app_views_api_events__event_json_jbuilder__4268863338220008222_70159743090280'
+  app/views/api/events/index.json.jbuilder:3:in `block (2 levels) in _app_views_api_events_index_json_jbuilder__1947645560412095770_70159743136600'
+  app/views/api/events/index.json.jbuilder:2:in `block in _app_views_api_events_index_json_jbuilder__1947645560412095770_70159743136600'
+  app/views/api/events/index.json.jbuilder:1:in `_app_views_api_events_index_json_jbuilder__1947645560412095770_70159743136600'
+  app/controllers/api/events_controller.rb:13:in `index'
+
+Started GET "/api/users/181/events" for ::1 at 2021-09-24 19:37:06 -0400
+Processing by Api::EventsController#index as JSON
+  Parameters: {"user_id"=>"181"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (4.7ms)
+  Rendered api/events/index.json.jbuilder (7.5ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.4ms)
+
+
+
+NoMethodError - undefined method `category' for "Today":String:
+  app/views/api/events/_event.json.jbuilder:4:in `block (2 levels) in _app_views_api_events__event_json_jbuilder__4268863338220008222_70159738760140'
+  app/views/api/events/_event.json.jbuilder:2:in `block in _app_views_api_events__event_json_jbuilder__4268863338220008222_70159738760140'
+  app/views/api/events/_event.json.jbuilder:1:in `_app_views_api_events__event_json_jbuilder__4268863338220008222_70159738760140'
+  app/views/api/events/index.json.jbuilder:3:in `block (2 levels) in _app_views_api_events_index_json_jbuilder__1947645560412095770_70159738807720'
+  app/views/api/events/index.json.jbuilder:2:in `block in _app_views_api_events_index_json_jbuilder__1947645560412095770_70159738807720'
+  app/views/api/events/index.json.jbuilder:1:in `_app_views_api_events_index_json_jbuilder__1947645560412095770_70159738807720'
+  app/controllers/api/events_controller.rb:13:in `index'
+
+Started GET "/" for ::1 at 2021-09-28 15:11:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (9.6ms)
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "VAF7Ehr5Zib8rqNupTJUiQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 686ms (Views: 668.9ms | ActiveRecord: 3.8ms)
+
+
