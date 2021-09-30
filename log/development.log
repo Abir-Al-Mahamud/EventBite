@@ -5014,3 +5014,122 @@ NoMethodError - undefined method `each' for nil:NilClass:
   app/views/api/events/show.json.jbuilder:1:in `_app_views_api_events_show_json_jbuilder__2502929962591777985_70352645996880'
   app/controllers/api/events_controller.rb:19:in `show'
 
+Started GET "/api/events" for ::1 at 2021-09-30 17:28:20 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (47.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (2.3ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/index.json.jbuilder (93.0ms)
+Completed 200 OK in 131ms (Views: 75.1ms | ActiveRecord: 47.9ms)
+
+
+Started GET "/api/events/82" for ::1 at 2021-09-30 17:28:25 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"82"}
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (7.3ms)
+  Rendered api/events/show.json.jbuilder (9.9ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.6ms)
+
+
+
+NoMethodError - undefined method `each' for nil:NilClass:
+  app/views/api/events/_event.json.jbuilder:1:in `_app_views_api_events__event_json_jbuilder__887002370789700068_70352601339500'
+  app/views/api/events/show.json.jbuilder:1:in `_app_views_api_events_show_json_jbuilder__2502929962591777985_70352573662460'
+  app/controllers/api/events_controller.rb:19:in `show'
+
+Started GET "/api/events" for ::1 at 2021-09-30 17:28:30 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (1.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (19.9ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/users/187/events" for ::1 at 2021-09-30 17:28:50 -0400
+Processing by Api::EventsController#index as JSON
+  Parameters: {"user_id"=>"187"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (3.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.9ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (30.4ms)
+Completed 200 OK in 44ms (Views: 39.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/users/187/events" for ::1 at 2021-09-30 17:28:50 -0400
+Processing by Api::EventsController#index as JSON
+  Parameters: {"user_id"=>"187"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (1.9ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (32.3ms)
+Completed 200 OK in 46ms (Views: 40.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/187/registrations" for ::1 at 2021-09-30 17:28:51 -0400
+Processing by Api::RegistrationsController#index as JSON
+  Parameters: {"user_id"=>"187"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Ri87UsSAfwM78U3Y6jjfSA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 187], ["LIMIT", 1]]
+  ↳ app/controllers/api/registrations_controller.rb:7
+  Rendering api/registrations/index.json.jbuilder
+  [1m[36mRegistration Load (0.5ms)[0m  [1m[34mSELECT "registrations".* FROM "registrations" WHERE "registrations"."buyer_id" = $1[0m  [["buyer_id", 187]]
+  ↳ app/views/api/registrations/index.json.jbuilder:1
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  Rendered api/registrations/index.json.jbuilder (59.5ms)
+Completed 200 OK in 179ms (Views: 22.3ms | ActiveRecord: 47.2ms)
+
+
+Started GET "/api/events" for ::1 at 2021-09-30 17:28:55 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.9ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (16.9ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.6ms)
+
+
