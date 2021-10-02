@@ -12,6 +12,13 @@ class Home extends React.Component{
         super(props)
     }
 
+    scrollDown() {
+        window.scrollTo({
+            top: 600,
+            behavior: 'smooth'
+        })
+    }
+
     render(){
         //Have the content key pointing to a react component
         // const tabs = [
@@ -29,16 +36,14 @@ class Home extends React.Component{
 
     return (
         <div className="home">
-            {/* <Link >Facebook.com</Link> */}
-                    {/* {Search} */}
-            {/* <h1>eventbite</h1> */}
+            
             <div className="float-container">
                 <div className="float-child">
                     <h2 className="help">Help shape the</h2>
                     <h1 className="future-events">future of your events</h1>
                     <br />
 
-                    <Link className="home-button" to="/events">Browse Events</Link>
+                    <button className="home-button" onClick={this.scrollDown}>Browse Events</button>
   
                     
                 </div>
@@ -50,13 +55,7 @@ class Home extends React.Component{
             <div className="event-display">
                 <EventIndexContainer />
             </div>
-            {/* <div className="interacting"> */}
-                {/* <Tabs tabs={tabs}/> */}
-            {/* </div> */}
-
-            {/* <div className="footer"> */}
-                {/* <Footer/> */}
-            {/* </div> */}
+          
         </div>
     )
 

@@ -23,6 +23,8 @@ class EventIndex extends React.Component{
 
     // }
 
+    
+
     componentDidMount(){
         this.props.requestEvents();
     }

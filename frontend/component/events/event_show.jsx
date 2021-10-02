@@ -33,6 +33,8 @@ class EventShow extends React.Component{
         this.props.history.push('/');
     }
 
+    
+
     render(){
 
         // debugger
@@ -50,7 +52,7 @@ class EventShow extends React.Component{
                 </div>
             )
             // Register button
-            const register = currentUser && event.attendees.includes(currentUser) ? (
+            const register = currentUser ? (
                 <div>
                     <input className="registering" type="button" value="Register" onClick={() => createRegistration(event.id)} />
                 </div>
