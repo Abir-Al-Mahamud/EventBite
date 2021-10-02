@@ -1235,6 +1235,22 @@ h1.create-event-form-type{
     }
 
     .event-index-like{
+        // display: flex;
+        // justify-content: flex-start;
+        // max-width: 100%;
+        // margin: 0 auto;
+        // margin-right: -15px;
+        // flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-right: -15px; 
+        position: absolute;
+        left: 10%;
+        top: 40%;
         border-style: solid;
         border-color: lightgray;
         border-width: 1px;
@@ -1248,6 +1264,7 @@ h1.create-event-form-type{
         top: 39%;
         left: 20%;
         background-color: whitesmoke;
+
     }
 
     i.far.fa-heart{
@@ -1490,6 +1507,6 @@ h1.create-event-form-type{
         height: 10px;
     }
 
-    .chart-vertical{
+    // .chart-vertical{
 
-    }
+    // }

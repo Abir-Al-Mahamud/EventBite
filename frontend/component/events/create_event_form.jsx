@@ -10,7 +10,8 @@ class EventForm extends React.Component{
 
     handleSubmit(){
         this.props.submitEvent(this.state);
-        //how to redirect to splash page
+        this.props.history.push('/');
+        
     }
 
     update(field){

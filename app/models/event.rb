@@ -15,5 +15,8 @@ class Event < ApplicationRecord
         class_name: :Registration,
         foreign_key: :event_id 
 
+    has_many :attendees, 
+        through: :registrations,
+        source: :user 
     
 end

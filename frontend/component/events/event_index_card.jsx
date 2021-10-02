@@ -35,7 +35,7 @@ class EventIndexCard extends React.Component {
                 <div className="event-index-like" onClick={() => this.setState({ liked: !this.state.liked })}>
                     { this.state.liked
                     ? <i className="far fa-heart"></i>
-                    : <i class="fas fa-heart"></i>
+                    : <i className="fas fa-heart"></i>
                     }
                 </div>
                 <div className="event-index-title">

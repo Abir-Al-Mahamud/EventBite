@@ -12,6 +12,9 @@ class EditEventForm extends React.Component {
             .then(() => this.setState({ event: this.props.event }))
     }
 
+    componentDidUpdate(){
+        this.props.history.push('/');
+    }
     render() {
         const { action, event, formType, errors, submitEvent } = this.props;
 

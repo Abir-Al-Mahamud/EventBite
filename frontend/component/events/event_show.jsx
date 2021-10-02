@@ -18,6 +18,21 @@ class EventShow extends React.Component{
         
     }
 
+    deleteEventButton(){
+        e.preventDefault();
+        onclick(this.props.deleteEvent())
+        this.props.history.push('/');
+    }
+
+    handleDelete(){
+        this.props.deleteRegistration();
+        this.props.history.push('/');
+    }
+
+    handleRedirect(){
+        this.props.history.push('/');
+    }
+
     render(){
 
         // debugger
@@ -28,12 +43,14 @@ class EventShow extends React.Component{
         if (!event) {
             return null 
         } else {
+
             const userChoice = (
                 <div> 
                     <button className="register-delete" onClick={this.handleDelete}>Cancel Registration</button>
                 </div>
             )
-            const register = currentUser ? (
+            // Register button
+            const register = currentUser && event.attendees.includes(currentUser) ? (
                 <div>
                     <input className="registering" type="button" value="Register" onClick={() => createRegistration(event.id)} />
                 </div>
@@ -42,6 +59,7 @@ class EventShow extends React.Component{
                     <Link className="regis-button" to="/login">Sign In to Register</Link>
                 </div>
             );
+
             return(
                 <div className="single-event-show">
                 <div className="back-to-events">
@@ -63,7 +81,7 @@ class EventShow extends React.Component{
                 </div> */}
                 
                 <Link className="edit-event-button" to={`/${event.id}/edit`}>Edit Event</Link>
-                <input className="delete-button" type="button" value="Delete Event" onClick={() => deleteEvent()} />
+                <input className="delete-button" type="button" value="Delete Event" onClick={() => deleteEventButton()} />
                 <div className="register">
                     {register}
                 </div>
