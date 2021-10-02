@@ -14,7 +14,7 @@ class Home extends React.Component{
 
     scrollDown() {
         window.scrollTo({
-            top: 600,
+            top: 630,
             behavior: 'smooth'
         })
     }

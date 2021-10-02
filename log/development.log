@@ -6496,3 +6496,111 @@ Processing by Api::EventsController#index as JSON
 Completed 200 OK in 53ms (Views: 45.7ms | ActiveRecord: 6.7ms)
 
 
+Started GET "/api/events/85" for ::1 at 2021-10-02 08:46:02 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"85"}
+  [1m[36mEvent Load (3.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 85], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (7.0ms)
+  Rendered api/events/show.json.jbuilder (10.7ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 12.6ms)
+
+
+
+NoMethodError - undefined method `each' for nil:NilClass:
+  app/views/api/events/_event.json.jbuilder:1:in `_app_views_api_events__event_json_jbuilder___3222818698335052769_70211100085500'
+  app/views/api/events/show.json.jbuilder:1:in `_app_views_api_events_show_json_jbuilder___2056146799569799854_70211100115660'
+  app/controllers/api/events_controller.rb:19:in `show'
+
+Started GET "/api/events" for ::1 at 2021-10-02 08:46:05 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (7.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (2.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (26.2ms)
+Completed 200 OK in 49ms (Views: 40.6ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/" for ::1 at 2021-10-02 08:52:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "3V64UGEM3prwSiFeP23v9Q"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 503ms (Views: 497.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/events" for ::1 at 2021-10-02 08:52:43 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (1.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (1.4ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (1.0ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/index.json.jbuilder (29.0ms)
+Completed 200 OK in 42ms (Views: 39.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2021-10-02 08:53:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "3V64UGEM3prwSiFeP23v9Q"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 449ms (Views: 443.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/events" for ::1 at 2021-10-02 08:53:09 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (3.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (1.0ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (19.7ms)
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2021-10-02 08:53:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "3V64UGEM3prwSiFeP23v9Q"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 39ms (Views: 33.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/events" for ::1 at 2021-10-02 08:53:17 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (2.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (1.9ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  Rendered api/events/_event.json.jbuilder (0.9ms)
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  Rendered api/events/index.json.jbuilder (49.1ms)
+Completed 200 OK in 63ms (Views: 59.0ms | ActiveRecord: 2.2ms)
+
+
