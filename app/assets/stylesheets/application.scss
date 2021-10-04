@@ -1235,12 +1235,7 @@ h1.create-event-form-type{
     }
 
     .event-index-like{
-        // display: flex;
-        // justify-content: flex-start;
-        // max-width: 100%;
-        // margin: 0 auto;
-        // margin-right: -15px;
-        // flex-wrap: wrap;
+        transform: translate(100px, 0px);
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
