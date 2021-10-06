@@ -7208,3 +7208,26 @@ Sprockets::Rails::Helper::AssetNotFound - The asset "dubai-beach.png" is not pre
   app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___4461734983429835468_70211165069640'
 
 Started POST "/__better_errors/6887d9fa6ae2e0d7/variables" for ::1 at 2021-10-04 14:41:08 -0400
+Started GET "/" for ::1 at 2021-10-06 12:15:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 87ms (Views: 73.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2021-10-06 12:15:39 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (30.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (1.4ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/index.json.jbuilder (52.9ms)
+Completed 200 OK in 80ms (Views: 48.3ms | ActiveRecord: 30.2ms)
+
+
