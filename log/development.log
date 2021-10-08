@@ -7231,3 +7231,987 @@ Processing by Api::EventsController#index as JSON
 Completed 200 OK in 80ms (Views: 48.3ms | ActiveRecord: 30.2ms)
 
 
+  [1m[35m (9.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (14.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (2.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 188]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 189]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 190]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 191]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 192]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 187]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[36mEvent Load (2.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 81]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 82]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 83]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 84]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 85]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 86]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 87]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mRegistration Load (0.8ms)[0m  [1m[34mSELECT "registrations".* FROM "registrations"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRegistration Destroy (22.8ms)[0m  [1m[31mDELETE FROM "registrations" WHERE "registrations"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRegistration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "registrations" WHERE "registrations"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRegistration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "registrations" WHERE "registrations"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "abir@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (19.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "abir@gmail.com"], ["first_name", "Abir"], ["last_name", "Mahamud"], ["password_digest", "$2a$12$88n4smonPjDtU5Za/a4Z6OrU1Kd19/D9.X.z3PWqZ0JXM/YU4GgnW"], ["session_token", "uKvhjEWOMGI3tPiPogn_GA"], ["created_at", "2021-10-06 22:00:35.194447"], ["updated_at", "2021-10-06 22:00:35.194447"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "hello@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "hello@gmail.com"], ["first_name", "Joe"], ["last_name", "BlackSmith"], ["password_digest", "$2a$12$BnXd3wm4ZM3B9C02RWzvR.Q7xU3b4gIdUS0ihml5xzNLH.WtxZBQK"], ["session_token", "DdWZ0NBj0dxjR--1nqHtHA"], ["created_at", "2021-10-06 22:00:35.436677"], ["updated_at", "2021-10-06 22:00:35.436677"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "whatsup@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "whatsup@gmail.com"], ["first_name", "Bob"], ["last_name", "Bradword"], ["password_digest", "$2a$12$3ncxRaHxAEwc/sJnIRq27ejBejhzOYNq5AdkudswuEh5trTvRUJey"], ["session_token", "1M3GpKnBZs6X98B7xo0X8A"], ["created_at", "2021-10-06 22:00:35.657012"], ["updated_at", "2021-10-06 22:00:35.657012"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Exists (2.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "up@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "up@gmail.com"], ["first_name", "Tom"], ["last_name", "Hilfiger"], ["password_digest", "$2a$12$Kg6XlWYi/3OW4O/37zU5jOp.jg1u3D4k1.gDQl2bRmbbPn4riuZ.i"], ["session_token", "tEhr5UMWtCeSVyAAUn3CiA"], ["created_at", "2021-10-06 22:00:35.877061"], ["updated_at", "2021-10-06 22:00:35.877061"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (2.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "down@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "down@gmail.com"], ["first_name", "John"], ["last_name", "Rohn"], ["password_digest", "$2a$12$9PEwZL2da4zNTLQU3IamBu6Sbo0dyWLE0gpz2VVgrOYqgbR4wHlO."], ["session_token", "GCqcwQAsKVv1uI3jvb7VLg"], ["created_at", "2021-10-06 22:00:36.098554"], ["updated_at", "2021-10-06 22:00:36.098554"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mUser Exists (2.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "left@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "left@gmail.com"], ["first_name", "Ron"], ["last_name", "Bant"], ["password_digest", "$2a$12$CjzfEmQDiPnxyGWJcv0Gpu2EzG.mJ/YINmUryyvEznniNCeRCxaSS"], ["session_token", "KqwcnYZyY1uLNLT-f1d7cQ"], ["created_at", "2021-10-06 22:00:36.322341"], ["updated_at", "2021-10-06 22:00:36.322341"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 193], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mEvent Create (4.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Biking with Bikers"], ["description", "Enjoy riding bikes? This is the perfect event for you to come show off your skills"], ["date", "1990-12-12 06:06:06"], ["author_name", "Abir"], ["author_id", 193], ["start_time", "1990-12-12 06:06:06"], ["end_time", "1990-12-12 07:07:07"], ["created_at", "2021-10-06 22:00:36.335303"], ["updated_at", "2021-10-06 22:00:36.335303"], ["category", "Today"], ["pic_url", "/assets/compass.jpg"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 194], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Spiritual Retreat"], ["description", "Feeling down and depressed? Relieve your sadness by reading the Holy Quran"], ["date", "1991-12-12 06:06:06"], ["author_name", "Joe"], ["author_id", 194], ["start_time", "1991-12-12 06:06:06"], ["end_time", "1991-12-12 07:07:07"], ["created_at", "2021-10-06 22:00:36.342937"], ["updated_at", "2021-10-06 22:00:36.342937"], ["category", "Religion"], ["pic_url", "/assets/forest.png"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 195], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Learn Python in 5 Minutes!"], ["description", "Python in 5 minutes?? Is that even possible?? Maybe, the least we can do is try."], ["date", "1992-12-12 06:06:06"], ["author_name", "Bob"], ["author_id", 195], ["start_time", "1992-12-12 06:06:06"], ["end_time", "1992-12-12 07:07:07"], ["created_at", "2021-10-06 22:00:36.345885"], ["updated_at", "2021-10-06 22:00:36.345885"], ["category", "Online"], ["pic_url", "/assets/rainbow.jpg"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 196], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Help Plant Trees!"], ["description", "We  need to help our ecosystems but using less and planting more!"], ["date", "1994-12-12 06:06:06"], ["author_name", "Tom"], ["author_id", 196], ["start_time", "1994-12-12 06:06:06"], ["end_time", "1994-12-12 07:07:07"], ["created_at", "2021-10-06 22:00:36.348785"], ["updated_at", "2021-10-06 22:00:36.348785"], ["category", "Today"], ["pic_url", "/assets/rainbow.jpg"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 193], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Summer Camp for Children"], ["description", "The perfect time for children to de-stress and take a break from their devices to enjoy nature"], ["date", "1995-12-12 06:06:06"], ["author_name", "Abir"], ["author_id", 193], ["start_time", "1995-12-12 06:06:06"], ["end_time", "1995-12-12 07:07:07"], ["created_at", "2021-10-06 22:00:36.351658"], ["updated_at", "2021-10-06 22:00:36.351658"], ["category", "This weekend"], ["pic_url", "/assets/palm-dubai.png"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 197], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Dinner on the Beach"], ["description", "Dinner with a view? Sign me up!"], ["date", "1996-12-12 06:06:06"], ["author_name", "John"], ["author_id", 197], ["start_time", "1996-12-12 06:06:06"], ["end_time", "1996-12-12 07:07:07"], ["created_at", "2021-10-06 22:00:36.354414"], ["updated_at", "2021-10-06 22:00:36.354414"], ["category", "Free"], ["pic_url", "/assets/compass.jpg"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 198], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Help Feed the Needy"], ["description", "It is very important that we give back to those who are in need."], ["date", "1998-12-12 06:06:06"], ["author_name", "Ron"], ["author_id", 198], ["start_time", "1998-12-12 06:06:06"], ["end_time", "1998-12-12 07:07:07"], ["created_at", "2021-10-06 22:00:36.357070"], ["updated_at", "2021-10-06 22:00:36.357070"], ["category", "Charity & Causes"], ["pic_url", "/assets/rainbow.jpg"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mRegistration Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "registrations" WHERE "registrations"."buyer_id" = $1 AND "registrations"."event_id" = $2 LIMIT $3[0m  [["buyer_id", 193], ["event_id", 88], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 193], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 88], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mRegistration Create (0.8ms)[0m  [1m[32mINSERT INTO "registrations" ("buyer_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["buyer_id", 193], ["event_id", 88], ["created_at", "2021-10-06 22:00:36.364168"], ["updated_at", "2021-10-06 22:00:36.364168"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mRegistration Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "registrations" WHERE "registrations"."buyer_id" = $1 AND "registrations"."event_id" = $2 LIMIT $3[0m  [["buyer_id", 193], ["event_id", 89], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 193], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mRegistration Create (0.2ms)[0m  [1m[32mINSERT INTO "registrations" ("buyer_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["buyer_id", 193], ["event_id", 89], ["created_at", "2021-10-06 22:00:36.368729"], ["updated_at", "2021-10-06 22:00:36.368729"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mRegistration Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "registrations" WHERE "registrations"."buyer_id" = $1 AND "registrations"."event_id" = $2 LIMIT $3[0m  [["buyer_id", 193], ["event_id", 90], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 193], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[36mRegistration Create (0.2ms)[0m  [1m[32mINSERT INTO "registrations" ("buyer_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["buyer_id", 193], ["event_id", 90], ["created_at", "2021-10-06 22:00:36.372289"], ["updated_at", "2021-10-06 22:00:36.372289"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+Started GET "/" for ::1 at 2021-10-07 16:34:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 553ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::Rails::Helper::AssetNotFound - The asset "dubai-beach.png" is not present in the asset pipeline.:
+  app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___4461734983429835468_70211145410160'
+
+Started POST "/__better_errors/9e64f9a14a63e4de/variables" for ::1 at 2021-10-07 16:34:21 -0400
+  [1m[35m (6.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2399663335211970345)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (6.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2399663335211970345)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2399663335211970345)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2399663335211970345)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (16.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (20.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 193]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 194]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (1.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 195]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 196]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 197]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 198]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 88]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 89]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 90]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.4ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 91]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 92]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 93]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.4ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 94]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mRegistration Load (0.9ms)[0m  [1m[34mSELECT "registrations".* FROM "registrations"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRegistration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "registrations" WHERE "registrations"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRegistration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "registrations" WHERE "registrations"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRegistration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "registrations" WHERE "registrations"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "abir@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (21.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "abir@gmail.com"], ["first_name", "Abir"], ["last_name", "Mahamud"], ["password_digest", "$2a$12$eRqtTD29ImL4sZBIojWfBuIdAyo7QH1FCrQOfT7peffBh5dLTyIeC"], ["session_token", "-fRzC132uea41dnolz35Og"], ["created_at", "2021-10-07 20:40:52.936015"], ["updated_at", "2021-10-07 20:40:52.936015"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "hello@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "hello@gmail.com"], ["first_name", "Joe"], ["last_name", "BlackSmith"], ["password_digest", "$2a$12$NFVv.tr0tfq9dJCi34dt6OGt6sjtIxxDd6m6iDQ6akNt1Jf5PtDki"], ["session_token", "1IFmV5Zf3qoh75Tve81FZw"], ["created_at", "2021-10-07 20:40:53.178295"], ["updated_at", "2021-10-07 20:40:53.178295"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "whatsup@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "whatsup@gmail.com"], ["first_name", "Bob"], ["last_name", "Bradword"], ["password_digest", "$2a$12$W67DRaVT0KX82VZfV1kItO.bNiHevPiFxxNVoFG8a5eoeSNJUUbZG"], ["session_token", "-OgBXLQmKuaQUZ6kdNDw5g"], ["created_at", "2021-10-07 20:40:53.405283"], ["updated_at", "2021-10-07 20:40:53.405283"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "up@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "up@gmail.com"], ["first_name", "Tom"], ["last_name", "Hilfiger"], ["password_digest", "$2a$12$MP3XnjL7gj3WeTjNasV33OmGSvO0YriZyhtASjHDry3X1nqCMDxVm"], ["session_token", "5A-xveJCnwO27z0gL7ATFw"], ["created_at", "2021-10-07 20:40:53.631822"], ["updated_at", "2021-10-07 20:40:53.631822"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "down@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "down@gmail.com"], ["first_name", "John"], ["last_name", "Rohn"], ["password_digest", "$2a$12$7k7FBNameY/2fMLKIAxjVegEeHUfR78CiHG1vpAh9sZJkfAHrBmPe"], ["session_token", "3BQRuhdFL2wyToyHMHDslg"], ["created_at", "2021-10-07 20:40:53.860075"], ["updated_at", "2021-10-07 20:40:53.860075"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "left@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mUser Create (3.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "left@gmail.com"], ["first_name", "Ron"], ["last_name", "Bant"], ["password_digest", "$2a$12$WvyhsNUSAU463mXf020yiegtcg5.3jfH93fFzeYTsJyf.DzFsavie"], ["session_token", "GS3oruqf24BYSeMCL9rb0Q"], ["created_at", "2021-10-07 20:40:54.089673"], ["updated_at", "2021-10-07 20:40:54.089673"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 199], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mEvent Create (0.7ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Biking with Bikers"], ["description", "Enjoy riding bikes? This is the perfect event for you to come show off your skills"], ["date", "1990-12-12 06:06:06"], ["author_name", "Abir"], ["author_id", 199], ["start_time", "1990-12-12 06:06:06"], ["end_time", "1990-12-12 07:07:07"], ["created_at", "2021-10-07 20:40:54.105575"], ["updated_at", "2021-10-07 20:40:54.105575"], ["category", "Today"], ["pic_url", "/assets/compass.jpg"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 200], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Spiritual Retreat"], ["description", "Feeling down and depressed? Relieve your sadness by reading the Holy Quran"], ["date", "1991-12-12 06:06:06"], ["author_name", "Joe"], ["author_id", 200], ["start_time", "1991-12-12 06:06:06"], ["end_time", "1991-12-12 07:07:07"], ["created_at", "2021-10-07 20:40:54.109749"], ["updated_at", "2021-10-07 20:40:54.109749"], ["category", "Religion"], ["pic_url", "/assets/forest.png"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 201], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Learn Python in 5 Minutes!"], ["description", "Python in 5 minutes?? Is that even possible?? Maybe, the least we can do is try."], ["date", "1992-12-12 06:06:06"], ["author_name", "Bob"], ["author_id", 201], ["start_time", "1992-12-12 06:06:06"], ["end_time", "1992-12-12 07:07:07"], ["created_at", "2021-10-07 20:40:54.113763"], ["updated_at", "2021-10-07 20:40:54.113763"], ["category", "Online"], ["pic_url", "/assets/rainbow.jpg"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 202], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Help Plant Trees!"], ["description", "We  need to help our ecosystems but using less and planting more!"], ["date", "1994-12-12 06:06:06"], ["author_name", "Tom"], ["author_id", 202], ["start_time", "1994-12-12 06:06:06"], ["end_time", "1994-12-12 07:07:07"], ["created_at", "2021-10-07 20:40:54.117330"], ["updated_at", "2021-10-07 20:40:54.117330"], ["category", "Today"], ["pic_url", "/assets/rainbow.jpg"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 199], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Summer Camp for Children"], ["description", "The perfect time for children to de-stress and take a break from their devices to enjoy nature"], ["date", "1995-12-12 06:06:06"], ["author_name", "Abir"], ["author_id", 199], ["start_time", "1995-12-12 06:06:06"], ["end_time", "1995-12-12 07:07:07"], ["created_at", "2021-10-07 20:40:54.121230"], ["updated_at", "2021-10-07 20:40:54.121230"], ["category", "This weekend"], ["pic_url", "/assets/palm-dubai.png"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 203], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Dinner on the Beach"], ["description", "Dinner with a view? Sign me up!"], ["date", "1996-12-12 06:06:06"], ["author_name", "John"], ["author_id", 203], ["start_time", "1996-12-12 06:06:06"], ["end_time", "1996-12-12 07:07:07"], ["created_at", "2021-10-07 20:40:54.125546"], ["updated_at", "2021-10-07 20:40:54.125546"], ["category", "Free"], ["pic_url", "/assets/compass.jpg"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 204], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Help Feed the Needy"], ["description", "It is very important that we give back to those who are in need."], ["date", "1998-12-12 06:06:06"], ["author_name", "Ron"], ["author_id", 204], ["start_time", "1998-12-12 06:06:06"], ["end_time", "1998-12-12 07:07:07"], ["created_at", "2021-10-07 20:40:54.128746"], ["updated_at", "2021-10-07 20:40:54.128746"], ["category", "Charity & Causes"], ["pic_url", "/assets/rainbow.jpg"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mRegistration Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "registrations" WHERE "registrations"."buyer_id" = $1 AND "registrations"."event_id" = $2 LIMIT $3[0m  [["buyer_id", 199], ["event_id", 95], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 199], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mRegistration Create (0.6ms)[0m  [1m[32mINSERT INTO "registrations" ("buyer_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["buyer_id", 199], ["event_id", 95], ["created_at", "2021-10-07 20:40:54.139450"], ["updated_at", "2021-10-07 20:40:54.139450"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mRegistration Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "registrations" WHERE "registrations"."buyer_id" = $1 AND "registrations"."event_id" = $2 LIMIT $3[0m  [["buyer_id", 199], ["event_id", 96], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 199], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mRegistration Create (0.3ms)[0m  [1m[32mINSERT INTO "registrations" ("buyer_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["buyer_id", 199], ["event_id", 96], ["created_at", "2021-10-07 20:40:54.145202"], ["updated_at", "2021-10-07 20:40:54.145202"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mRegistration Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "registrations" WHERE "registrations"."buyer_id" = $1 AND "registrations"."event_id" = $2 LIMIT $3[0m  [["buyer_id", 199], ["event_id", 97], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 199], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[36mRegistration Create (0.3ms)[0m  [1m[32mINSERT INTO "registrations" ("buyer_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["buyer_id", 199], ["event_id", 97], ["created_at", "2021-10-07 20:40:54.150286"], ["updated_at", "2021-10-07 20:40:54.150286"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+Started GET "/" for ::1 at 2021-10-08 14:16:58 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 563ms (Views: 555.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2021-10-08 14:16:59 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (3.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (1.8ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.8ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.8ms)
+  Rendered api/events/index.json.jbuilder (220.5ms)
+Completed 200 OK in 282ms (Views: 80.4ms | ActiveRecord: 162.0ms)
+
+
+Started GET "/api/events/96" for ::1 at 2021-10-08 14:17:02 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"96"}
+  [1m[36mEvent Load (2.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (1.9ms)
+  [1m[35m (10.2ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 96]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (52.0ms)
+Completed 200 OK in 97ms (Views: 52.4ms | ActiveRecord: 35.5ms)
+
+
+Started POST "/api/session" for ::1 at 2021-10-08 14:17:05 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"abir@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "abir@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:24
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:43
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "abir@gmail.com"], ["id", 199], ["LIMIT", 1]]
+  ↳ app/models/user.rb:43
+  [1m[36mUser Update (19.6ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "xa8aeJ1zpuBwh_PnL0Vffw"], ["updated_at", "2021-10-08 18:17:05.753041"], ["id", 199]]
+  ↳ app/models/user.rb:43
+  [1m[35m (13.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:43
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:43
+  [1m[36mUser Exists (2.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "abir@gmail.com"], ["id", 199], ["LIMIT", 1]]
+  ↳ app/models/user.rb:43
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "GVHei3YYjQ1lk1r5jzA_6w"], ["updated_at", "2021-10-08 18:17:05.800239"], ["id", 199]]
+  ↳ app/models/user.rb:43
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:43
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/users/show.json.jbuilder (2.1ms)
+Completed 200 OK in 293ms (Views: 10.2ms | ActiveRecord: 39.0ms)
+
+
+Started GET "/api/events" for ::1 at 2021-10-08 14:17:05 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (15.5ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/events/97" for ::1 at 2021-10-08 14:17:07 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"97"}
+  [1m[36mEvent Load (2.9ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  [1m[35m (11.7ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 97]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (18.3ms)
+Completed 200 OK in 41ms (Views: 22.7ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/api/events/97" for ::1 at 2021-10-08 14:17:11 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"97"}
+  [1m[36mEvent Load (2.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 97]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (6.1ms)
+Completed 200 OK in 30ms (Views: 17.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/events" for ::1 at 2021-10-08 14:17:11 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (2.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (5.1ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/index.json.jbuilder (47.3ms)
+Completed 200 OK in 67ms (Views: 63.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2021-10-08 14:18:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GVHei3YYjQ1lk1r5jzA_6w"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 765ms (Views: 760.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/events" for ::1 at 2021-10-08 14:18:26 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (1.7ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/index.json.jbuilder (51.6ms)
+Completed 200 OK in 76ms (Views: 74.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/events/96" for ::1 at 2021-10-08 14:18:28 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"96"}
+  [1m[36mEvent Load (2.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 96]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (12.8ms)
+Completed 200 OK in 43ms (Views: 34.1ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/api/events/96" for ::1 at 2021-10-08 14:18:29 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"96"}
+  [1m[36mEvent Load (3.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 96]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (7.5ms)
+Completed 200 OK in 33ms (Views: 25.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/?category=Select+one" for ::1 at 2021-10-08 14:18:33 -0400
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"Select one"}
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GVHei3YYjQ1lk1r5jzA_6w"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 47ms (Views: 42.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/events/96" for ::1 at 2021-10-08 14:18:33 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"96"}
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 96]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (6.3ms)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/events" for ::1 at 2021-10-08 14:18:38 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (1.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (15.5ms)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/events/97" for ::1 at 2021-10-08 14:18:44 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"97"}
+  [1m[36mEvent Load (1.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 97]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (5.8ms)
+Completed 200 OK in 26ms (Views: 12.7ms | ActiveRecord: 9.3ms)
+
+
+Started POST "/api/events/97/registrations" for ::1 at 2021-10-08 14:19:01 -0400
+Processing by Api::RegistrationsController#create as JSON
+  Parameters: {"event_id"=>"97"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GVHei3YYjQ1lk1r5jzA_6w"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mEvent Load (1.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/api/registrations_controller.rb:13
+No template found for Api::RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 177ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/api/events/97" for ::1 at 2021-10-08 16:01:36 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"97"}
+  [1m[36mEvent Load (3.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (3.0ms)
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 97]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (16.1ms)
+Completed 200 OK in 41ms (Views: 27.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/api/events" for ::1 at 2021-10-08 16:01:39 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (8.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (1.4ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (25.1ms)
+Completed 200 OK in 35ms (Views: 25.3ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/api/users/199/events" for ::1 at 2021-10-08 16:01:42 -0400
+Processing by Api::EventsController#index as JSON
+  Parameters: {"user_id"=>"199"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (24.2ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/199/events" for ::1 at 2021-10-08 16:01:43 -0400
+Processing by Api::EventsController#index as JSON
+  Parameters: {"user_id"=>"199"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.8ms)
+  Rendered api/events/_event.json.jbuilder (2.6ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  Rendered api/events/index.json.jbuilder (40.5ms)
+Completed 200 OK in 58ms (Views: 55.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/199/registrations" for ::1 at 2021-10-08 16:01:44 -0400
+Processing by Api::RegistrationsController#index as JSON
+  Parameters: {"user_id"=>"199"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GVHei3YYjQ1lk1r5jzA_6w"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 199], ["LIMIT", 1]]
+  ↳ app/controllers/api/registrations_controller.rb:7
+  Rendering api/registrations/index.json.jbuilder
+  [1m[36mRegistration Load (0.6ms)[0m  [1m[34mSELECT "registrations".* FROM "registrations" WHERE "registrations"."buyer_id" = $1[0m  [["buyer_id", 199]]
+  ↳ app/views/api/registrations/index.json.jbuilder:1
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  Rendered api/registrations/index.json.jbuilder (26.0ms)
+Completed 200 OK in 49ms (Views: 29.3ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/api/events/undefined" for ::1 at 2021-10-08 16:01:49 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mEvent Load (8.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (10.6ms)
+  Rendered api/events/show.json.jbuilder (12.3ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 8.7ms)
+
+
+
+NoMethodError - undefined method `id' for nil:NilClass:
+  app/views/api/events/_event.json.jbuilder:2:in `_app_views_api_events__event_json_jbuilder___3222818698335052769_70211165435280'
+  app/views/api/events/show.json.jbuilder:1:in `_app_views_api_events_show_json_jbuilder___2056146799569799854_70211162025160'
+  app/controllers/api/events_controller.rb:19:in `show'
+
+Started GET "/api/users/199/events" for ::1 at 2021-10-08 16:01:52 -0400
+Processing by Api::EventsController#index as JSON
+  Parameters: {"user_id"=>"199"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (3.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/index.json.jbuilder (22.7ms)
+Completed 200 OK in 52ms (Views: 48.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/users/199/events" for ::1 at 2021-10-08 16:01:52 -0400
+Processing by Api::EventsController#index as JSON
+  Parameters: {"user_id"=>"199"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (1.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/index.json.jbuilder (19.7ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/events/99" for ::1 at 2021-10-08 16:01:53 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"99"}
+  [1m[36mEvent Load (7.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (3.1ms)
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 99]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (12.1ms)
+Completed 200 OK in 42ms (Views: 30.8ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/api/events" for ::1 at 2021-10-08 16:01:55 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (1.0ms)
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (20.7ms)
+Completed 200 OK in 36ms (Views: 34.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/events/96" for ::1 at 2021-10-08 16:01:57 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"96"}
+  [1m[36mEvent Load (18.9ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  [1m[35m (16.5ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 96]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (20.9ms)
+Completed 200 OK in 68ms (Views: 31.6ms | ActiveRecord: 35.4ms)
+
+
+Started GET "/api/events" for ::1 at 2021-10-08 16:01:59 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (11.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.8ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (36.2ms)
+Completed 200 OK in 52ms (Views: 39.6ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/api/events/101" for ::1 at 2021-10-08 16:02:02 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"101"}
+  [1m[36mEvent Load (14.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 101], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 101]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (11.8ms)
+Completed 200 OK in 65ms (Views: 43.1ms | ActiveRecord: 20.3ms)
+
+
+Started GET "/api/events" for ::1 at 2021-10-08 16:02:03 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (7.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.8ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (2.0ms)
+  Rendered api/events/_event.json.jbuilder (0.8ms)
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (29.7ms)
+Completed 200 OK in 53ms (Views: 44.9ms | ActiveRecord: 7.3ms)
+
+

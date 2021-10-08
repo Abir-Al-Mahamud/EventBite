@@ -12,7 +12,7 @@ class EditEventForm extends React.Component {
             .then(() => this.setState({ event: this.props.event }))
     }
 
-    componentDidUpdate(){
+    componentWillUnmount(){
         this.props.history.push('/');
     }
     render() {
