@@ -24,7 +24,7 @@ const eventsReducer = (oldState = {}, action) => {
         case REMOVE_EVENT:
             delete nextState[action.eventId];
             return nextState;
-        default:
+        default: 
             return oldState;
     }
 }
