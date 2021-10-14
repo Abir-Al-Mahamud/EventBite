@@ -6,7 +6,6 @@ import EventDetail from './event_detail';
 import EditEventForm from './edit_form_container';
 import { createRegistration, deleteEvent } from '../../actions/events';
 
-
 class EventShow extends React.Component{
     componentDidMount(){
         // debugger
@@ -83,7 +82,7 @@ class EventShow extends React.Component{
                 </div> */}
                 
                 <Link className="edit-event-button" to={`/${event.id}/edit`}>Edit Event</Link>
-                <input className="delete-button" type="button" value="Delete Event" onClick={() => deleteEventButton()} />
+                    <button className="delete-button" onClick={() => deleteEvent()}>Delete Event</button>
                 <div className="register">
                     {register}
                 </div>
