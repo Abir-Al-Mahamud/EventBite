@@ -100,6 +100,6 @@ export const fetchRegistrations = userId => dispatch => {
             
                 }  
             )
-
+ 
 }
  
