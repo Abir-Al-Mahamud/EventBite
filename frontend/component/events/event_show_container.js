@@ -23,7 +23,7 @@ const mDTP = dispatch => {
     // debugger
     return{
         fetchEvent: id => dispatch(requestEvent(id)), 
-        deleteEvent: () => dispatch(deleteEvent()),
+        deleteEvent: (eventId) => dispatch(deleteEvent(eventId)),
         createRegistration: eventId => dispatch(createRegistration(eventId)),
         deleteRegistration: (eventId, registrationId) => dispatch(deleteRegistration(eventId, registrationId)),
         fetchRegistrations: userId => dispatch(fetchRegistrations(userId))

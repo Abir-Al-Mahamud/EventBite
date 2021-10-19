@@ -4,24 +4,30 @@ import { Link } from 'react-router-dom';
 import EventDetail from './event_detail';
 // import { ProtectedRoute } from '../../utils/route_utils';
 import EditEventForm from './edit_form_container';
-import { createRegistration, deleteEvent } from '../../actions/events';
+// import { createRegistration, deleteEvent } from '../../actions/events';
 
 class EventShow extends React.Component{
+    constructor(props){
+        super(props);
+
+        this.handleDeleteRedirect = this.handleDeleteRedirect.bind(this);
+        this.handleDelete = this.handleDelete.bind(this);
+    }
     componentDidMount(){
         // debugger
         this.props.fetchEvent(this.props.match.params.eventId);
     }
 
-    completeRegistration(e){
-        e.preventDefault();
+    // completeRegistration(e){
+    //     e.preventDefault();
         
-    }
+    // }
 
-    deleteEventButton(){
-        e.preventDefault();
-        onclick(this.props.deleteEvent())
-        this.props.history.push('/');
-    }
+    // deleteEventButton(){
+    //     e.preventDefault();
+    //     onclick(this.props.deleteEvent())
+    //     this.props.history.push('/');
+    // }
 
     handleDelete(){
         this.props.deleteRegistration();
@@ -32,12 +38,17 @@ class EventShow extends React.Component{
         this.props.history.push('/');
     }
 
+    handleDeleteRedirect(){
+        this.props.deleteEvent(this.props.event.id)
+        .then(() => this.props.history.push('/'))
+    }
+
     
 
     render(){
 
         // debugger
-        const { event, currentUser, createRegistration } = this.props 
+        const { event, currentUser, createRegistration, deleteEvent } = this.props 
         // console.log(event.id)
 
         
@@ -82,7 +93,7 @@ class EventShow extends React.Component{
                 </div> */}
                 
                 <Link className="edit-event-button" to={`/${event.id}/edit`}>Edit Event</Link>
-                    <button className="delete-button" onClick={() => deleteEvent()}>Delete Event</button>
+                    <button className="delete-button" onClick={() => handleDeleteRedirect()}>Delete Event</button>
                 <div className="register">
                     {register}
                 </div>

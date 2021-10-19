@@ -44,21 +44,21 @@ export const deleteEvent = (eventId) => {
     })
 } 
 
-export const createRegistration = (eventId) => {
+export const makeRegistration = (eventId) => {
     return $.ajax({
         url: `/api/events/${eventId}/registrations`,
         method: 'POST'
     })
 }
 
-export const fetchRegistrations = (userId) => {
+export const getRegistrations = (userId) => {
     return $.ajax({
         url: `/api/users/${userId}/registrations`,
         method: 'GET'
     })
 }
 
-export const deleteRegistration = (eventId, registrationId) => {
+export const removeRegistration = (eventId, registrationId) => {
     return $.ajax({
         url: `/api/events/${eventId}/registrations/${registrationId}`,
         method: 'DELETE'

@@ -73,27 +73,34 @@ export const changeEvent = event => dispatch => {
 }
 
 export const deleteEvent = eventId => dispatch => {
+    // debugger 
     return EventAPIUtil.deleteEvent(eventId)
-        .then(event => dispatch(removeEvent(event.id)))
-        .catch(err => console.log(err.responseJSON));
+        .then(event => {
+            // debugger
+            dispatch(removeEvent(event.id))
+        })
+        // .catch(err => {
+        //     debugger
+        //     console.log(err.responseJSON)
+        // });
 }
 
 export const createRegistration = eventId => dispatch => {
-    return EventAPIUtil.createRegistration(eventId)
+    return EventAPIUtil.makeRegistration(eventId)
         .then(event => {
             dispatch(receiveEvents(event))
         })
 }
  
 export const deleteRegistration = (eventId, registrationId) => dispatch => {
-    return EventAPIUtil.deleteRegistration(eventId, registrationId)
+    return EventAPIUtil.removeRegistration(eventId, registrationId)
         .then(events => {
             dispatch(receiveEvents(events))
         })
 }
  
 export const fetchRegistrations = userId => dispatch => {
-    return EventAPIUtil.fetchRegistrations(userId)
+    return EventAPIUtil.getRegistrations(userId)
         .then(registrations => { 
             // debugger
             return dispatch(receiveEvents(registrations))
