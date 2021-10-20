@@ -13,6 +13,7 @@ class EventIndexCard extends React.Component {
 
     handleClick() {
         const { event } = this.props;
+        console.log(event)
         this.props.history.push(`/events/${event.id}`)
     }
 

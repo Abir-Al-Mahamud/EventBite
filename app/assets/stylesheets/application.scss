@@ -267,10 +267,11 @@ span, article, time, small {
 .footer{
     display: flex;
     flex-direction: row;
-    position: relative;
+    position: absolute;
     justify-content: center;
     align-items: center;
     margin-top: 50%;
+    bottom: 0;
     top: 100%;
     width: 100%;
     background-color: purple;

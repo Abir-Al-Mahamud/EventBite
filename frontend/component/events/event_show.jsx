@@ -93,7 +93,7 @@ class EventShow extends React.Component{
                 </div> */}
                 
                 <Link className="edit-event-button" to={`/${event.id}/edit`}>Edit Event</Link>
-                    <button className="delete-button" onClick={() => handleDeleteRedirect()}>Delete Event</button>
+                <button className="delete-button" onClick={() => this.handleDeleteRedirect()}>Delete Event</button>
                 <div className="register">
                     {register}
                 </div>
