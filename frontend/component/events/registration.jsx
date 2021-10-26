@@ -7,7 +7,7 @@ class Registration extends React.Component{
         super(props);
 
         this.state = {
-            registrations: [] 
+            registrations: []
         }
 
         this.handleRedirect = this.handleRedirect.bind(this);
@@ -31,9 +31,9 @@ class Registration extends React.Component{
                         result.push(reg)
                     }
                 }
+                console.log(result[0])
                 return result;
             
-
 
     }
 
@@ -64,24 +64,25 @@ class Registration extends React.Component{
                 <button className="register-delete" onClick={this.handleDelete}>Cancel Registration</button>
             </div>
         )
-        // console.log(this.state)
         if (!this.props.events) {
             return (<h2>Loading...</h2>)
         } else {
-
+            
+            
             // console.log(this.props.events)
+            console.log(this.filterEvents())
             return (
                 <div className="user-event-index">
 
                     {/* <h2>Events in <span className="blue">New York</span></h2> */}
                     <ul className="user-event-index-list">
                         {this.filterEvents().map((event, idx) => (
-                            <Link className="event-index-links" key={event.id} to={`/events/${event.id}`}>
+                            <Link className="event-index-links" key={event.event_id} to={`/events/${event.event_id}`}>
                                 <EventIndexCard
                                     className="event-index-card-comp"
                                     event={event}
                                     // currentUserId={currentUserId}
-                                    key={idx}
+                                    key={event.event_id}
                                 />
                             </Link>
                         ))}

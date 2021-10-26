@@ -1,9 +1,7 @@
 import { connect } from 'react-redux';
-
 import { requestEvent, requestEvents, deleteEvent } from '../../actions/events';
-
 import { selectEvent } from '../../reducers/selectors';
-import { createRegistration } from '../../utils/event_utils';
+import { createRegistration } from '../../actions/events';
 
 import EventShow from './event_show';
 

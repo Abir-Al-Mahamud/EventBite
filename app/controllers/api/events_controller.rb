@@ -2,19 +2,20 @@ class Api::EventsController < ApplicationController
 
 
     def index 
-        # debugger
         if params.has_key?(:author_id)
             # @events = Event.where(author_id: params[:author_id])
             @events = current_user.events 
         else
             @events = Event.all 
         end
+        # debugger
 
         render :index
     end
 
     def show 
         @event = Event.find_by(id: params[:id])
+        @events = Event.all 
         # debugger
         render :show
     end

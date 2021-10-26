@@ -11,12 +11,12 @@ class Api::RegistrationsController < ApplicationController
 
     def create
         @event = Event.find_by(id: params[:event_id])
-        # if @event.attendees.include?(current_user)
-        #     render "api/events/show", status: 422
-        # else
-        #     @registration = Registration.create(user_id: current_user.id, event_id: @event.id)
-        #     render "api/events/show"
-        # end  
+        if @event.attendees.include?(current_user)
+            render "api/events/show", status: 422
+        else
+            @registration = Registration.create(buyer_id: current_user.id, event_id: @event.id)
+            render "api/events/show"
+        end  
     end 
 
     def destroy 

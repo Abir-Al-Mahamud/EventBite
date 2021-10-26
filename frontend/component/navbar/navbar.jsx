@@ -5,7 +5,7 @@ import Search from '../search/search';
 
 const Navbar = ({ history, currentUser , logout, ...otherProps }) => {
     // debugger
-    console.log(currentUser)
+    // console.log(currentUser)
     const onAuthPage = otherProps.location.pathname !== '/login' && otherProps.location.pathname !== '/signup';
     // console.log(otherProps.location.pathname);
     const display = currentUser ? (

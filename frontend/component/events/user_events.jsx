@@ -32,14 +32,14 @@ class UserEvents extends React.Component {
 
     filterEvents(){
         let result = [];
-        let eventCount = this.props.events 
+        let eventCount = Object.values(this.props.events) 
         for(let i = 0; i < eventCount.length; i++){
             let event = eventCount[i];
             if (event.author_id == this.props.currentUser){
                 result.push(event)
             }
         }
-
+        
         return result;
     }
 
@@ -47,7 +47,7 @@ class UserEvents extends React.Component {
         // const { event } = this.props;
         // console.log(this.props.requestEvents())
         // debugger
-        console.log(this.props.events)
+        // console.log(this.props.events)
         if (!this.props.events) {
             return (<h2>Loading...</h2>)
         } else {
@@ -59,6 +59,7 @@ class UserEvents extends React.Component {
                     {/* <h2>Events in <span className="blue">New York</span></h2> */}
                     <ul className="user-event-index-list">
                         {this.filterEvents().map((event, idx) => (
+                            
                             <Link className="event-index-links" key={event.id} to={`/events/${event.id}`}>
                                 <EventIndexCard
                                     className="event-index-card-comp"

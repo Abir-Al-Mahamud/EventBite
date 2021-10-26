@@ -1,33 +1,36 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import EventDetail from './event_detail';
 // import { ProtectedRoute } from '../../utils/route_utils';
 import EditEventForm from './edit_form_container';
-// import { createRegistration, deleteEvent } from '../../actions/events';
+
 
 class EventShow extends React.Component{
     constructor(props){
         super(props);
+        this.state = {
+            buttonType: "register"
+        }
 
         this.handleDeleteRedirect = this.handleDeleteRedirect.bind(this);
         this.handleDelete = this.handleDelete.bind(this);
+        this.completeRegistration = this.completeRegistration.bind(this);
+        this.removeRegistration = this.removeRegistration.bind(this);
     }
     componentDidMount(){
         // debugger
         this.props.fetchEvent(this.props.match.params.eventId);
     }
 
-    // completeRegistration(e){
-    //     e.preventDefault();
-        
-    // }
+    completeRegistration(eve){
+        // eve.preventDefault();
+        this.props.createRegistration(eve.id)
+        this.setState({ buttonType: "registered" })
+    }
 
-    // deleteEventButton(){
-    //     e.preventDefault();
-    //     onclick(this.props.deleteEvent())
-    //     this.props.history.push('/');
-    // }
+    removeRegistration(eve){
+        this.props.deleteRegistration()
+        this.setState({ buttonType: "register" })
+    }
 
     handleDelete(){
         this.props.deleteRegistration();
@@ -61,16 +64,51 @@ class EventShow extends React.Component{
                     <button className="register-delete" onClick={this.handleDelete}>Cancel Registration</button>
                 </div>
             )
+
+            // Register Button 
+            let registerButton;
+            if (this.state.buttonType === "register") {
+                registerButton = 
+                (
+                <div>
+                    <input className="registering" type="button" value="Register" onClick={() => this.completeRegistration(event)} />
+                </div>
+                )
+            } else if(this.state.buttonType === "registered"){
+                registerButton = 
+                (
+                <div>
+                    <input className="registering" type="button" value="Cancel Registration" onClick={() => this.removeRegistration(event)} />
+                </div>
+                )
+            }
+            // Sign In Button
+            const signInButton = 
+            (
+            <div>
+                <Link className="regis-button" to="/login">Sign In to Register</Link>
+            </div>
+            )
+
+            const register = currentUser ? registerButton : signInButton
+                
+
             // Register button
-            const register = currentUser ? (
-                <div>
-                    <input className="registering" type="button" value="Register" onClick={() => createRegistration(event.id)} />
-                </div>
-            ) : (
-                <div>
-                    <Link className="regis-button" to="/login">Sign In to Register</Link>
-                </div>
-            );
+            // const register = currentUser ? (
+                // if(this.state.buttonType === "register"){
+                //     <div>
+                //         <input className="registering" type="button" value="Register" onClick={() => this.completeRegistration(event)} />
+                //     </div>
+                // } elsif(this.state.buttonType === "registered"){
+                // <div>
+                //     <input className="registering" type="button" value="Cancel Registration" onClick={() => this.removeRegistration(event)} />
+                // </div>
+                // }
+        //      ) : (
+        //         <div>
+        //             <Link className="regis-button" to="/login">Sign In to Register</Link>
+        //         </div>
+        // );
 
             return(
                 <div className="single-event-show">

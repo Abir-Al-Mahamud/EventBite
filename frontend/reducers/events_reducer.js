@@ -17,6 +17,7 @@ const eventsReducer = (oldState = {}, action) => {
             return action.events;
         case RECEIVE_USER_EVENTS:
             // debugger
+            console.log("What!!!", action.events)
             return action.events;
         case RECEIVE_EVENT:
             nextState[action.event.id] = action.event;
