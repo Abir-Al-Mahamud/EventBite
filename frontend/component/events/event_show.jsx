@@ -19,17 +19,22 @@ class EventShow extends React.Component{
     componentDidMount(){
         // debugger
         this.props.fetchEvent(this.props.match.params.eventId);
+        this.props.fetchRegistrations(this.props.currentUserId)
     }
 
-    completeRegistration(eve){
+    completeRegistration(){
         // eve.preventDefault();
-        this.props.createRegistration(eve.id)
-        this.setState({ buttonType: "registered" })
+        if(!this.props.registrations.includes(event_id)){
+            this.props.createRegistration(event_id)
+            this.setState({ buttonType: "registered" })
+        }
     }
 
-    removeRegistration(eve){
-        this.props.deleteRegistration()
-        this.setState({ buttonType: "register" })
+    removeRegistration(){
+        if(this.props.registrations.includes(event_id)){
+            this.props.deleteRegistration(event_id, this.props.registration.id)
+            this.setState({ buttonType: "register" })
+        }
     }
 
     handleDelete(){
@@ -52,7 +57,7 @@ class EventShow extends React.Component{
 
         // debugger
         const { event, currentUser, createRegistration, deleteEvent } = this.props 
-        // console.log(event.id)
+        console.log(event)
 
         
         if (!event) {

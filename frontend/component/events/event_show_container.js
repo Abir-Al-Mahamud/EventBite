@@ -7,12 +7,13 @@ import EventShow from './event_show';
 
 const mSTP = (state, ownProps) => {
     // debugger
+    const eventId = ownProps.match.params.eventId
     return{
-    // const eventId = parseInt(match.params.eventId);
-    // const event = selectEvent(state.entities, eventId);
-
+    
     currentUser: state.session.id,
-    event: state.entities.events[ownProps.match.params.eventId] 
+    event: state.entities.events[ownProps.match.params.eventId],
+    registrations: Object.values(state.session.registrations),
+    registration: state.entities.registrations[ownProps.match.params.eventId]
     }
 }
     
