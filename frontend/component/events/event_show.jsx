@@ -19,20 +19,30 @@ class EventShow extends React.Component{
     componentDidMount(){
         // debugger
         this.props.fetchEvent(this.props.match.params.eventId);
-        this.props.fetchRegistrations(this.props.currentUserId)
+        this.props.fetchRegistrations(this.props.currentUser)
+            .then(res => {
+                // debugger
+                if(res.events[this.props.match.params.eventId] ){
+                    this.setState({ buttonType: "registered" })
+                }
+            })
     }
 
     completeRegistration(){
         // eve.preventDefault();
-        if(!this.props.registrations.includes(event_id)){
-            this.props.createRegistration(event_id)
+        if (!this.props.registrations.includes(this.props.event.id)){ 
+            this.props.createRegistration(this.props.event.id)
             this.setState({ buttonType: "registered" })
         }
     }
 
     removeRegistration(){
-        if(this.props.registrations.includes(event_id)){
-            this.props.deleteRegistration(event_id, this.props.registration.id)
+        //Throw in a debugger here to see what registrations contains. 
+        //The if statement is not being entered into
+        // debugger
+        // console.log(this.props)
+        if (this.props.registrations.includes(this.props.event.id)){
+            this.props.deleteRegistration(this.props.event.id, this.props.registration.id)
             this.setState({ buttonType: "register" })
         }
     }
@@ -57,7 +67,7 @@ class EventShow extends React.Component{
 
         // debugger
         const { event, currentUser, createRegistration, deleteEvent } = this.props 
-        console.log(event)
+        // console.log(event)
 
         
         if (!event) {

@@ -13,16 +13,14 @@ const registrationsReducer = (oldState = {}, action) => {
 
     switch(action.type) {
         case RECEIVE_REGISTRATIONS:
+            // console.log(action)
             return action.registrations 
         case RECEIVE_REGISTRATION:
-            eventRegistration = state[action.registration.event_id]
-            eventRegistration.attendees.push(action.registration.buyer_id)
-            return Object.assign(nextState, { [eventRegistration.id]: eventRegistration })
+            nextState[action.registration.id] = action.registration;
+            return nextState;
         case DELETE_REGISTRATION:
-            eventRegistration = state[action.unregistration.event_id]
-            removedRegistration = eventRegistration.attendees.filter((user) => user.id !== action.unregistration.buyer_id)
-            eventRegistration.attendees = removedRegistration;
-            return Object.assign(nextState, { [eventRegistration.id]: eventRegistration })
+            delete nextState[action.registration_id]
+            return nextState;
         default:
             return oldState;
     }

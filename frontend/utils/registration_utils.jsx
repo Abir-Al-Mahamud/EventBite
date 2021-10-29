@@ -1,7 +1,7 @@
-export const registerUser = (event_id) => {
+export const registerUser = (eventId) => {
     return $.ajax({
         method: 'POST',
-        url: `/api/events/${event_id}/registrations`
+        url: `/api/events/${eventId}/registrations`
     })
 }
 export const cancelRegisterUser = (id) => {

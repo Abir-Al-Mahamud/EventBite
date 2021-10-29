@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { requestEvent, requestEvents, deleteEvent } from '../../actions/events';
 import { selectEvent } from '../../reducers/selectors';
-import { createRegistration } from '../../actions/events';
+import { createRegistration, deleteRegistration, fetchRegistrations } from '../../actions/events';
 
 import EventShow from './event_show';
 
@@ -11,8 +11,8 @@ const mSTP = (state, ownProps) => {
     return{
     
     currentUser: state.session.id,
-    event: state.entities.events[ownProps.match.params.eventId],
-    registrations: Object.values(state.session.registrations),
+    event: state.entities.events[ownProps.match.params.eventId], 
+    registrations: Object.values(state.entities.registrations),
     registration: state.entities.registrations[ownProps.match.params.eventId]
     }
 }
