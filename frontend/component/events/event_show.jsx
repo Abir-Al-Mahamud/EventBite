@@ -20,12 +20,12 @@ class EventShow extends React.Component{
         // debugger
         this.props.fetchEvent(this.props.match.params.eventId);
         this.props.fetchRegistrations(this.props.currentUser)
-            .then(res => {
-                // debugger
-                if(res.events[this.props.match.params.eventId] ){
-                    this.setState({ buttonType: "registered" })
-                }
-            })
+            // .then(res => {
+            //     // debugger
+            //     if(res.events[this.props.match.params.eventId] ){
+            //         this.setState({ buttonType: "registered" })
+            //     }
+            // })
     }
 
     completeRegistration(){
@@ -34,6 +34,21 @@ class EventShow extends React.Component{
             this.props.createRegistration(this.props.event.id)
             this.setState({ buttonType: "registered" })
         }
+    }
+
+    ///Create function that filters through registrations and compares event_id 
+
+    filterRegistrations(){
+        // debugger
+        // return Object.keys(this.props.registrations).includes(this.props.event.id)
+        const { currentUser, registrations } = this.props
+        for(let i = 0; i < registrations.length; i+=1){
+            if(registrations[i].buyer_id == currentUser){
+                return true
+            }
+        }
+        return false 
+
     }
 
     removeRegistration(){
@@ -68,6 +83,9 @@ class EventShow extends React.Component{
         // debugger
         const { event, currentUser, createRegistration, deleteEvent } = this.props 
         // console.log(event)
+        // if(this.props.registrations){
+        //     console.log(this.filterRegistrations)
+        // }
 
         
         if (!event) {
@@ -82,7 +100,9 @@ class EventShow extends React.Component{
 
             // Register Button 
             let registerButton;
-            if (this.state.buttonType === "register") {
+            // debugger
+            //this.state.buttonType === "register" ==========> inside if statement below
+            if (this.filterRegistrations) {
                 registerButton = 
                 (
                 <div>

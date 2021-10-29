@@ -8,8 +8,9 @@ class Api::RegistrationsController < ApplicationController
         @registrations = @user.registrations
         render :index
     end
-
+ 
     def create
+        # @user = User.find_by(id: params[:user_id])
         @event = Event.find_by(id: params[:event_id])
         if @event.attendees.include?(current_user)
             render "api/events/show", status: 422

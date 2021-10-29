@@ -10,7 +10,8 @@ const mSTP = (state, ownProps) => {
     return {
         currentUserId: state.session.id,
         events: Object.values(state.entities.events),
-        event: state.entities.events[ownProps.match.params.eventId] 
+        event: state.entities.events[ownProps.match.params.eventId],
+        registrations: Object.values(state.entities.registrations),
     }
 }
 

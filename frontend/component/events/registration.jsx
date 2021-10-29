@@ -64,19 +64,19 @@ class Registration extends React.Component{
                 <button className="register-delete" onClick={this.handleDelete}>Cancel Registration</button>
             </div>
         )
-        if (!this.props.events) {
+        if (!this.props.registrations) {
             return (<h2>Loading...</h2>)
         } else {
             
             
             // console.log(this.props.events)
-            console.log(this.filterEvents())
+            console.log(this.props.registrations)
             return (
                 <div className="user-event-index">
 
                     {/* <h2>Events in <span className="blue">New York</span></h2> */}
                     <ul className="user-event-index-list">
-                        {this.filterEvents().map((event, idx) => (
+                        {this.props.registrations.map((event, idx) => (
                             <Link className="event-index-links" key={event.event_id} to={`/events/${event.event_id}`}>
                                 <EventIndexCard
                                     className="event-index-card-comp"
