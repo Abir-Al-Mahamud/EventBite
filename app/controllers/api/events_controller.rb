@@ -14,6 +14,7 @@ class Api::EventsController < ApplicationController
     end
 
     def show 
+        @user = User.find_by(id: params[:id])
         @event = Event.find_by(id: params[:id])
         @events = Event.all 
         # debugger
@@ -22,6 +23,7 @@ class Api::EventsController < ApplicationController
 
     def create 
         # debugger
+        @user = User.find_by(id: params[:id])
         @event = Event.new(event_params)
         @event.author_id = current_user.id 
         @event.author_name = current_user.first_name 

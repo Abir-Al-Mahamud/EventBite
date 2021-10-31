@@ -10,7 +10,9 @@ class Api::RegistrationsController < ApplicationController
     end
  
     def create
+        @user = current_user.id
         # @user = User.find_by(id: params[:user_id])
+        @event_id = params[:event_id]
         @event = Event.find_by(id: params[:event_id])
         if @event.attendees.include?(current_user)
             render "api/events/show", status: 422
@@ -19,6 +21,10 @@ class Api::RegistrationsController < ApplicationController
             render "api/events/show"
         end  
     end 
+
+    def show 
+        @user = User.find_by(id: params[:buyer_id])
+    end
 
     def destroy 
         @registration = current_user.registrations.find_by(id: params[:buyer_id])
