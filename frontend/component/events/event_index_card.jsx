@@ -33,12 +33,12 @@ class EventIndexCard extends React.Component {
                 <div className="event-index-image">  
                     <img src={event.pic_url} alt={event.title} onClick={this.handleClick}/>
                 </div>
-                <div className="event-index-like" onClick={() => this.setState({ liked: !this.state.liked })}>
+                {/* <div className="event-index-like" onClick={() => this.setState({ liked: !this.state.liked })}>
                     { this.state.liked
                     ? <i className="far fa-heart"></i>
                     : <i className="fas fa-heart"></i>
                     }
-                </div>
+                </div> */}
                 <div className="event-index-title">
                     {event.title}
                 </div>

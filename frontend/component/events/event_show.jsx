@@ -150,7 +150,7 @@ class EventShow extends React.Component{
                 <div className="single-event-show">
                 <div className="back-to-events">
                         <Link to="/"><i className="far fa-arrow-alt-circle-left"></i></Link>
-                    
+                        {/* <button onClick={} className="far fa-arrow-alt-circle-left"></button> */}
                 </div>
                 <ul className="event-details">
                     <img className="pic-show" src={event.pic_url}/>
