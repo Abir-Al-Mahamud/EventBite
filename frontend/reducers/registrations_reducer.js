@@ -16,10 +16,10 @@ const registrationsReducer = (oldState = {}, action) => {
             // console.log(action)
             return action.registrations 
         case RECEIVE_REGISTRATION:
-            nextState[action.registration.id] = action.registration;
+            nextState[action.registration.event_id] = action.registration;
             return nextState;
         case DELETE_REGISTRATION:
-            delete nextState[action.registration_id]
+            delete nextState[action.unregistration.event_id]
             return nextState;
         default:
             return oldState;

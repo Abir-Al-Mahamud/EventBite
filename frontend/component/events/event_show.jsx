@@ -54,12 +54,12 @@ class EventShow extends React.Component{
     removeRegistration(){
         //Throw in a debugger here to see what registrations contains. 
         //The if statement is not being entered into
-        // debugger
         // console.log(this.props)
-        if (this.props.registrations.includes(this.props.event.id)){
-            this.props.deleteRegistration(this.props.event.id, this.props.registration.id)
+        // debugger
+        // if (this.props.registrations.includes(this.props.event.id)){
+            this.props.deleteRegistration(this.props.event.id, this.props.registration.registration_id)
             this.setState({ buttonType: "register" })
-        }
+        // }
     }
 
     handleDelete(){
@@ -102,18 +102,19 @@ class EventShow extends React.Component{
             let registerButton;
             // debugger
             //this.state.buttonType === "register" ==========> inside if statement below
-            if (this.filterRegistrations) {
+            // else if (this.state.buttonType === "registered")
+            if (!this.props.registered) {
                 registerButton = 
                 (
                 <div>
-                    <input className="registering" type="button" value="Register" onClick={() => this.completeRegistration(event)} />
+                    <input className="registering" type="button" value="Register" onClick={() => this.completeRegistration()} />
                 </div>
                 )
-            } else if(this.state.buttonType === "registered"){
+            } else{
                 registerButton = 
                 (
                 <div>
-                    <input className="registering" type="button" value="Cancel Registration" onClick={() => this.removeRegistration(event)} />
+                    <input className="registering" type="button" value="Cancel Registration" onClick={() => this.removeRegistration()} />
                 </div>
                 )
             }

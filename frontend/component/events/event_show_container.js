@@ -7,12 +7,18 @@ import EventShow from './event_show';
 
 const mSTP = (state, ownProps) => {
     // debugger
+    // let registrations = Object.values(state.entities.registrations).filter(reg => {
+    //     return reg.buyer_id === state.session.id 
+    // })
     const eventId = ownProps.match.params.eventId
+    let registered = Object.keys(state.entities.registrations).includes(eventId)
     return{
     
     currentUser: state.session.id,
     event: state.entities.events[ownProps.match.params.eventId], 
     registrations: Object.values(state.entities.registrations),
+    registered,
+    // registrations,
     registration: state.entities.registrations[ownProps.match.params.eventId]
     }
 }
