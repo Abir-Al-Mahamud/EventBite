@@ -19,15 +19,13 @@ class UserEvents extends React.Component {
 
     componentWillMount(){
     this.props.requestUserEvents(this.props.currentUser);
-    // const navBar = document.querySelector(".header");
-    // navBar.classList.remove("white");
+   
     }
 
     componentDidMount() {
         // console.log(this.props.currentUser)
         this.props.requestUserEvents(this.props.currentUser);
-        // const navBar = document.querySelector(".header")
-        // navBar.classList.add("white");
+      
     }
 
     filterEvents(){
@@ -44,34 +42,34 @@ class UserEvents extends React.Component {
     }
 
     render() {
-        // const { event } = this.props;
-        // console.log(this.props.requestEvents())
-        // debugger
-        // console.log(this.props.events)
-        if (!this.props.events) {
-            return (<h2>Loading...</h2>)
+        if (this.filterEvents().length === 0){
+            return( <h1>You currently have no events!</h1> )
         } else {
-
-            // console.log(this.props.events)
-            return (
-                <div className="user-event-index">
-                  
-                    {/* <h2>Events in <span className="blue">New York</span></h2> */}
-                    <ul className="user-event-index-list">
-                        {this.filterEvents().map((event, idx) => (
-                            
-                            <Link className="event-index-links" key={event.id} to={`/events/${event.id}`}>
-                                <EventIndexCard
-                                    className="event-index-card-comp"
-                                    event={event}
-                                    // currentUserId={currentUserId}
-                                    key={idx}
-                                />
-                            </Link>
-                        ))}
-                    </ul>
-                </div>
-            )
+            if (!this.props.events) {
+                return (<h2>Loading...</h2>)
+            } else {
+    
+                // console.log(this.props.events)
+                return (
+                    <div className="user-event-index">
+                      
+                        {/* <h2>Events in <span className="blue">New York</span></h2> */}
+                        <ul className="user-event-index-list">
+                            {this.filterEvents().map((event, idx) => (
+                                
+                                <Link className="event-index-links" key={event.id} to={`/events/${event.id}`}>
+                                    <EventIndexCard
+                                        className="event-index-card-comp"
+                                        event={event}
+                                        // currentUserId={currentUserId}
+                                        key={idx}
+                                    />
+                                </Link>
+                            ))}
+                        </ul>
+                    </div>
+                )
+            }
         }
     }
 }

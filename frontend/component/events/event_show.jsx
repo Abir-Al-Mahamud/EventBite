@@ -153,7 +153,7 @@ class EventShow extends React.Component{
                         {/* <button onClick={} className="far fa-arrow-alt-circle-left"></button> */}
                 </div>
                 <ul className="event-details">
-                    <img className="pic-show" src={event.pic_url}/>
+                    <img className="pic-show" src={window.signupImageSeven}/>
                     <h1 className="title">{event.title}</h1>
                     <li className="desc">{event.description}</li>
                     <li className="date">{event.date}</li>

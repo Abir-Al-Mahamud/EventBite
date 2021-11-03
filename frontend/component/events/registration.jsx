@@ -55,40 +55,41 @@ class Registration extends React.Component{
  
     render(){
         // debugger
-        const actbutton = this.props.currentUserId ? 
-        <button className="register-button" onClick={this.handleSubmit}>Register</button> :
-        <button className="register-redirect" onClick={this.handleRedirect}>Sign In to Register</button>
+        // const actbutton = this.props.currentUserId ? 
+        // <button className="register-button" onClick={this.handleSubmit}>Register</button> :
+        // <button className="register-redirect" onClick={this.handleRedirect}>Sign In to Register</button>
 
-        const userChoice = (
-            <div>
-                <button className="register-delete" onClick={this.handleDelete}>Cancel Registration</button>
-            </div>
-        )
-        if (!this.props.registrations) {
-            return (<h2>Loading...</h2>)
+        // const userChoice = (
+        //     <div>
+        //         <button className="register-delete" onClick={this.handleDelete}>Cancel Registration</button>
+        //     </div>
+        // )
+        if (this.props.registrations.length === 0) {
+            return( <h1>You currently have no registrations!</h1> )
         } else {
-            
-            
-            // console.log(this.props.events)
-            console.log(this.props.registrations)
-            return (
-                <div className="user-event-index">
+            if (!this.props.registrations) {
+                return (<h2>Loading...</h2>)
+            } else {
+                
+                return (
+                    <div className="user-event-index">
 
-                    {/* <h2>Events in <span className="blue">New York</span></h2> */}
-                    <ul className="user-event-index-list">
-                        {this.props.registrations.map((event, idx) => (
-                            <Link className="event-index-links" key={event.event_id} to={`/events/${event.event_id}`}>
-                                <EventIndexCard
-                                    className="event-index-card-comp"
-                                    event={event}
-                                    // currentUserId={currentUserId}
-                                    key={event.event_id}
-                                />
-                            </Link>
-                        ))}
-                    </ul>
-                </div>
-            )
+                        {/* <h2>Events in <span className="blue">New York</span></h2> */}
+                        <ul className="user-event-index-list">
+                            {this.props.registrations.map((event, idx) => (
+                                <Link className="event-index-links" key={event.event_id} to={`/events/${event.event_id}`}>
+                                    <EventIndexCard
+                                        className="event-index-card-comp"
+                                        event={event}
+                                        // currentUserId={currentUserId}
+                                        key={event.event_id}
+                                    />
+                                </Link>
+                            ))}
+                        </ul>
+                    </div>
+                )
+            }
         }
     }
 }
