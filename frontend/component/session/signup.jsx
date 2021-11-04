@@ -81,7 +81,7 @@ class Signup extends React.Component{
             
             return (
                 <div className="box">
-                    <img className="burj-image"src={window.signupImageFour} />
+                    <img className="dubai-image-two" src={window.signupImageThree} />
                     <form className="session-form-two">
                         <h1>Create an Account</h1>
                         <div className="errors-signup">
@@ -115,7 +115,7 @@ class Signup extends React.Component{
                 <>
                 
                 
-                    <img className="desert-image" src={window.signupImageFive} />
+                    <img className="dubai-image-three" src={window.signupImageThree} />
                     <div className='signin-box'>
                 <div className="box">
 

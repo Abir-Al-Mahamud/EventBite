@@ -61,11 +61,22 @@ class EventForm extends React.Component{
                         </select> 
                     </label>
                     <label className="img-input">Image Link
-                        <input className="img-input"
+                        {/* <input className="img-input"
                             type="text"
                             value={this.state.pic_url}
                             onChange={this.update('pic_url')}
-                        />
+                        /> */}
+                            <select name="category" onChange={this.update('pic_url')} >Image 
+
+                                <option value="assets/burj.png">Burj</option>
+                                <option value="assets/desert.png">Desert</option>
+                                <option value="assets/forest.png">forest</option>
+                                <option value="assets/dubai-beach.png">Dubai</option>
+                                <option value="assets/palm-dubai.png">Palm Dubai</option>
+                                <option value="assets/rainbow.jpg">Rainbow</option>
+                                <option value="assets/compass.jpg">Compass</option>
+                                
+                            </select>
                     </label>
                     {/* <label className="author-input">Author
                         <input className="author-input" 
