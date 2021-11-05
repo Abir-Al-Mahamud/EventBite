@@ -20,6 +20,7 @@ const eventsReducer = (oldState = {}, action) => {
             // console.log("What!!!", action.events)
             return action.events;
         case RECEIVE_EVENT:
+            console.log(action.event)
             nextState[action.event.id] = action.event;
             return nextState;
         case REMOVE_EVENT:

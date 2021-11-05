@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { createEvent } from '../../actions/events';
+import { createEvent, updateEvent } from '../../actions/events';
 import EventForm from './create_event_form';
 
 const mSTP = (state) => ({

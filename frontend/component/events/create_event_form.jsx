@@ -9,8 +9,10 @@ class EventForm extends React.Component{
     }
 
     handleSubmit(){
+        // console.log(this.props)
+        // debugger
         this.props.submitEvent(this.state);
-        this.props.history.push('/');
+        // this.props.history.push('/');
         
     }
 
@@ -21,6 +23,7 @@ class EventForm extends React.Component{
     }
 
     render(){
+        console.log(this.props)
         return(
             <form onSubmit={this.handleSubmit}>
                 <h1 className="create-event-form-type">{this.props.formType}</h1>

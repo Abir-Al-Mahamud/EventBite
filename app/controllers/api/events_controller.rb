@@ -16,7 +16,7 @@ class Api::EventsController < ApplicationController
     def show 
         @user = User.find_by(id: params[:id])
         @event = Event.find_by(id: params[:id])
-        @events = Event.all 
+        # @events = Event.all 
         # debugger
         render :show
     end
@@ -35,6 +35,7 @@ class Api::EventsController < ApplicationController
     end
 
     def update 
+        # debugger
         @event = Event.find_by(id: params[:id])
         if @event.update(event_params)
             render :show 

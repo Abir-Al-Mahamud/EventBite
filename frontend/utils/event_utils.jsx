@@ -29,7 +29,9 @@ export const createEvent = (event) => {
     })
 }
 
-export const updateEvent = ({event}) => {
+export const updateEvent = (event) => {
+    console.log(event)
+    debugger
     return $.ajax({
         url: `/api/events/${event.id}`,
         method: 'PATCH',
