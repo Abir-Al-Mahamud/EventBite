@@ -57,7 +57,6 @@ class EventForm extends React.Component{
                             <option value="religion">Religion</option>
                             <option value="online">Online</option>
                             <option value="today">Today</option>
-                            <option value="free">Free</option>
                             <option value="charity and causes">Charity and Causes</option>
                             <option value="free">Free</option>
                             <option value="other">Other</option>

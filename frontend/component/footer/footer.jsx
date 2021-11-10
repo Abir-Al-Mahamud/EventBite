@@ -4,8 +4,9 @@ class Footer extends React.Component {
     render(){
         return(
             <div className="footer">
-                <a className="linked" href="https://www.linkedin.com/in/abir-mahamud-38526510b"><i className="fab fa-linkedin"></i></a>
-                <a className="github" href="https://github.com/Abir-Al-Mahamud"> <i className="fab fa-github"></i></a>
+                <a className="linked" href="https://www.linkedin.com/in/abir-mahamud-2495571b3" target="_blank"><i className="fab fa-linkedin"></i></a>
+                <a className="github" href="https://github.com/Abir-Al-Mahamud" target="_blank"> <i className="fab fa-github"></i></a>
+                <a className="portfolio" href="" target="_blank"> <i class="fab fa-product-hunt"></i></a>
             </div>
         )
     }

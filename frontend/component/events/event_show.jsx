@@ -17,30 +17,22 @@ class EventShow extends React.Component{
         this.removeRegistration = this.removeRegistration.bind(this);
     }
     componentDidMount(){
-        // debugger
+
         this.props.fetchEvent(this.props.match.params.eventId);
         this.props.fetchRegistrations(this.props.currentUser)
-            // .then(res => {
-            //     // debugger
-            //     if(res.events[this.props.match.params.eventId] ){
-            //         this.setState({ buttonType: "registered" })
-            //     }
-            // })
+
     }
 
     completeRegistration(){
-        // eve.preventDefault();
+
         if (!this.props.registrations.includes(this.props.event.id)){ 
             this.props.createRegistration(this.props.event.id)
             this.setState({ buttonType: "registered" })
         }
     }
 
-    ///Create function that filters through registrations and compares event_id 
-
     filterRegistrations(){
-        // debugger
-        // return Object.keys(this.props.registrations).includes(this.props.event.id)
+
         const { currentUser, registrations } = this.props
         for(let i = 0; i < registrations.length; i+=1){
             if(registrations[i].buyer_id == currentUser){
@@ -52,10 +44,7 @@ class EventShow extends React.Component{
     }
 
     removeRegistration(){
-        //Throw in a debugger here to see what registrations contains. 
-        //The if statement is not being entered into
-        // console.log(this.props)
-        // debugger
+
         // if (this.props.registrations.includes(this.props.event.id)){
             this.props.deleteRegistration(this.props.event.id, this.props.registration.registration_id)
             this.setState({ buttonType: "register" })
@@ -128,24 +117,6 @@ class EventShow extends React.Component{
 
             const register = currentUser ? registerButton : signInButton
                 
-
-            // Register button
-            // const register = currentUser ? (
-                // if(this.state.buttonType === "register"){
-                //     <div>
-                //         <input className="registering" type="button" value="Register" onClick={() => this.completeRegistration(event)} />
-                //     </div>
-                // } elsif(this.state.buttonType === "registered"){
-                // <div>
-                //     <input className="registering" type="button" value="Cancel Registration" onClick={() => this.removeRegistration(event)} />
-                // </div>
-                // }
-        //      ) : (
-        //         <div>
-        //             <Link className="regis-button" to="/login">Sign In to Register</Link>
-        //         </div>
-        // );
-
             return(
                 <div className="single-event-show">
                 <div className="back-to-events">
