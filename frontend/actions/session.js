@@ -31,9 +31,11 @@ const removeSessionErrors = () => {
 export const signup = user => dispatch => (
     APIUtil.signup(user).then(user => (
         dispatch(receiveCurrentUser(user))
-    ), err => (
-        dispatch(receiveSessionErrors(err.responseJSON))
-    ))
+    ), err =>  {
+        debugger
+        return dispatch(receiveSessionErrors(err.responseJSON))
+    }
+    )
 );
 
 export const login = user => dispatch => (

@@ -33,6 +33,10 @@ class Login extends React.Component {
         this.props.processForm({ email: 'abir@gmail.com', password: '123456' })
     }
 
+    componentWillUnmount(){
+        this.props.clearSessionErrors();
+    }
+
     renderErrors() {
         // return (
         //     <ul>
