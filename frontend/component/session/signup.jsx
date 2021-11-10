@@ -58,8 +58,12 @@ class Signup extends React.Component{
         return true;
     }
 
+    componentWillUnmount() {
+        this.props.clearSessionErrors();
+    }
+
     renderErrors(){
-        console.log(this.props)
+        // console.log(this.props)
         if(this.props.errors.length > 0){
             return(
                 <ul>
@@ -74,9 +78,17 @@ class Signup extends React.Component{
             return null
         }
 
+        // let formErrors = [];
+        // if (this.props.errors === "") return;
+        // this.props.errors.map((err) => {
+        //     const field = err.split(" ")[0];
+        //     formErrors[field] = err;
+        // })
+        // return formErrors;
     }
 
     render(){
+        let formErrors = this.renderErrors();
         if (this.state.step === 0) {
             
             return (
@@ -115,12 +127,15 @@ class Signup extends React.Component{
                 <>
                 
                 
-                    <img className="dubai-image-three" src={window.signupImageThree} />
+                    <img className="dubai-image-three" src={window.signupImageTwo} />
                     <div className='signin-box'>
                 <div className="box">
 
                         <form onSubmit={this.handleChange} className="session-form-three">
                             <h1>Create an Account</h1>
+                                <div className="errors-signup">
+                                    {this.renderErrors()}
+                                </div>
                             <div className="input-info">
                                 {/* {this.renderErrors()} */}
                             

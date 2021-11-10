@@ -124,23 +124,26 @@ class EventShow extends React.Component{
                         {/* <button onClick={} className="far fa-arrow-alt-circle-left"></button> */}
                 </div>
                 <ul className="event-details">
-                    <img className="pic-show" src={window.signupImageSeven}/>
+                    <img className="pic-show" src={event.pic_url}/>
                     <h1 className="title">{event.title}</h1>
+                    {/* <h2 className="desc">Event Details</h2> */}
                     <li className="desc">{event.description}</li>
-                    <li className="date">{event.date}</li>
-                    <li className="categ">{event.category}</li>
-                    <li className="author">{event.author}</li>
-                    <li className="start">{event.start_time}</li>
-                    <li className="end">{event.end_time}</li>
+                    <li className="categ">Category: {event.category}</li>
+                    <li className="date">Date: {event.date}</li>
+                    <li className="author">Event Creator: {event.author}</li>
+                    <li className="start">Start Time: {event.start_time}</li>
+                    <li className="end">End Time: {event.end_time}</li>
                 </ul>
                 {/* <div className="event-details">
                     <EventDetail event={event}/>
                 </div> */}
-                
-                <Link className="edit-event-button" to={`/${event.id}/edit`}>Edit Event</Link>
-                <button className="delete-button" onClick={() => this.handleDeleteRedirect()}>Delete Event</button>
-                <div className="register">
-                    {register}
+                <div className="buttons">
+
+                    <Link className="edit-event-button" to={`/${event.id}/edit`}>Edit Event</Link>
+                    <button className="delete-button" onClick={() => this.handleDeleteRedirect()}>Delete Event</button>
+                    <div className="register">
+                        {register}
+                    </div>
                 </div>
             </div>
             )

@@ -481,7 +481,7 @@ a.portfolio{
 
 .link-to-signup{
     position: absolute;
-    top: 250px;
+    top: 230%;
     left: 2%;
     text-align: left;
     text-decoration: blue;
@@ -635,6 +635,7 @@ input.title-input{
         padding: 20px;
         font-size: 16px;
         width: 400px;
+        font-family: 'Mochiy Pop P One', sans-serif;
 }
 
 select{
@@ -688,6 +689,26 @@ label.date-input{
     display: flex;
     position: relative;
     left: -8%;
+}
+
+li.categ{
+    padding-left: 20px;
+}
+
+li.desc{
+    padding-left: 20px;
+}
+li.date{
+    padding-left: 20px;
+}
+li.author{
+    padding-left: 20px;
+}
+li.start{
+    padding-left: 20px;
+}
+li.end{
+    padding-left: 20px;
 }
 select.category{
         display: flex;
@@ -1186,7 +1207,7 @@ h1.create-event-form-type{
         transition: box-shadow 0.25s;
         padding-bottom: 20px;
         text-align: center;
-        font-family: sans-serif;
+        font-family: 'Mochiy Pop P One', sans-serif;
         font-size: 20px;
         font-weight: 700;
         &:hover {
@@ -1208,7 +1229,7 @@ h1.create-event-form-type{
 
     .event-idx-small-title{
         text-align: center;
-        font-family: sans-serif;
+        font-family: 'Mochiy Pop P One', sans-serif;
         font-size: 20px;
         font-weight: 700;
     }
@@ -1254,6 +1275,12 @@ h1.create-event-form-type{
         }
     }
 
+    h1.title{
+        font-family: 'Pangolin';
+        font-size: 60px;
+        font-weight: 800;
+        padding-left: 20px;
+    }
     .event-index-list {
         display: flex;
         flex-wrap: wrap;
@@ -1361,13 +1388,16 @@ h1.create-event-form-type{
         color: #f05537;
         font-size: 14px;
         font-weight: 500;
+        font-family: 'Anton', sans-serif;
+        
     }
 
     .event-index-title{
         // margin-top: 10px;
         padding-bottom: 30px;
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 900;
+        font-family: 'Kaushan Script';
     }
 
     .blue {
@@ -1375,22 +1405,30 @@ h1.create-event-form-type{
     }
 
     .event-details{
-        padding-left: 0;
+        border: #39364F;
+        outline: #39364F;
+        // padding-left: 0;
+        // padding: 15px;
         list-style-position: inside;
         margin-top: 0;
+        padding-right: 300px;
+        // margin-right: 100px;
         display: block;
         position: absolute;
-        top: 60%;
+        top: 10%;
         left: 10%;
+        border-style: double;
+        // padding-left: 20px;
+        margin-left: 20px;
     }
 
     .pic-show{
-        max-height: 140%;
-        max-width: 200%; 
-        display: block;
-        position: absolute;
-        top: -132%;
-        left: 55%;
+        max-height: 60%;
+        max-width: 90%; 
+        display: flex;
+        position: relative;
+        top: 10%;
+        left: 25%;
     }
 
     .single-event-show{
@@ -1400,14 +1438,16 @@ h1.create-event-form-type{
     }
 
     .delete-button{
+
         border: 0;
         background: none;
         display: block;
+        // flex-direction: column;
         margin: 2px;
         text-align: center;
         border: 2px solid gray;
-        padding: 18px 8px 11px;
-        width: 150px;
+        padding: 18px 8px 19px;
+        width: 165px;
         outline: none;
         color: white;
         border-radius: 3px;
@@ -1415,10 +1455,16 @@ h1.create-event-form-type{
         font-weight: 600;
         background-color: #f05537;
         position: absolute;
-        top: 70%;
-        left: 47%;
+        top: 95%;
+        left: 49%;
         cursor: pointer;
+        font-size: 16px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
     }
 
     .edit-event-button{
@@ -1428,8 +1474,8 @@ h1.create-event-form-type{
         margin: 2px;
         text-align: center;
         border: 2px solid gray;
-        padding: 18px 8px 8px;
-        width: 145px;
+        padding: 18px 8px 19px;
+        width: 165px;
         outline: none;
         color: white;
         border-radius: 3px;
@@ -1437,22 +1483,22 @@ h1.create-event-form-type{
         font-weight: 600;
         background-color: #f05537;
         position: absolute;
-        top: 70%;
-        left: 60%;
+        top: 95%;
+        left: 62%;
         cursor: pointer;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     }
 
 
     .regis-button{
-        border: 0;
+       border: 0;
         background: none;
         display: block;
-        margin: 3px;
+        margin: 2px;
         text-align: center;
         border: 2px solid gray;
-        padding: 18px 8px 8px;
-        width: 145px;
+        padding: 18px 8px 19px;
+        width: 165px;
         outline: none;
         color: white;
         border-radius: 3px;
@@ -1460,36 +1506,47 @@ h1.create-event-form-type{
         font-weight: 600;
         background-color: #f05537;
         position: absolute;
-        top: 70%;
-        left: 74%;
+        top: 95%;
+        left: 75%;
         cursor: pointer;
+        font-size: 16px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     }
 
     .registering{
+
         border: 0;
         background: none;
         display: block;
-        margin: 3px;
+        margin: 2px;
         text-align: center;
         border: 2px solid gray;
-        padding: 18px 8px 8px;
-        width: 145px;
+        padding: 18px 8px 19px;
+        width: 165px;
         outline: none;
         color: white;
         border-radius: 3px;
         transition: 0.20s;
-        font-weight: 700;
+        font-weight: 600;
         background-color: #f05537;
         position: absolute;
-        top: 70%;
-        left: 74%;
+        top: 95%;
+        left: 75%;
         cursor: pointer;
+        font-size: 16px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     }
 
+    // p.double {border-style: double;}
     .event-details li {
         padding-bottom: 20px;
+        font-family: 'Pangolin';
+        
+    }
+
+    li.desc{
+        font-size: 20px;
+        padding-left: 20px;
     }
 
     .back-to-events-link{

@@ -34,13 +34,28 @@ class Login extends React.Component {
     }
 
     renderErrors() {
-        return (
-            <ul>
-                <li >
-                    {this.props.errors}
-                </li>
-            </ul>
-        )
+        // return (
+        //     <ul>
+        //         <li >
+        //             {this.props.errors}
+        //         </li>
+        //     </ul>
+        // )
+
+        if (this.props.errors.length > 0) {
+            return (
+                <ul>
+                    {this.props.errors.map((error, i) => (
+                        <li key={`error: ${i}`}>
+                            {error}
+                        </li>
+                    ))}
+                </ul>
+            )
+        } else {
+            return null
+        }
+
     }
 
     render(){
