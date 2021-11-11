@@ -9,7 +9,7 @@ const sessionErrorsReducer = (state = [], action) => {
     Object.freeze(state);
     switch (action.type) {
         case RECEIVE_SESSION_ERRORS:
-            debugger
+            // debugger
             return action.errors;
         case REMOVE_SESSION_ERRORS:
             return [];

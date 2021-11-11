@@ -19,6 +19,15 @@ class Signup extends React.Component{
         this.nextForm = this.nextForm.bind(this);
     }
 
+    componentWillUnmount() {
+        // debugger
+        this.props.clearSessionErrors();
+    }
+
+    componentDidMount(){
+        this.props.clearSessionErrors();
+    }
+
     update(field){
         return (e) => {
             this.setState({ [field]: e.target.value })
@@ -31,12 +40,7 @@ class Signup extends React.Component{
             this.props.createNewUser(user)
     }
 
-    nextForm(num) {
-        return (e) => {
-            e.preventDefault();
-            this.setState({ step: num })
-        }
-    }
+   
     prevForm(num) {
         return (e) => {
             e.preventDefault();
@@ -58,10 +62,7 @@ class Signup extends React.Component{
         return true;
     }
 
-    componentWillUnmount() {
-        // debugger
-        this.props.clearSessionErrors();
-    }
+    
 
     renderErrors(){
         // console.log(this.props)
@@ -76,16 +77,22 @@ class Signup extends React.Component{
                 </ul>
             )
         } else {
-            return null
+            return []
         }
+    }
 
-        // let formErrors = [];
-        // if (this.props.errors === "") return;
-        // this.props.errors.map((err) => {
-        //     const field = err.split(" ")[0];
-        //     formErrors[field] = err;
-        // })
-        // return formErrors;
+    nextForm(num) {
+        let formErrors = this.renderErrors()
+        return (e) => {
+            // debugger
+            if (this.props.errors.length === 0) {
+                e.preventDefault();
+                this.setState({ step: num })
+            } else{
+                return this.props.errors[0]
+            }
+        }
+        
     }
 
     render(){
@@ -98,8 +105,12 @@ class Signup extends React.Component{
                     <form className="session-form-two">
                         <h1>Create an Account</h1>
                         <div className="errors-signup">
-                            {this.renderErrors()}
+                            {/* {this.renderErrors()} */}
+                            {/* {formErrors[0]} */}
                         </div>
+                        {/* <div>
+                           {formErrors[0]}
+                        </div> */}
                         <label>
                             <div className="input-info">
                             <input className="input-box"
@@ -111,7 +122,7 @@ class Signup extends React.Component{
                             <p>
                                 {/* {this.renderErrors()} */}
                             </p>
-                            <button className="signup-button" onClick={this.nextForm(1)} >Continue</button>
+                            <button className="signup-button" onClick={this.nextForm(1)}>Continue</button>
                             </div>
                         </label>
                     <div className="link-to-login">
@@ -127,7 +138,10 @@ class Signup extends React.Component{
                 // <div className="box">
                 <>
                 
-                
+                    <div className="back-to-form-one">
+                        {/* <Link to="/"><i className="far fa-arrow-alt-circle-left"></i></Link> */}
+                        <button onClick={this.prevForm(0)} className="far fa-arrow-alt-circle-left"></button>
+                    </div>
                     <img className="dubai-image-three" src={window.signupImageTwo} />
                     <div className='signin-box'>
                 <div className="box">
@@ -138,7 +152,7 @@ class Signup extends React.Component{
                                     {this.renderErrors()}
                                 </div>
                             <div className="input-info">
-                                {/* {this.renderErrors()} */}
+                                {/* {this.renderErrors()[0]} */}
                             
                                 <input className="input-box-filled"
                                     type="text"
@@ -155,7 +169,7 @@ class Signup extends React.Component{
                                     onChange={this.update('confirmEmail')}
                                     />
                                 <p>
-                                    {/* {this.renderErrors()} */}
+                                    {/* {formErrors[0]} */}
                                 </p>
                             <br />
                             <div className="first-last">
@@ -166,7 +180,7 @@ class Signup extends React.Component{
                                     onChange={this.update("first_name")}
                                 />
                                 <p>
-                                    {/* {this.renderErrors()} */}
+                                    {/* {formErrors[1]} */}
                                 </p>
                                 <input className="input-box-two"
                                     type="text"
@@ -175,7 +189,7 @@ class Signup extends React.Component{
                                     onChange={this.update("last_name")}
                                     />
                                 <p>
-                                    {/* {this.renderErrors()}   */}
+                                    {/* {this.renderErrors()[2]}   */}
                                 </p>
                             </div>
                             <br />
@@ -185,7 +199,7 @@ class Signup extends React.Component{
                                     value={this.state.password}
                                     onChange={this.update("password")}
                                     />
-                                {/* <p>{this.renderErrors()}</p> */}
+                                <p>{this.renderErrors()[3]}</p>
 
                             <button className="session-submit">Create account</button>
                             </div>
@@ -193,7 +207,7 @@ class Signup extends React.Component{
                         </form>
                     </div>
                     <div className="link-to-login-two">
-                        <Link className="link-to" to="/login">Log in</Link>
+                        <Link className="link-to-login-two" to="/login">Log in</Link>
                     </div>
                 {/* // </div> */}
                     </div>

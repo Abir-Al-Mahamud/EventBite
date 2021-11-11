@@ -10,6 +10,8 @@ export const RECEIVE_USER_EVENTS = "RECEIVE_USER_EVENTS";
 export const RECEIVE_NEW_EVENT = "RECEIVE_NEW_EVENT";
 export const REMOVE_EVENT = "REMOVE_EVENT";
 export const EDIT_EVENT = "EDIT_EVENT";
+export const RECEIVE_EVENT_ERRORS = "RECEIVE_EVENT_ERRORS";
+export const REMOVE_EVENT_ERRORS = "REMOVE_EVENT_ERRORS";
 //Registrations
 export const RECEIVE_REGISTRATIONS = 'RECEIVE_REGISTRATIONS';
 export const RECEIVE_REGISTRATION = 'RECEIVE_REGISTRATION';
@@ -32,6 +34,17 @@ const receiveUserEvents = events => ({
     type: RECEIVE_USER_EVENTS,
     events: events 
 })
+
+const receiveEventErrors = errors => ({
+    type: RECEIVE_EVENT_ERRORS,
+    errors
+})
+
+const removeEventErrors = () => {
+    return {
+        type: REMOVE_EVENT_ERRORS
+    }
+}
 
 const receiveRegs = registrations => ({
     type: RECEIVE_REGISTRATIONS,
@@ -85,22 +98,34 @@ export const requestEvent = (eventId) => dispatch => {
 
 export const requestUserEvents = (userId) => dispatch => {
     return EventAPIUtil.fetchUserEvents(userId)
-        .then(events => dispatch(receiveUserEvents(events)))
+        .then(events => dispatch(receiveUserEvents(events)),
+        // err => {
+        //     return dispatch(receiveEventErrors(err.responseJSON))
+        // }
+        )
         // .catch(err => console.log(err.responseJSON));
 }
 
 export const createEvent = event => dispatch => {
     // console.log(EventAPIUtil.createEvent(event))
     return EventAPIUtil.createEvent(event)
-        .then(event => dispatch(receiveEvent(event)))
+        .then(event => dispatch(receiveEvent(event)),
+        err => {
+                return dispatch(receiveEventErrors(err.responseJSON))
+            }
+        )
         // .catch(err => console.log(err.responseJSON));
 }
 
 export const changeEvent = event => dispatch => {
     debugger
     return EventAPIUtil.updateEvent(event)
-        .then(event => dispatch(receiveEvent(event)))
-        .catch(err => console.log(err.responseJSON));
+        .then(event => dispatch(receiveEvent(event)),
+            err => {
+                return dispatch(receiveEventErrors(err.responseJSON))
+            }
+        )
+        // .catch(err => console.log(err.responseJSON));
 }
 
 export const deleteEvent = eventId => dispatch => {
@@ -143,4 +168,8 @@ export const fetchRegistrations = userId => dispatch => {
             )
  
 }
+
+export const clearEventErrors = () => dispatch => {
+    return dispatch(removeEventErrors())
+};
  

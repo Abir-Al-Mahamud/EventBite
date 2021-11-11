@@ -8,6 +8,11 @@ class EventForm extends React.Component{
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    componentWillUnmount() {
+        // debugger
+        this.props.clearSessionErrors;
+    }
+
     handleSubmit(){
         // console.log(this.props)
         // debugger
@@ -22,14 +27,38 @@ class EventForm extends React.Component{
         }
     }
 
+    renderErrors() {
+        // console.log(this.props)
+        if (this.props.errors.length > 0) {
+            return (
+                <ul>
+                    {this.props.errors.map((error, i) => (
+                        <li key={`error: ${i}`}>
+                            {error}
+                        </li>
+                    ))}
+                </ul>
+            )
+        } else {
+            return []
+        }
+    }
+
     render(){
-        console.log(this.props)
+        // console.log(this.props)
+        let formErrors = this.props.errors 
+        console.log(formErrors[1])
         return(
             <form onSubmit={this.handleSubmit}>
                 <h1 className="create-event-form-type">{this.props.formType}</h1>
+                {/* <div className="errors-event">
+                    {this.renderErrors()}
+                </div> */}
                 <div className="modal">
                     <div className="modal-content">
-
+                        <div className="errors-event">
+                            {formErrors[0]}
+                        </div>
                     <label className="title-input">Title
                         <input className="event-input" 
                             type="text" 
@@ -37,12 +66,18 @@ class EventForm extends React.Component{
                             onChange={this.update('title')}
                         />
                     </label>
+                        <div className="errors-event">
+                            {formErrors[1]}
+                        </div>
                     <label className="description-input">Description
                         <textarea  className="desc-input"
                             value={this.state.description}
                             onChange={this.update('description')}
                         />
                     </label>
+                        <div className="errors-event">
+                            {formErrors[2]}
+                        </div>
                     <label className="date-input">Date 
                         <input className="date-input" 
                             type="date" 
@@ -50,6 +85,9 @@ class EventForm extends React.Component{
                             onChange={this.update('date')}
                         />
                     </label>
+                        <div className="errors-event">
+                            {formErrors[3]}
+                        </div>
                     <label className="category-input">Category
                             <select name="category" onChange={this.update('category')} >Category
 
@@ -62,6 +100,9 @@ class EventForm extends React.Component{
                             <option value="other">Other</option>
                         </select> 
                     </label>
+                        <div className="errors-event">
+                            {formErrors[4]}
+                        </div>
                     <label className="img-input">Image Link
                         {/* <input className="img-input"
                             type="text"
@@ -70,9 +111,9 @@ class EventForm extends React.Component{
                         /> */}
                             <select name="category" onChange={this.update('pic_url')} >Image 
 
-                                <option value="assets/burj.png">Burj</option>
+                                <option value="assets/forest.png">Forest</option>
                                 <option value="assets/desert.png">Desert</option>
-                                <option value="assets/forest.png">forest</option>
+                                <option value="assets/burj.png">Burj</option>
                                 <option value="assets/dubai-beach.png">Dubai</option>
                                 <option value="assets/palm-dubai.png">Palm Dubai</option>
                                 <option value="assets/rainbow.jpg">Rainbow</option>
@@ -87,6 +128,9 @@ class EventForm extends React.Component{
                             onChange={this.update('author_name')}
                         />
                     </label> */}
+                        <div className="errors-event">
+                            {formErrors[5]}
+                        </div>
                     <label className="time-start-input">Start Time
                         <input className="time-input" 
                             type="time" 
@@ -94,6 +138,9 @@ class EventForm extends React.Component{
                             onChange={this.update('start_time')}
                         />
                     </label>
+                        <div className="errors-event">
+                            {formErrors[6]}
+                        </div>
                     <label className="time-end-input">End Time
                         <input className="time-input" 
                             type="time" 

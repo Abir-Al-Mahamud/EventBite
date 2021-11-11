@@ -4,6 +4,8 @@ class Event < ApplicationRecord
     validates :date, presence: true 
     validates :category, presence: true 
     validates :pic_url, presence: true
+    validates :start_time, presence: true 
+    validates :end_time, presence: true 
 
     # after_initialize :ensure_session_token
 

@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
-import { createEvent, updateEvent } from '../../actions/events';
+import { createEvent, updateEvent, clearEventErrors } from '../../actions/events';
 import EventForm from './create_event_form';
 
-const mSTP = (state) => ({
+const mSTP = ({ errors }) => ({
     event: {
         title: '',
         description: '',
@@ -13,11 +13,13 @@ const mSTP = (state) => ({
         end_time: '',
         pic_url: ''
     },
-    formType: 'Create Event'
+    formType: 'Create Event',
+    errors: errors.event
 })
 
 const mDTP = (dispatch) => ({
-    submitEvent: (event) => dispatch(createEvent(event))
+    submitEvent: (event) => dispatch(createEvent(event)),
+    clearEventErrors: (errors) => dispatch(clearEventErrors(errors))
 })
 
 export default connect(mSTP, mDTP)(EventForm);
