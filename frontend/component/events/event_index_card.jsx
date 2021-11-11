@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import { compareAsc, format } from 'date-fns';
 
 class EventIndexCard extends React.Component {
 
@@ -18,10 +19,10 @@ class EventIndexCard extends React.Component {
     }
 
     render(){
+        const { event } = this.props
 
         // const { title, location, description, date, pic_url } = this.props.event;
         // let desc = this.props.test.description;
-        const { event } = this.props
         
         // if (event.description.length > 40) {
         //     let desc = description.slice(0 ,30) + "..."; 
@@ -43,31 +44,13 @@ class EventIndexCard extends React.Component {
                     {event.title}
                 </div>
                 <div className="event-index-date">
-                    {event.date}
+                    {format(new Date(event.date), 'mm-dd-yyyy')}
                 </div>
 
                 
             </div>
         )
-        // if (pic_url.length == 0){
-        //     return(
-        //         <div className = "event-show-default">
-        //             <img src="adam-kool-ndN00KmbJ1c-unsplash.jpg" alt="mountains" />  
-        //             < li className = "event-idx-small-date" > { date }</li >
-        //             <li className="event-idx-small-title">{title}</li>
-        //             <li className="event-idx-description">{desc}</li>
-        //         </div>
-        //     )
-        // } else {
-        //     return(
-        //         <div className="event-idx-small">
-        //             <li className="event-idx-pic">{pic_url}</li>
-        //             <li className="event-idx-small-date">{date}</li>
-        //             <li className="event-idx-small-title">{title}</li>
-        //             <li className="event-idx-description">{desc}</li>
-        //         </div>
-        //     )
-        // }
+      
     }
 }
 

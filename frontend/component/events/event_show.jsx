@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // import { ProtectedRoute } from '../../utils/route_utils';
 import EditEventForm from './edit_form_container';
+import { compareAsc, format, getDate, getTime } from 'date-fns';
 
 
 class EventShow extends React.Component{
@@ -68,14 +69,7 @@ class EventShow extends React.Component{
     
 
     render(){
-
-        // debugger
         const { event, currentUser, createRegistration, deleteEvent } = this.props 
-        // console.log(event)
-        // if(this.props.registrations){
-        //     console.log(this.filterRegistrations)
-        // }
-
         
         if (!event) {
             return null 
@@ -89,9 +83,7 @@ class EventShow extends React.Component{
 
             // Register Button 
             let registerButton;
-            // debugger
-            //this.state.buttonType === "register" ==========> inside if statement below
-            // else if (this.state.buttonType === "registered")
+            
             if (!this.props.registered) {
                 registerButton = 
                 (
@@ -129,10 +121,10 @@ class EventShow extends React.Component{
                     {/* <h2 className="desc">Event Details</h2> */}
                     <li className="desc">{event.description}</li>
                     <li className="categ">Category: {event.category}</li>
-                    <li className="date">Date: {event.date}</li>
-                    <li className="author">Event Creator: {event.author}</li>
-                    <li className="start">Start Time: {event.start_time}</li>
-                    <li className="end">End Time: {event.end_time}</li>
+                        <li className="date">Date: {format(new Date(event.date), 'mm-dd-yyyy')}</li>
+                    <li className="author">Event Creator: {event.author_name}</li>
+                        <li className="start">Start Time: {format(new Date(event.start_time), 'h:mm')}</li>
+                        <li className="end">End Time: {format(new Date(event.end_time), 'h:mm')}</li>
                 </ul>
                 {/* <div className="event-details">
                     <EventDetail event={event}/>
