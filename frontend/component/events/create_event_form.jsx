@@ -14,9 +14,12 @@ class EventForm extends React.Component{
     }
 
     handleSubmit(){
-        
-        this.props.submitEvent(this.state)
-        .then(this.props.history.push('/'));
+        if (this.props.formType === 'Edit Event'){
+            this.props.submitEvent(this.state)
+            .then(this.props.history.push('/'));
+        } else {
+            this.props.submitEvent(this.state)
+        }
         
     }
 
