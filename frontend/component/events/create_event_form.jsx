@@ -101,16 +101,16 @@ class EventForm extends React.Component{
 
                                 <option value="Select one">Select One</option>
                                 <option value="assets/forest.png">Forest</option>
-                                <option value="assets/desert.png">Desert</option>
-                                <option value="assets/burj.png">Burj</option>
-                                <option value="assets/dubai-beach.png">Dubai</option>
+                                <option value="assets/biking.png">Biking</option>
+                                <option value="assets/cars.png">Cars</option>
+                                <option value="assets/family.png">Family</option>
                                 <option value="assets/palm-dubai.png">Palm Dubai</option>
                                 <option value="assets/rainbow.jpg">Rainbow</option>
-                                <option value="assets/compass.jpg">Compass</option>
-                                <option value="assets/compass.jpg">Compass</option>
-                                <option value="assets/compass.jpg">Compass</option>
-                                <option value="assets/compass.jpg">Compass</option>
-                                <option value="assets/compass.jpg">Compass</option>
+                                <option value="assets/python.jpg">Python</option>
+                                <option value="assets/geology.jpg">Geology</option>
+                                <option value="assets/spiritual.jpg">Spiritual</option>
+                                <option value="assets/summercamp.jpg">Summercamp</option>
+                                <option value="assets/basketball.jpg">Basketball</option>
                                 
                             </select>
                     </label>
