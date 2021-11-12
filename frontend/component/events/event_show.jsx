@@ -121,7 +121,7 @@ class EventShow extends React.Component{
                     {/* <h2 className="desc">Event Details</h2> */}
                     <li className="desc">{event.description}</li>
                     <li className="categ">Category: {event.category}</li>
-                        <li className="date">Date: {format(new Date(event.date), 'mm-dd-yyyy')}</li>
+                        <li className="date">Date: {format(new Date(event.date), 'MM-dd-yyyy')}</li>
                     <li className="author">Event Creator: {event.author_name}</li>
                         <li className="start">Start Time: {format(new Date(event.start_time), 'h:mm')}</li>
                         <li className="end">End Time: {format(new Date(event.end_time), 'h:mm')}</li>

@@ -44,7 +44,7 @@ class EventIndexCard extends React.Component {
                     {event.title}
                 </div>
                 <div className="event-index-date">
-                    {format(new Date(event.date), 'mm-dd-yyyy')}
+                    {format(new Date(event.date), 'MM-dd-yyyy')}
                 </div>
 
                 

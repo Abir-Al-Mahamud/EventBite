@@ -317,9 +317,16 @@ a.portfolio{
 .errors-event{
     color: red;
     display: flex;
-    justify-content: center;
+    position: relative;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: -45px;
+    left: 20%;
+    // margin-bottom: 45px;
+}
+
+.errors-event li{
+    margin-top: 50%;
+    margin-bottom: 65%;
 }
 
 .box{
@@ -601,7 +608,7 @@ a.portfolio{
     flex-direction: column;
     // width: 100%;
     margin: 40px;
-    height: 850px;
+    // height: 850px;
 }
 
 .modal-content{

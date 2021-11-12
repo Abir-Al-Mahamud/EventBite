@@ -118,7 +118,7 @@ export const createEvent = event => dispatch => {
 }
 
 export const changeEvent = event => dispatch => {
-    debugger
+    // debugger
     return EventAPIUtil.updateEvent(event)
         .then(event => dispatch(receiveEvent(event)),
             err => {

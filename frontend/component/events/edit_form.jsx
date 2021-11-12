@@ -12,9 +12,26 @@ class EditEventForm extends React.Component {
             .then(() => this.setState({ event: this.props.event }))
     }
 
-    // componentWillUnmount(){
-    //     this.props.history.push('/');
-    // }
+    renderErrors() {
+        // console.log(this.props)
+        if (this.props.errors.length < 0) {
+            return (
+                <ul>
+                    {this.props.errors.map((error, i) => (
+                        <li key={`error: ${i}`}>
+                            {error}
+                        </li>
+                    ))}
+                </ul>
+            )
+        } else {
+            return []
+        }
+    }
+
+    componentWillUnmount(){
+        this.props.history.push('/');
+    }
     render() {
         const { action, event, formType, errors, submitEvent } = this.props;
 
@@ -22,11 +39,13 @@ class EditEventForm extends React.Component {
 
 
         return (
+            
             <CreateEventForm
                 event={event}
                 formType={formType}
                 submitEvent={submitEvent}
             />
+
         )
     }
 }
