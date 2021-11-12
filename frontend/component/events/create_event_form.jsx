@@ -10,7 +10,11 @@ class EventForm extends React.Component{
     }
 
     componentWillUnmount() {
-        this.props.clearSessionErrors;
+        this.props.clearEventErrors();
+    }
+
+    componentDidMount() {
+        this.props.clearEventErrors();
     }
 
     handleSubmit(){

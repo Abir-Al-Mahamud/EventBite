@@ -49935,3 +49935,384 @@ Processing by Api::EventsController#index as JSON
 Completed 200 OK in 34ms (Views: 29.4ms | ActiveRecord: 3.6ms)
 
 
+Started GET "/" for ::1 at 2021-11-12 17:22:16 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 1226ms (Views: 1193.8ms | ActiveRecord: 22.5ms)
+
+
+Started GET "/api/events" for ::1 at 2021-11-12 17:22:18 -0500
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (5.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (3.0ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/index.json.jbuilder (37.8ms)
+Completed 200 OK in 52ms (Views: 44.3ms | ActiveRecord: 5.2ms)
+
+
+Started POST "/api/events" for ::1 at 2021-11-12 17:22:23 -0500
+Started GET "/?category=Select+one&category=Select+one" for ::1 at 2021-11-12 17:22:23 -0500
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "category"=>"", "author_name"=>"", "start_time"=>"", "end_time"=>"", "pic_url"=>""}}
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"Select one"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:21
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:25
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 242], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:25
+  [1m[35m (1.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/events_controller.rb:25
+Completed 422 Unprocessable Entity in 31ms (Views: 0.2ms | ActiveRecord: 6.7ms)
+
+
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 51ms (Views: 47.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/?category=Select+one&category=Select+one" for ::1 at 2021-11-12 17:22:37 -0500
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"Select one"}
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 469ms (Views: 466.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/?category=Select+one&category=Select+one" for ::1 at 2021-11-12 17:22:40 -0500
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"Select one"}
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/events" for ::1 at 2021-11-12 17:22:43 -0500
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "category"=>"", "author_name"=>"", "start_time"=>"", "end_time"=>"", "pic_url"=>""}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:21
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:25
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 242], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/events_controller.rb:25
+Completed 422 Unprocessable Entity in 16ms (Views: 0.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/events" for ::1 at 2021-11-12 17:22:47 -0500
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (10.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (35.6ms)
+Completed 200 OK in 53ms (Views: 41.1ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/?category=Select+one&category=Select+one" for ::1 at 2021-11-12 17:23:07 -0500
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"Select one"}
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 460ms (Views: 455.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/?category=Select+one&category=Select+one" for ::1 at 2021-11-12 17:24:10 -0500
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"Select one"}
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 64ms (Views: 60.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/events" for ::1 at 2021-11-12 17:24:13 -0500
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "category"=>"", "author_name"=>"", "start_time"=>"", "end_time"=>"", "pic_url"=>""}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:25
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 242], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/events_controller.rb:25
+Completed 422 Unprocessable Entity in 15ms (Views: 0.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/users/242/events" for ::1 at 2021-11-12 17:24:18 -0500
+Processing by Api::EventsController#index as JSON
+  Parameters: {"user_id"=>"242"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (2.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/_event.json.jbuilder (1.0ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (22.5ms)
+Completed 200 OK in 37ms (Views: 34.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/users/242/events" for ::1 at 2021-11-12 17:24:18 -0500
+Processing by Api::EventsController#index as JSON
+  Parameters: {"user_id"=>"242"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (28.1ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/?category=Select+one&category=Select+one" for ::1 at 2021-11-12 17:25:20 -0500
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"Select one"}
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 466ms (Views: 461.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/?category=Select+one&category=Select+one" for ::1 at 2021-11-12 17:25:34 -0500
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"Select one"}
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 33ms (Views: 29.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/?category=Select+one&category=Select+one" for ::1 at 2021-11-12 17:25:37 -0500
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"Select one"}
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 33ms (Views: 29.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/?category=Select+one&category=Select+one" for ::1 at 2021-11-12 17:26:11 -0500
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"Select one"}
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 559ms (Views: 555.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/events" for ::1 at 2021-11-12 17:26:14 -0500
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "category"=>"", "author_name"=>"", "start_time"=>"", "end_time"=>"", "pic_url"=>""}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:25
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 242], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/events_controller.rb:25
+Completed 422 Unprocessable Entity in 17ms (Views: 0.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/users/242/events" for ::1 at 2021-11-12 17:26:17 -0500
+Processing by Api::EventsController#index as JSON
+  Parameters: {"user_id"=>"242"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (83.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.9ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/index.json.jbuilder (109.1ms)
+Completed 200 OK in 121ms (Views: 36.3ms | ActiveRecord: 83.3ms)
+
+
+Started GET "/api/users/242/events" for ::1 at 2021-11-12 17:26:18 -0500
+Processing by Api::EventsController#index as JSON
+  Parameters: {"user_id"=>"242"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (2.7ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/index.json.jbuilder (47.9ms)
+Completed 200 OK in 146ms (Views: 144.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/events" for ::1 at 2021-11-12 17:26:24 -0500
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "category"=>"", "author_name"=>"", "start_time"=>"", "end_time"=>"", "pic_url"=>""}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:21
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:25
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 242], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/events_controller.rb:25
+Completed 422 Unprocessable Entity in 19ms (Views: 0.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/?category=Select+one&category=Select+one" for ::1 at 2021-11-12 17:27:00 -0500
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"Select one"}
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 458ms (Views: 455.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/events" for ::1 at 2021-11-12 17:29:35 -0500
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "category"=>"", "author_name"=>"", "start_time"=>"", "end_time"=>"", "pic_url"=>""}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:25
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 242], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/events_controller.rb:25
+Completed 422 Unprocessable Entity in 12ms (Views: 0.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/?category=Select+one&category=Select+one" for ::1 at 2021-11-12 17:29:48 -0500
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"Select one"}
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 429ms (Views: 425.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/events" for ::1 at 2021-11-12 17:29:51 -0500
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "category"=>"", "author_name"=>"", "start_time"=>"", "end_time"=>"", "pic_url"=>""}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:25
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 242], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:25
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/events_controller.rb:25
+Completed 422 Unprocessable Entity in 17ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/?category=Select+one&category=Select+one" for ::1 at 2021-11-12 17:29:59 -0500
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"Select one"}
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 492ms (Views: 486.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/events" for ::1 at 2021-11-12 17:30:02 -0500
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event"=>{"title"=>"", "description"=>"", "date"=>"", "category"=>"", "author_name"=>"", "start_time"=>"", "end_time"=>"", "pic_url"=>""}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:25
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 242], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:25
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/events_controller.rb:25
+Completed 422 Unprocessable Entity in 18ms (Views: 0.2ms | ActiveRecord: 4.3ms)
+
+

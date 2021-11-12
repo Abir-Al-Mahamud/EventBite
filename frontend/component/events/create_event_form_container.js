@@ -19,7 +19,7 @@ const mSTP = ({ errors }) => ({
 
 const mDTP = (dispatch) => ({
     submitEvent: (event) => dispatch(createEvent(event)),
-    clearEventErrors: (errors) => dispatch(clearEventErrors(errors))
+    clearEventErrors: () => dispatch(clearEventErrors())
 })
 
 export default connect(mSTP, mDTP)(EventForm);
