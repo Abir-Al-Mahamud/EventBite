@@ -1383,15 +1383,16 @@ h1.create-event-form-type{
     }
 
     .event-details{
+        height: 800px;
+        width: 800px;
         border: #39364F;
         outline: #39364F;
         list-style-position: inside;
         margin-top: 0;
-        padding-right: 300px;
         display: block;
         position: absolute;
         top: 10%;
-        left: 10%;
+        left: 20%;
         border-style: double;
         margin-left: 20px;
     }
@@ -1401,8 +1402,8 @@ h1.create-event-form-type{
         max-width: 90%; 
         display: flex;
         position: relative;
-        top: 10%;
-        left: 25%;
+        top: 0%;
+        left: 5%;
     }
 
     .single-event-show{
@@ -1423,13 +1424,13 @@ h1.create-event-form-type{
         width: 165px;
         outline: none;
         color: white;
-        border-radius: 3px;
+        border-radius: 50px;
         transition: 0.20s;
         font-weight: 600;
         background-color: #f05537;
         position: absolute;
         top: 95%;
-        left: 49%;
+        left: 39%;
         cursor: pointer;
         font-size: 16px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
@@ -1451,13 +1452,13 @@ h1.create-event-form-type{
         width: 165px;
         outline: none;
         color: white;
-        border-radius: 3px;
+        border-radius: 50px;
         transition: 0.20s;
         font-weight: 600;
         background-color: #f05537;
         position: absolute;
         top: 95%;
-        left: 62%;
+        left: 52%;
         cursor: pointer;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     }
@@ -1474,13 +1475,13 @@ h1.create-event-form-type{
         width: 165px;
         outline: none;
         color: white;
-        border-radius: 3px;
+        border-radius: 50px;
         transition: 0.20s;
         font-weight: 600;
         background-color: #f05537;
         position: absolute;
         top: 95%;
-        left: 75%;
+        left: 65%;
         cursor: pointer;
         font-size: 16px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
@@ -1498,13 +1499,13 @@ h1.create-event-form-type{
         width: 165px;
         outline: none;
         color: white;
-        border-radius: 3px;
+        border-radius: 50px;
         transition: 0.20s;
         font-weight: 600;
         background-color: #f05537;
         position: absolute;
         top: 95%;
-        left: 75%;
+        left: 65%;
         cursor: pointer;
         font-size: 16px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
