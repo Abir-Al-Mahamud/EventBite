@@ -36,7 +36,7 @@ span, article, time, small {
  html, body, div{
      padding: 10;
      margin: 10;
-     font-family: 'Times New Roman', Times, serif;
+     font-family: -apple-system, BlinkMacSystemFont, ‘Segoe UI’, Roboto, Oxygen, Ubuntu, Cantarell, ‘Open Sans’, ‘Helvetica Neue’, sans-serif;
  }
 
  .navbar-right {
@@ -248,16 +248,7 @@ span, article, time, small {
         align-items: flex-start;
     }
     
-    // .future-events{
-    //     font-size: 50px;
-    //     padding: 10px;
-    //     left: 40%;
-    //     // margin-bottom: 90%;
-    //     display: flex;
-    //     // align-items: left;
-        
-    // }
-    
+
     .nav-bar-button{
         display: flex;
         align-items: flex-end;
@@ -270,7 +261,7 @@ span, article, time, small {
     position: absolute;
     justify-content: center;
     align-items: center;
-    margin-top: 50%;
+    margin-top: 80%;
     bottom: 0;
     top: 100%;
     width: 100%;
@@ -594,21 +585,10 @@ a.portfolio{
 
 .modal{
     display: flex;
-    // position: fixed;
-    // z-index: 1;
-    // left: 0;
-    // top: 0;
-    // width: 100%;
-    // height: 100%;
-    // overflow: auto;
-    // background-color: rgb(0,0,0);
-    // background-color: rgba(0,0,0,0.4);
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    // width: 100%;
     margin: 40px;
-    // height: 850px;
 }
 
 .modal-content{
@@ -741,20 +721,6 @@ select.category{
         }
 }
 
-// input.author-input{
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         grid-column: 1;
-//         border: 1px solid gray;
-//         border-radius: 5px;
-//         line-height: 23%;
-//         min-height: 23%;
-//         padding: 20px;
-//         // margin: 20%;
-//         font-size: 16px;
-//         width: 400px;
-// }
 input.time-start-input{
         display: flex;
         justify-content: center;
@@ -1419,18 +1385,14 @@ h1.create-event-form-type{
     .event-details{
         border: #39364F;
         outline: #39364F;
-        // padding-left: 0;
-        // padding: 15px;
         list-style-position: inside;
         margin-top: 0;
         padding-right: 300px;
-        // margin-right: 100px;
         display: block;
         position: absolute;
         top: 10%;
         left: 10%;
         border-style: double;
-        // padding-left: 20px;
         margin-left: 20px;
     }
 
@@ -1454,7 +1416,6 @@ h1.create-event-form-type{
         border: 0;
         background: none;
         display: block;
-        // flex-direction: column;
         margin: 2px;
         text-align: center;
         border: 2px solid gray;
@@ -1549,7 +1510,6 @@ h1.create-event-form-type{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     }
 
-    // p.double {border-style: double;}
     .event-details li {
         padding-bottom: 20px;
         font-family: 'Pangolin';
@@ -1566,10 +1526,6 @@ h1.create-event-form-type{
         position: absolute;
         left: 10%;
         top: 10%;
-        // font-family: "FontAwesome";
-        // content: "/f359";
-        // font-weight: 900;
-        // content: ;
         &:hover{
             cursor: pointer;
         }
@@ -1604,6 +1560,3 @@ h1.create-event-form-type{
         height: 10px;
     }
 
-    // .chart-vertical{
-
-    // }

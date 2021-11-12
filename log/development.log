@@ -48002,3 +48002,1128 @@ Processing by Api::EventsController#index as JSON
 Completed 200 OK in 31ms (Views: 26.1ms | ActiveRecord: 4.6ms)
 
 
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (6.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 241]]
+  ↳ db/seeds.rb:9
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (2.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 235]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (1.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 236]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 237]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 238]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 239]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 240]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[36mEvent Load (2.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 131]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 133]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 134]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 136]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 137]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 132]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 135]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mRegistration Load (0.7ms)[0m  [1m[34mSELECT "registrations".* FROM "registrations"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRegistration Destroy (0.8ms)[0m  [1m[31mDELETE FROM "registrations" WHERE "registrations"."id" = $1[0m  [["id", 37]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "abir@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (21.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "abir@gmail.com"], ["first_name", "Abir"], ["last_name", "Mahamud"], ["password_digest", "$2a$12$26acFHv/Vb9yleINDkSrvOVhr8WuHOOlwveuLc96/QxFNprQBryqe"], ["session_token", "KLsWjwQUZVV0fTgfPXKmNQ"], ["created_at", "2021-11-12 19:18:19.835890"], ["updated_at", "2021-11-12 19:18:19.835890"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "hello@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "hello@gmail.com"], ["first_name", "Joe"], ["last_name", "BlackSmith"], ["password_digest", "$2a$12$KaC9HJgw7VTUhNu0d7SIL../1Ayqn7KcJZL4P0h4JrF3z7cGqoa.y"], ["session_token", "OrmLZlLmLgHo-np0XxFf2g"], ["created_at", "2021-11-12 19:18:20.072893"], ["updated_at", "2021-11-12 19:18:20.072893"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "whatsup@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "whatsup@gmail.com"], ["first_name", "Bob"], ["last_name", "Bradword"], ["password_digest", "$2a$12$/mqwYqDfp148ax1Ps7v0RuncCfGrfRAG1T9ZYZ8oIC18QNOqblBJW"], ["session_token", "pXyx8ujnXPr5dFXho5KleA"], ["created_at", "2021-11-12 19:18:20.291001"], ["updated_at", "2021-11-12 19:18:20.291001"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "up@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "up@gmail.com"], ["first_name", "Tom"], ["last_name", "Hilfiger"], ["password_digest", "$2a$12$eDxvXY6xhKqpwoiswLABNugktlLi5o9Ep7tM9YzQWqWdSL0bC2PKi"], ["session_token", "IsHVKqSquVvMAcaRIgMHdA"], ["created_at", "2021-11-12 19:18:20.510376"], ["updated_at", "2021-11-12 19:18:20.510376"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (3.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "down@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "down@gmail.com"], ["first_name", "John"], ["last_name", "Rohn"], ["password_digest", "$2a$12$I0unhwM9/ws3cCtDmWezA.j/ZFcfjJGkC2gg8HESOWdGQO6FCW.A2"], ["session_token", "kEe6Sg-5ehC9V-pSj-EEKg"], ["created_at", "2021-11-12 19:18:20.735690"], ["updated_at", "2021-11-12 19:18:20.735690"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "left@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "left@gmail.com"], ["first_name", "Ron"], ["last_name", "Bant"], ["password_digest", "$2a$12$j7o7KA5hErrj6O2x2t5fn.65KA06NGS1l6A8RMpAkn4HCNpOV41zi"], ["session_token", "nZv7eVdmG1551LXuIeGNNw"], ["created_at", "2021-11-12 19:18:20.949697"], ["updated_at", "2021-11-12 19:18:20.949697"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 242], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mEvent Create (3.7ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Biking with Bikers"], ["description", "Enjoy riding bikes? This is the perfect event for you to come show off your skills"], ["date", "2021-12-21 06:06:06"], ["author_name", "Abir"], ["author_id", 242], ["start_time", "2021-01-05 03:06:06"], ["end_time", "2021-12-12 06:15:07"], ["created_at", "2021-11-12 19:18:20.965415"], ["updated_at", "2021-11-12 19:18:20.965415"], ["category", "Today"], ["pic_url", "/assets/biking.png"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 243], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Spiritual Retreat"], ["description", "Feeling down and depressed? Relieve your sadness by reading the Holy Quran"], ["date", "2020-11-21 06:06:06"], ["author_name", "Joe"], ["author_id", 243], ["start_time", "2020-12-12 02:06:06"], ["end_time", "2021-12-12 05:00:00"], ["created_at", "2021-11-12 19:18:20.973132"], ["updated_at", "2021-11-12 19:18:20.973132"], ["category", "Religion"], ["pic_url", "/assets/spiritual.png"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 244], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Learn Python in 5 Minutes!"], ["description", "Python in 5 minutes?? Is that even possible?? Maybe, the least we can do is try."], ["date", "2021-12-12 06:06:06"], ["author_name", "Bob"], ["author_id", 244], ["start_time", "2020-12-12 06:00:00"], ["end_time", "1992-12-12 10:00:00"], ["created_at", "2021-11-12 19:18:20.976639"], ["updated_at", "2021-11-12 19:18:20.976639"], ["category", "Online"], ["pic_url", "/assets/python.png"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 245], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Help Plant Trees!"], ["description", "We  need to help our ecosystems but using less and planting more!"], ["date", "2020-12-29 06:06:06"], ["author_name", "Tom"], ["author_id", 245], ["start_time", "2020-11-15 06:06:06"], ["end_time", "2020-11-15 07:07:07"], ["created_at", "2021-11-12 19:18:20.980272"], ["updated_at", "2021-11-12 19:18:20.980272"], ["category", "Today"], ["pic_url", "/assets/forest.png"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 242], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Summer Camp for Children"], ["description", "The perfect time for children to de-stress and take a break from their devices to enjoy nature"], ["date", "2021-11-16 06:06:06"], ["author_name", "Abir"], ["author_id", 242], ["start_time", "2021-12-12 06:06:06"], ["end_time", "2021-12-12 07:07:07"], ["created_at", "2021-11-12 19:18:20.983613"], ["updated_at", "2021-11-12 19:18:20.983613"], ["category", "This weekend"], ["pic_url", "/assets/summercamp.png"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 246], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Dinner on the Beach"], ["description", "Dinner with a view? Sign me up!"], ["date", "2021-12-12 06:06:06"], ["author_name", "John"], ["author_id", 246], ["start_time", "2020-12-12 06:06:06"], ["end_time", "2020-12-12 07:07:07"], ["created_at", "2021-11-12 19:18:20.987216"], ["updated_at", "2021-11-12 19:18:20.987216"], ["category", "Free"], ["pic_url", "/assets/palm-dubai.png"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 247], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Donate Blood"], ["description", "It is very important that we donate blood for those who are in dire need of it."], ["date", "2021-01-12 06:06:06"], ["author_name", "Ron"], ["author_id", 247], ["start_time", "2022-12-12 06:06:06"], ["end_time", "2022-12-12 07:07:07"], ["created_at", "2021-11-12 19:18:20.990218"], ["updated_at", "2021-11-12 19:18:20.990218"], ["category", "Charity & Causes"], ["pic_url", "/assets/blood.png"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 247], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Geology Day"], ["description", "Learn about the world we are living in."], ["date", "2021-01-12 06:06:06"], ["author_name", "Ron"], ["author_id", 247], ["start_time", "2022-12-12 06:06:06"], ["end_time", "2022-12-12 07:07:07"], ["created_at", "2021-11-12 19:18:20.993162"], ["updated_at", "2021-11-12 19:18:20.993162"], ["category", "Charity & Causes"], ["pic_url", "/assets/geology.png"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 247], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Car Meetup"], ["description", "Come show us your coolest rides for a chance to win the coolest car award."], ["date", "2021-01-12 06:06:06"], ["author_name", "Ron"], ["author_id", 247], ["start_time", "2022-12-12 06:06:06"], ["end_time", "2022-12-12 07:07:07"], ["created_at", "2021-11-12 19:18:20.996804"], ["updated_at", "2021-11-12 19:18:20.996804"], ["category", "Charity & Causes"], ["pic_url", "/assets/cars.png"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 247], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Family Night"], ["description", "Spend more time with Mom and Dad to show them you care."], ["date", "2021-01-12 06:06:06"], ["author_name", "Ron"], ["author_id", 247], ["start_time", "2022-12-12 06:06:06"], ["end_time", "2022-12-12 07:07:07"], ["created_at", "2021-11-12 19:18:20.999832"], ["updated_at", "2021-11-12 19:18:20.999832"], ["category", "Charity & Causes"], ["pic_url", "/assets/family.png"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 247], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date", "author_name", "author_id", "start_time", "end_time", "created_at", "updated_at", "category", "pic_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Basketball Fun"], ["description", "Come with your team and see who is the champion."], ["date", "2021-01-12 06:06:06"], ["author_name", "Ron"], ["author_id", 247], ["start_time", "2022-12-12 06:06:06"], ["end_time", "2022-12-12 07:07:07"], ["created_at", "2021-11-12 19:18:21.002737"], ["updated_at", "2021-11-12 19:18:21.002737"], ["category", "Charity & Causes"], ["pic_url", "/assets/basketball.png"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mRegistration Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "registrations" WHERE "registrations"."buyer_id" = $1 AND "registrations"."event_id" = $2 LIMIT $3[0m  [["buyer_id", 242], ["event_id", 138], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 242], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 138], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mRegistration Create (1.1ms)[0m  [1m[32mINSERT INTO "registrations" ("buyer_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["buyer_id", 242], ["event_id", 138], ["created_at", "2021-11-12 19:18:21.009935"], ["updated_at", "2021-11-12 19:18:21.009935"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mRegistration Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "registrations" WHERE "registrations"."buyer_id" = $1 AND "registrations"."event_id" = $2 LIMIT $3[0m  [["buyer_id", 242], ["event_id", 139], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 242], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 139], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mRegistration Create (0.3ms)[0m  [1m[32mINSERT INTO "registrations" ("buyer_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["buyer_id", 242], ["event_id", 139], ["created_at", "2021-11-12 19:18:21.016095"], ["updated_at", "2021-11-12 19:18:21.016095"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mRegistration Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "registrations" WHERE "registrations"."buyer_id" = $1 AND "registrations"."event_id" = $2 LIMIT $3[0m  [["buyer_id", 242], ["event_id", 140], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 242], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mRegistration Create (0.3ms)[0m  [1m[32mINSERT INTO "registrations" ("buyer_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["buyer_id", 242], ["event_id", 140], ["created_at", "2021-11-12 19:18:21.020379"], ["updated_at", "2021-11-12 19:18:21.020379"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+Started GET "/" for ::1 at 2021-11-12 14:18:25 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Started GET "/" for ::1 at 2021-11-12 14:18:29 -0500
+Completed 200 OK in 6257ms (Views: 6250.2ms | ActiveRecord: 0.0ms)
+
+
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 31ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2021-11-12 14:18:32 -0500
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (2.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (68.2ms)
+Completed 200 OK in 114ms (Views: 64.3ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/api/users/null/registrations" for ::1 at 2021-11-12 14:18:50 -0500
+Started GET "/api/events/139" for ::1 at 2021-11-12 14:18:50 -0500
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"139"}
+Processing by Api::RegistrationsController#index as JSON
+  Parameters: {"user_id"=>"null"}
+Filter chain halted as :ensure_logged_in rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 139], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 139], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (1.6ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 139]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (97.8ms)
+Completed 200 OK in 186ms (Views: 102.9ms | ActiveRecord: 40.4ms)
+
+
+Started GET "/api/events" for ::1 at 2021-11-12 14:18:55 -0500
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (13.5ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/events/144" for ::1 at 2021-11-12 14:22:36 -0500
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"144"}
+Started GET "/api/users/null/registrations" for ::1 at 2021-11-12 14:22:36 -0500
+Processing by Api::RegistrationsController#index as JSON
+  Parameters: {"user_id"=>"null"}
+Filter chain halted as :ensure_logged_in rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (15.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mEvent Load (25.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 144]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (4.8ms)
+Completed 200 OK in 63ms (Views: 18.6ms | ActiveRecord: 41.6ms)
+
+
+Started GET "/api/events" for ::1 at 2021-11-12 14:23:05 -0500
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (47.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (3.4ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (1.3ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/index.json.jbuilder (150.0ms)
+Completed 200 OK in 175ms (Views: 127.4ms | ActiveRecord: 47.1ms)
+
+
+Started POST "/api/session" for ::1 at 2021-11-12 14:23:41 -0500
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"abir@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "abir@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:24
+  [1m[35m (4.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:43
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "abir@gmail.com"], ["id", 242], ["LIMIT", 1]]
+  ↳ app/models/user.rb:43
+  [1m[36mUser Update (6.8ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "fri83QvkBTTaY3m2FsT1QQ"], ["updated_at", "2021-11-12 19:23:42.002171"], ["id", 242]]
+  ↳ app/models/user.rb:43
+  [1m[35m (11.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:43
+  [1m[35m (19.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:43
+  [1m[36mUser Exists (1.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "abir@gmail.com"], ["id", 242], ["LIMIT", 1]]
+  ↳ app/models/user.rb:43
+  [1m[36mUser Update (2.0ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["updated_at", "2021-11-12 19:23:42.046602"], ["id", 242]]
+  ↳ app/models/user.rb:43
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:43
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/users/show.json.jbuilder (6.3ms)
+Completed 200 OK in 714ms (Views: 16.2ms | ActiveRecord: 54.3ms)
+
+
+Started GET "/api/events" for ::1 at 2021-11-12 14:23:42 -0500
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (12.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (2.4ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (42.1ms)
+Completed 200 OK in 91ms (Views: 76.8ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/api/events/141" for ::1 at 2021-11-12 14:23:46 -0500
+Started GET "/api/users/242/registrations" for ::1 at 2021-11-12 14:23:46 -0500
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"141"}
+Processing by Api::RegistrationsController#index as JSON
+  Parameters: {"user_id"=>"242"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering api/events/show.json.jbuilder
+  Rendering api/registrations/index.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  [1m[36mRegistration Load (2.2ms)[0m  [1m[34mSELECT "registrations".* FROM "registrations" WHERE "registrations"."buyer_id" = $1[0m  [["buyer_id", 242]]
+  ↳ app/views/api/registrations/index.json.jbuilder:1
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (20.0ms)
+Completed 200 OK in 67ms (Views: 52.6ms | ActiveRecord: 3.1ms)
+
+
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 138], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 139], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  Rendered api/registrations/index.json.jbuilder (42.6ms)
+Completed 200 OK in 97ms (Views: 68.0ms | ActiveRecord: 19.5ms)
+
+
+Started GET "/api/events/141" for ::1 at 2021-11-12 14:23:47 -0500
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"141"}
+  [1m[36mUser Load (15.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mEvent Load (4.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (6.5ms)
+Completed 200 OK in 48ms (Views: 22.2ms | ActiveRecord: 21.2ms)
+
+
+Started PATCH "/api/events/141" for ::1 at 2021-11-12 14:24:11 -0500
+Started GET "/?category=charity+and+causes&category=assets%2Fforest.png" for ::1 at 2021-11-12 14:24:11 -0500
+Processing by Api::EventsController#update as JSON
+  Parameters: {"event"=>{"id"=>"141", "title"=>"Help Plant Trees!", "description"=>"We  need to help our ecosystems but using less and planting more!", "date"=>"2020-12-29T06:06:06.000Z", "category"=>"charity and causes", "start_time"=>"18:23", "end_time"=>"19:24", "author_id"=>"245", "author_name"=>"Tom", "pic_url"=>"assets/forest.png"}, "id"=>"141"}
+Processing by StaticPagesController#root as HTML
+  [1m[36mEvent Load (4.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:33
+Unpermitted parameter: :id
+  Parameters: {"category"=>"assets/forest.png"}
+  [1m[35m (5.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:34
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 245], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:34
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+  [1m[36mEvent Update (8.7ms)[0m  [1m[33mUPDATE "events" SET "category" = $1, "start_time" = $2, "end_time" = $3, "pic_url" = $4, "updated_at" = $5 WHERE "events"."id" = $6[0m  [["category", "charity and causes"], ["start_time", "2021-11-12 18:23:00"], ["end_time", "2021-11-12 19:24:00"], ["pic_url", "assets/forest.png"], ["updated_at", "2021-11-12 19:24:11.687397"], ["id", 141]]
+  ↳ app/controllers/api/events_controller.rb:34
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/events_controller.rb:34
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.8ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (10.2ms)
+Completed 200 OK in 87ms (Views: 41.2ms | ActiveRecord: 21.8ms)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 775ms (Views: 764.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/events/141" for ::1 at 2021-11-12 14:24:14 -0500
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"141"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.8ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (6.6ms)
+Completed 200 OK in 26ms (Views: 21.1ms | ActiveRecord: 2.2ms)
+
+
+Started PATCH "/api/events/141" for ::1 at 2021-11-12 14:26:14 -0500
+Processing by Api::EventsController#update as JSON
+  Parameters: {"event"=>{"id"=>"141", "title"=>"Help Plant Trees!", "description"=>"We  need to help our ecosystems but using less and planting more!", "date"=>"2021-11-15", "category"=>"today", "start_time"=>"19:26", "end_time"=>"20:26", "author_id"=>"245", "author_name"=>"Tom", "pic_url"=>"assets/forest.png"}, "id"=>"141"}
+Started GET "/?category=today&category=assets%2Fforest.png" for ::1 at 2021-11-12 14:26:14 -0500
+  [1m[36mEvent Load (5.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:33
+Unpermitted parameter: :id
+Processing by StaticPagesController#root as HTML
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:34
+  Parameters: {"category"=>"assets/forest.png"}
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 245], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:34
+  [1m[36mEvent Update (2.1ms)[0m  [1m[33mUPDATE "events" SET "date" = $1, "category" = $2, "start_time" = $3, "end_time" = $4, "updated_at" = $5 WHERE "events"."id" = $6[0m  [["date", "2021-11-15 00:00:00"], ["category", "today"], ["start_time", "2021-11-12 19:26:00"], ["end_time", "2021-11-12 20:26:00"], ["updated_at", "2021-11-12 19:26:14.105615"], ["id", 141]]
+  ↳ app/controllers/api/events_controller.rb:34
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/events_controller.rb:34
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.8ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (5.4ms)
+Completed 200 OK in 63ms (Views: 16.7ms | ActiveRecord: 17.3ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 725ms (Views: 705.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/events/141" for ::1 at 2021-11-12 14:26:16 -0500
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"141"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (5.8ms)
+Completed 200 OK in 25ms (Views: 19.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/?category=today&category=assets%2Fforest.png" for ::1 at 2021-11-12 14:26:19 -0500
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"assets/forest.png"}
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 42ms (Views: 37.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/events/141" for ::1 at 2021-11-12 14:26:20 -0500
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"141"}
+  [1m[36mUser Load (12.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mEvent Load (4.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (7.8ms)
+Completed 200 OK in 40ms (Views: 15.5ms | ActiveRecord: 21.8ms)
+
+
+Started PATCH "/api/events/141" for ::1 at 2021-11-12 14:26:54 -0500
+Started GET "/?category=online&category=assets%2Fforest.png" for ::1 at 2021-11-12 14:26:54 -0500
+Processing by Api::EventsController#update as JSON
+  Parameters: {"event"=>{"id"=>"141", "title"=>"Help Plant Trees!!", "description"=>"We  need to help our ecosystems but using less and planting more!!!", "date"=>"2021-11-22", "category"=>"online", "start_time"=>"16:26", "end_time"=>"20:26", "author_id"=>"245", "author_name"=>"Tom", "pic_url"=>"assets/forest.png"}, "id"=>"141"}
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"assets/forest.png"}
+  [1m[36mEvent Load (2.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:33
+Unpermitted parameter: :id
+  [1m[35m (7.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:34
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 245], ["LIMIT", 1]]
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+  ↳ app/controllers/api/events_controller.rb:34
+  [1m[36mEvent Update (1.4ms)[0m  [1m[33mUPDATE "events" SET "title" = $1, "description" = $2, "date" = $3, "category" = $4, "start_time" = $5, "updated_at" = $6 WHERE "events"."id" = $7[0m  [["title", "Help Plant Trees!!"], ["description", "We  need to help our ecosystems but using less and planting more!!!"], ["date", "2021-11-22 00:00:00"], ["category", "online"], ["start_time", "2021-11-12 16:26:00"], ["updated_at", "2021-11-12 19:26:54.567032"], ["id", 141]]
+  ↳ app/controllers/api/events_controller.rb:34
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/events_controller.rb:34
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (25.1ms)
+Completed 200 OK in 167ms (Views: 32.5ms | ActiveRecord: 29.1ms)
+
+
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 204ms (Views: 192.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/events/141" for ::1 at 2021-11-12 14:26:55 -0500
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"141"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (5.3ms)
+Completed 200 OK in 22ms (Views: 16.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/?category=online&category=assets%2Fforest.png" for ::1 at 2021-11-12 14:27:17 -0500
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"assets/forest.png"}
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 955ms (Views: 950.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/events/141" for ::1 at 2021-11-12 14:27:19 -0500
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"141"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mEvent Load (4.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (7.8ms)
+Completed 200 OK in 32ms (Views: 21.8ms | ActiveRecord: 7.1ms)
+
+
+Started PATCH "/api/events/141" for ::1 at 2021-11-12 14:28:37 -0500
+Started GET "/?category=online&category=assets%2Fdubai-beach.png" for ::1 at 2021-11-12 14:28:37 -0500
+Processing by Api::EventsController#update as JSON
+  Parameters: {"event"=>{"id"=>"141", "title"=>"Help Plant Trees!!!", "description"=>"We  need to help our ecosystems but using less and planting more!!!", "date"=>"2021-11-17", "category"=>"online", "start_time"=>"17:27", "end_time"=>"20:27", "author_id"=>"245", "author_name"=>"Tom", "pic_url"=>"assets/dubai-beach.png"}, "id"=>"141"}
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"assets/dubai-beach.png"}
+  [1m[36mEvent Load (19.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:33
+  Rendering static_pages/root.html.erb within layouts/application
+Unpermitted parameter: :id
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:34
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 245], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:34
+  [1m[36mEvent Update (1.9ms)[0m  [1m[33mUPDATE "events" SET "title" = $1, "date" = $2, "start_time" = $3, "end_time" = $4, "pic_url" = $5, "updated_at" = $6 WHERE "events"."id" = $7[0m  [["title", "Help Plant Trees!!!"], ["date", "2021-11-17 00:00:00"], ["start_time", "2021-11-12 17:27:00"], ["end_time", "2021-11-12 20:27:00"], ["pic_url", "assets/dubai-beach.png"], ["updated_at", "2021-11-12 19:28:37.457749"], ["id", 141]]
+  ↳ app/controllers/api/events_controller.rb:34
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/events_controller.rb:34
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (21.6ms)
+Completed 200 OK in 73ms (Views: 32.7ms | ActiveRecord: 27.1ms)
+
+
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 123ms (Views: 114.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/events/141" for ::1 at 2021-11-12 14:28:38 -0500
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"141"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (6.7ms)
+Completed 200 OK in 27ms (Views: 20.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/users/242/events" for ::1 at 2021-11-12 14:29:42 -0500
+Started GET "/api/events" for ::1 at 2021-11-12 14:29:42 -0500
+Processing by Api::EventsController#index as JSON
+  Parameters: {"user_id"=>"242"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (131.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (1.0ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (162.2ms)
+Completed 200 OK in 377ms (Views: 244.6ms | ActiveRecord: 131.1ms)
+
+
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+Started GET "/api/users/242/events" for ::1 at 2021-11-12 14:29:42 -0500
+Processing by Api::EventsController#index as JSON
+  Parameters: {"user_id"=>"242"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (8.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.9ms)
+  Rendered api/events/_event.json.jbuilder (2.2ms)
+  [1m[36mEvent Load (96.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/index.json.jbuilder (160.8ms)
+Completed 200 OK in 178ms (Views: 168.6ms | ActiveRecord: 8.9ms)
+
+
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (1.1ms)
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (1.8ms)
+  Rendered api/events/index.json.jbuilder (266.0ms)
+Completed 200 OK in 287ms (Views: 189.3ms | ActiveRecord: 96.3ms)
+
+
+Started GET "/api/users/242/registrations" for ::1 at 2021-11-12 14:29:47 -0500
+Started GET "/api/events/141" for ::1 at 2021-11-12 14:29:47 -0500
+Processing by Api::RegistrationsController#index as JSON
+  Parameters: {"user_id"=>"242"}
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"141"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mUser Load (9.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering api/registrations/index.json.jbuilder
+  [1m[36mEvent Load (21.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  Rendering api/events/show.json.jbuilder
+  [1m[36mRegistration Load (9.8ms)[0m  [1m[34mSELECT "registrations".* FROM "registrations" WHERE "registrations"."buyer_id" = $1[0m  [["buyer_id", 242]]
+  ↳ app/views/api/registrations/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  [1m[36mEvent Load (6.9ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 138], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 139], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (19.0ms)
+Completed 200 OK in 73ms (Views: 24.9ms | ActiveRecord: 28.9ms)
+
+
+  [1m[36mEvent Load (2.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  Rendered api/registrations/index.json.jbuilder (47.5ms)
+Completed 200 OK in 106ms (Views: 53.5ms | ActiveRecord: 45.9ms)
+
+
+Started GET "/api/events/141" for ::1 at 2021-11-12 14:29:49 -0500
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"141"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mEvent Load (1.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (1.0ms)
+  [1m[35m (6.4ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (13.9ms)
+Completed 200 OK in 35ms (Views: 21.0ms | ActiveRecord: 8.6ms)
+
+
+Started PATCH "/api/events/141" for ::1 at 2021-11-12 14:30:15 -0500
+Processing by Api::EventsController#update as JSON
+  Parameters: {"event"=>{"id"=>"141", "title"=>"Help Plant Trees!", "description"=>"We  need to help our ecosystems but using less and planting more!", "date"=>"2021-11-03", "category"=>"online", "start_time"=>"16:30", "end_time"=>"20:30", "author_id"=>"245", "author_name"=>"Tom", "pic_url"=>"assets/dubai-beach.png"}, "id"=>"141"}
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:33
+Unpermitted parameter: :id
+  [1m[35m (2.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:34
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 245], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:34
+Started GET "/?category=online&category=assets%2Fforest.png" for ::1 at 2021-11-12 14:30:15 -0500
+  [1m[36mEvent Update (1.0ms)[0m  [1m[33mUPDATE "events" SET "title" = $1, "description" = $2, "date" = $3, "start_time" = $4, "end_time" = $5, "updated_at" = $6 WHERE "events"."id" = $7[0m  [["title", "Help Plant Trees!"], ["description", "We  need to help our ecosystems but using less and planting more!"], ["date", "2021-11-03 00:00:00"], ["start_time", "2021-11-12 16:30:00"], ["end_time", "2021-11-12 20:30:00"], ["updated_at", "2021-11-12 19:30:15.141661"], ["id", 141]]
+  ↳ app/controllers/api/events_controller.rb:34
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"assets/forest.png"}
+  [1m[35m (16.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/events_controller.rb:34
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  [1m[35m (42.8ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (54.5ms)
+Completed 200 OK in 271ms (Views: 37.9ms | ActiveRecord: 64.5ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 1178ms (Views: 1173.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/events/141" for ::1 at 2021-11-12 14:30:17 -0500
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"141"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mEvent Load (1.9ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (6.0ms)
+Completed 200 OK in 24ms (Views: 17.3ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/?category=online&category=assets%2Fforest.png" for ::1 at 2021-11-12 14:31:15 -0500
+Processing by StaticPagesController#root as HTML
+  Parameters: {"category"=>"assets/forest.png"}
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 793ms (Views: 786.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/events/141" for ::1 at 2021-11-12 14:31:17 -0500
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"141"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (1.3ms)
+  [1m[35m (46.3ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (57.6ms)
+Completed 200 OK in 74ms (Views: 24.4ms | ActiveRecord: 47.2ms)
+
+
+Started PATCH "/api/events/141" for ::1 at 2021-11-12 14:31:36 -0500
+Started GET "/api/events" for ::1 at 2021-11-12 14:31:36 -0500
+Processing by Api::EventsController#update as JSON
+  Parameters: {"event"=>{"id"=>"141", "title"=>"Help Plant Trees!!!", "description"=>"We  need to help our ecosystems but using less and planting more!!!", "date"=>"2021-11-24", "category"=>"charity and causes", "start_time"=>"14:31", "end_time"=>"16:31", "author_id"=>"245", "author_name"=>"Tom", "pic_url"=>"assets/dubai-beach.png"}, "id"=>"141"}
+  [1m[36mEvent Load (51.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:33
+Unpermitted parameter: :id
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[35m (71.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:34
+  [1m[36mUser Load (85.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 245], ["LIMIT", 1]]
+  [1m[36mEvent Load (87.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/events_controller.rb:34
+  ↳ app/views/api/events/index.json.jbuilder:1
+  [1m[36mEvent Update (3.0ms)[0m  [1m[33mUPDATE "events" SET "title" = $1, "description" = $2, "date" = $3, "category" = $4, "start_time" = $5, "end_time" = $6, "updated_at" = $7 WHERE "events"."id" = $8[0m  [["title", "Help Plant Trees!!!"], ["description", "We  need to help our ecosystems but using less and planting more!!!"], ["date", "2021-11-24 00:00:00"], ["category", "charity and causes"], ["start_time", "2021-11-12 14:31:00"], ["end_time", "2021-11-12 16:31:00"], ["updated_at", "2021-11-12 19:31:36.456415"], ["id", 141]]
+  ↳ app/controllers/api/events_controller.rb:34
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/events_controller.rb:34
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/index.json.jbuilder (305.2ms)
+Completed 200 OK in 318ms (Views: 229.6ms | ActiveRecord: 87.9ms)
+
+
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  [1m[35m (16.4ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (20.5ms)
+Completed 200 OK in 453ms (Views: 58.5ms | ActiveRecord: 229.6ms)
+
+
+Started GET "/api/events/141" for ::1 at 2021-11-12 14:31:41 -0500
+Started GET "/api/users/242/registrations" for ::1 at 2021-11-12 14:31:41 -0500
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"141"}
+Processing by Api::RegistrationsController#index as JSON
+  Parameters: {"user_id"=>"242"}
+  [1m[36mUser Load (48.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mUser Load (23.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering api/registrations/index.json.jbuilder
+  [1m[36mEvent Load (14.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  [1m[36mRegistration Load (6.0ms)[0m  [1m[34mSELECT "registrations".* FROM "registrations" WHERE "registrations"."buyer_id" = $1[0m  [["buyer_id", 242]]
+  ↳ app/views/api/registrations/index.json.jbuilder:1
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (1.6ms)
+  [1m[36mEvent Load (3.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 138], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 139], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (10.2ms)
+Completed 200 OK in 93ms (Views: 24.6ms | ActiveRecord: 63.4ms)
+
+
+  [1m[36mEvent Load (4.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  Rendered api/registrations/index.json.jbuilder (46.5ms)
+Completed 200 OK in 85ms (Views: 45.3ms | ActiveRecord: 37.5ms)
+
+
+Started GET "/api/events/141" for ::1 at 2021-11-12 14:31:43 -0500
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"141"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mEvent Load (20.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (5.6ms)
+Completed 200 OK in 44ms (Views: 18.8ms | ActiveRecord: 22.1ms)
+
+
+Started PATCH "/api/events/141" for ::1 at 2021-11-12 14:32:00 -0500
+Started GET "/api/events" for ::1 at 2021-11-12 14:32:00 -0500
+Processing by Api::EventsController#update as JSON
+  Parameters: {"event"=>{"id"=>"141", "title"=>"Help Plant Trees!!!!!", "description"=>"We  need to help our ecosystems but using less and planting more!!!", "date"=>"2021-11-03", "category"=>"today", "start_time"=>"16:31", "end_time"=>"18:31", "author_id"=>"245", "author_name"=>"Tom", "pic_url"=>"assets/rainbow.jpg"}, "id"=>"141"}
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (58.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:33
+Unpermitted parameter: :id
+  Rendering api/events/index.json.jbuilder
+  [1m[35m (38.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:34
+  [1m[36mEvent Load (15.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 245], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:34
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  [1m[36mEvent Update (8.5ms)[0m  [1m[33mUPDATE "events" SET "title" = $1, "date" = $2, "category" = $3, "start_time" = $4, "end_time" = $5, "pic_url" = $6, "updated_at" = $7 WHERE "events"."id" = $8[0m  [["title", "Help Plant Trees!!!!!"], ["date", "2021-11-03 00:00:00"], ["category", "today"], ["start_time", "2021-11-12 16:31:00"], ["end_time", "2021-11-12 18:31:00"], ["pic_url", "assets/rainbow.jpg"], ["updated_at", "2021-11-12 19:32:01.365339"], ["id", 141]]
+  ↳ app/controllers/api/events_controller.rb:34
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/events_controller.rb:34
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (1.1ms)
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (21.1ms)
+Completed 200 OK in 764ms (Views: 33.0ms | ActiveRecord: 108.8ms)
+
+
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/index.json.jbuilder (669.0ms)
+Completed 200 OK in 701ms (Views: 683.9ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/api/events/141" for ::1 at 2021-11-12 14:32:12 -0500
+Started GET "/api/users/242/registrations" for ::1 at 2021-11-12 14:32:12 -0500
+Processing by Api::RegistrationsController#index as JSON
+  Parameters: {"user_id"=>"242"}
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"141"}
+  [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "a-6WeWXjd_sFdZ5IaMKPqQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering api/registrations/index.json.jbuilder
+  [1m[36mUser Load (15.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  [1m[36mRegistration Load (5.3ms)[0m  [1m[34mSELECT "registrations".* FROM "registrations" WHERE "registrations"."buyer_id" = $1[0m  [["buyer_id", 242]]
+  ↳ app/views/api/registrations/index.json.jbuilder:1
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (7.5ms)
+  [1m[36mEvent Load (15.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 138], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (17.6ms)
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 139], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+Completed 200 OK in 76ms (Views: 52.5ms | ActiveRecord: 17.8ms)
+
+
+  [1m[36mEvent Load (14.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/views/api/registrations/index.json.jbuilder:7
+  Rendered api/registrations/index.json.jbuilder (99.8ms)
+Completed 200 OK in 125ms (Views: 77.0ms | ActiveRecord: 44.5ms)
+
+
+Started GET "/api/events/141" for ::1 at 2021-11-12 14:32:14 -0500
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"141"}
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:14
+  [1m[36mEvent Load (2.9ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:15
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (1.8ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (8.3ms)
+Completed 200 OK in 33ms (Views: 21.6ms | ActiveRecord: 7.9ms)
+
+
+Started PATCH "/api/events/141" for ::1 at 2021-11-12 14:32:36 -0500
+Started GET "/api/events" for ::1 at 2021-11-12 14:32:36 -0500
+Processing by Api::EventsController#update as JSON
+  Parameters: {"event"=>{"id"=>"141", "title"=>"Help Plant Trees!!!", "description"=>"We  need to help our ecosystems but using less and planting more!!!", "date"=>"2021-11-08", "category"=>"online", "start_time"=>"18:32", "end_time"=>"17:32", "author_id"=>"245", "author_name"=>"Tom", "pic_url"=>"assets/palm-dubai.png"}, "id"=>"141"}
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  Rendering api/events/index.json.jbuilder
+  ↳ app/controllers/api/events_controller.rb:33
+Unpermitted parameter: :id
+  [1m[36mEvent Load (6.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  [1m[35m (3.9ms)[0m  [1m[35mBEGIN[0m
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  ↳ app/controllers/api/events_controller.rb:34
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 245], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:34
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  [1m[36mEvent Update (1.6ms)[0m  [1m[33mUPDATE "events" SET "title" = $1, "date" = $2, "category" = $3, "start_time" = $4, "end_time" = $5, "pic_url" = $6, "updated_at" = $7 WHERE "events"."id" = $8[0m  [["title", "Help Plant Trees!!!"], ["date", "2021-11-08 00:00:00"], ["category", "online"], ["start_time", "2021-11-12 18:32:00"], ["end_time", "2021-11-12 17:32:00"], ["pic_url", "assets/palm-dubai.png"], ["updated_at", "2021-11-12 19:32:36.610883"], ["id", 141]]
+  ↳ app/controllers/api/events_controller.rb:34
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/events_controller.rb:34
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "registrations" ON "users"."id" = "registrations"."buyer_id" WHERE "registrations"."event_id" = $1[0m  [["event_id", 141]]
+  ↳ app/views/api/events/show.json.jbuilder:3
+  Rendered api/events/show.json.jbuilder (4.8ms)
+Completed 200 OK in 508ms (Views: 14.9ms | ActiveRecord: 11.2ms)
+
+
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (1.0ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/index.json.jbuilder (509.2ms)
+Completed 200 OK in 524ms (Views: 517.2ms | ActiveRecord: 6.5ms)
+
+

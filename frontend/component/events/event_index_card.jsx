@@ -21,13 +21,6 @@ class EventIndexCard extends React.Component {
     render(){
         const { event } = this.props
 
-        // const { title, location, description, date, pic_url } = this.props.event;
-        // let desc = this.props.test.description;
-        
-        // if (event.description.length > 40) {
-        //     let desc = description.slice(0 ,30) + "..."; 
-        // }
-        // console.log("HELLO", event.pic_url);
         return (
             <div className="event-index-item">
                 {/* <h1 className="events-near-you">Events Near You </h1> */}

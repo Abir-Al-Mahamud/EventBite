@@ -1,5 +1,4 @@
 export const fetchEvents = () => {
-    // debugger
     return $.ajax({
         url: '/api/events',
         method: 'GET'
@@ -21,7 +20,6 @@ export const fetchUserEvents = author_id => {
 }
 
 export const createEvent = (event) => {
-    // debugger
     return $.ajax({
         url: `/api/events`,
         method: 'POST',
@@ -30,8 +28,6 @@ export const createEvent = (event) => {
 }
 
 export const updateEvent = (event) => {
-    // console.log(event)
-    // debugger
     return $.ajax({
         url: `/api/events/${event.id}`,
         method: 'PATCH',

@@ -5,11 +5,9 @@ import EditEventForm from './edit_form';
 
 
 const mSTP = (state, ownProps) => {
-    // debugger
     return {
         event: state.entities.events[ownProps.match.params.eventId],
         formType: 'Edit Event',
-        // errors: errors.event,
         currentUserId: state.session.currentUserId ,
 
     }

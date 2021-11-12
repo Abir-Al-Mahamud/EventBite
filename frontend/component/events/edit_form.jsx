@@ -13,7 +13,6 @@ class EditEventForm extends React.Component {
     }
 
     renderErrors() {
-        // console.log(this.props)
         if (this.props.errors.length < 0) {
             return (
                 <ul>
@@ -33,17 +32,15 @@ class EditEventForm extends React.Component {
         this.props.history.push('/');
     }
     render() {
-        const { action, event, formType, errors, submitEvent } = this.props;
+        const { action, event, formType, errors, submitEvent, history } = this.props;
 
         if (!event) return null;
-
-
         return (
-            
-            <CreateEventForm
+                <CreateEventForm
                 event={event}
                 formType={formType}
                 submitEvent={submitEvent}
+                history={history}
             />
 
         )

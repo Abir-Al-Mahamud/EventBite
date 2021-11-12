@@ -17,7 +17,6 @@ class Registration extends React.Component{
     }
 
     componentDidMount(){
-        // debugger
         this.props.fetchRegistrations(this.props.currentUserId)
        
     }
@@ -54,16 +53,7 @@ class Registration extends React.Component{
     }
  
     render(){
-        // debugger
-        // const actbutton = this.props.currentUserId ? 
-        // <button className="register-button" onClick={this.handleSubmit}>Register</button> :
-        // <button className="register-redirect" onClick={this.handleRedirect}>Sign In to Register</button>
 
-        // const userChoice = (
-        //     <div>
-        //         <button className="register-delete" onClick={this.handleDelete}>Cancel Registration</button>
-        //     </div>
-        // )
         if (this.props.registrations.length === 0) {
             return( <h1>You currently have no registrations!</h1> )
         } else {
@@ -81,7 +71,6 @@ class Registration extends React.Component{
                                     <EventIndexCard
                                         className="event-index-card-comp"
                                         event={event}
-                                        // currentUserId={currentUserId}
                                         key={event.event_id}
                                     />
                                 </Link>

@@ -6,7 +6,7 @@ const mSTP = (state) => {
     
     return {
     events: Object.values(state.entities.events)
-    // currentUserId
+    
 }
 }
 

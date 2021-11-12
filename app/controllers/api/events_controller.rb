@@ -3,26 +3,21 @@ class Api::EventsController < ApplicationController
 
     def index 
         if params.has_key?(:author_id)
-            # @events = Event.where(author_id: params[:author_id])
             @events = current_user.events 
         else
             @events = Event.all 
         end
-        # debugger
-
         render :index
     end
 
     def show 
         @user = User.find_by(id: params[:id])
         @event = Event.find_by(id: params[:id])
-        # @events = Event.all 
-        # debugger
+
         render :show
     end
 
     def create 
-        # debugger
         @user = User.find_by(id: params[:id])
         @event = Event.new(event_params)
         @event.author_id = current_user.id 
@@ -35,7 +30,6 @@ class Api::EventsController < ApplicationController
     end
 
     def update 
-        # debugger
         @event = Event.find_by(id: params[:id])
         if @event.update(event_params)
             render :show 

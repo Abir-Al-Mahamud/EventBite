@@ -8,12 +8,9 @@ import event_index from '../component/events/event_index';
 const registrationsReducer = (oldState = {}, action) => {
     Object.freeze(oldState);
     let nextState = Object.assign({}, oldState);
-    let eventRegistration;
-    let removedRegistration;
 
     switch(action.type) {
         case RECEIVE_REGISTRATIONS:
-            // console.log(action)
             return action.registrations 
         case RECEIVE_REGISTRATION:
             nextState[action.registration.event_id] = action.registration;

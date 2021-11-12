@@ -10,15 +10,13 @@ class EventForm extends React.Component{
     }
 
     componentWillUnmount() {
-        // debugger
         this.props.clearSessionErrors;
     }
 
     handleSubmit(){
-        // console.log(this.props)
-        // debugger
-        this.props.submitEvent(this.state);
-        // this.props.history.push('/');
+        
+        this.props.submitEvent(this.state)
+        .then(this.props.history.push('/'));
         
     }
 
@@ -29,7 +27,6 @@ class EventForm extends React.Component{
     }
 
     renderErrors() {
-        // console.log(this.props)
         let formErrors = this.props.errors
         if (formErrors !== undefined && formErrors.length > 0) {
             return (
@@ -47,20 +44,8 @@ class EventForm extends React.Component{
     }
 
     render(){
-        // console.log(this.renderErrors())
-        // let formErrors = this.props.errors !== undefined ? this.renderErrors() : ["", "", "", "", "", ""] 
         let formErrors = this.props.errors
-        // console.log(formErrors[1])
-        // if (this.props.errors !== undefined){
-        //     return (
-        //     <div className="errors-event">
-        //         {this.renderErrors()}
-        //     </div>
-        //     )
-        // } else {
 
-        // }
-        console.log(this.props.event)
         return(
             <form onSubmit={this.handleSubmit}>
                 <h1 className="create-event-form-type">{this.props.formType}</h1>
@@ -69,9 +54,7 @@ class EventForm extends React.Component{
                 </div>
                 <div className="modal">
                     <div className="modal-content">
-                        {/* <div className="errors-event">
-                            {formErrors[0]}
-                        </div> */}
+                        
                     <label className="title-input">Title
                         <input className="event-input" 
                             type="text" 
@@ -79,18 +62,14 @@ class EventForm extends React.Component{
                             onChange={this.update('title')}
                         />
                     </label>
-                        {/* <div className="errors-event">
-                            {formErrors[1]}
-                        </div> */}
+                        
                     <label className="description-input">Description
                         <textarea  className="desc-input"
                             value={this.state.description}
                             onChange={this.update('description')}
                         />
                     </label>
-                        {/* <div className="errors-event">
-                            {formErrors[2]}
-                        </div> */}
+                        
                     <label className="date-input">Date
                         <input className="date-input" 
                             type="date" 
@@ -98,9 +77,7 @@ class EventForm extends React.Component{
                             onChange={this.update('date')}
                         />
                     </label>
-                        {/* <div className="errors-event">
-                            {formErrors[3]}
-                        </div> */}
+                        
                     <label className="category-input">Category
                             <select name="category" onChange={this.update('category')} >Category
 
@@ -113,9 +90,7 @@ class EventForm extends React.Component{
                             <option value="other">Other</option>
                         </select> 
                     </label>
-                        {/* <div className="errors-event">
-                            {formErrors[4]}
-                        </div> */}
+                        
                     <label className="img-input">Image Link
                         {/* <input className="img-input"
                             type="text"
@@ -124,6 +99,7 @@ class EventForm extends React.Component{
                         /> */}
                             <select name="category" onChange={this.update('pic_url')} >Image 
 
+                                <option value="Select one">Select One</option>
                                 <option value="assets/forest.png">Forest</option>
                                 <option value="assets/desert.png">Desert</option>
                                 <option value="assets/burj.png">Burj</option>
@@ -131,19 +107,14 @@ class EventForm extends React.Component{
                                 <option value="assets/palm-dubai.png">Palm Dubai</option>
                                 <option value="assets/rainbow.jpg">Rainbow</option>
                                 <option value="assets/compass.jpg">Compass</option>
+                                <option value="assets/compass.jpg">Compass</option>
+                                <option value="assets/compass.jpg">Compass</option>
+                                <option value="assets/compass.jpg">Compass</option>
+                                <option value="assets/compass.jpg">Compass</option>
                                 
                             </select>
                     </label>
-                    {/* <label className="author-input">Author
-                        <input className="author-input" 
-                            type="text" 
-                            value={this.state.author_name}
-                            onChange={this.update('author_name')}
-                        />
-                    </label> */}
-                        {/* <div className="errors-event">
-                            {formErrors[5]}
-                        </div> */}
+                    
                     <label className="time-start-input">Start Time
                         <input className="time-input" 
                             type="time" 
@@ -151,9 +122,7 @@ class EventForm extends React.Component{
                             onChange={this.update('start_time')}
                         />
                     </label>
-                        {/* <div className="errors-event">
-                            {formErrors[6]}
-                        </div> */}
+                       
                     <label className="time-end-input">End Time
                         <input className="time-input" 
                             type="time" 
@@ -162,7 +131,7 @@ class EventForm extends React.Component{
                         />
                     </label>
                     <input type="submit" className="modal-submit" value={this.props.formType}  />
-                    {/* <button className="modal-close">Close</button>  */}
+                    
                     </div>
                 </div>
             </form>

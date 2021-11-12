@@ -24,7 +24,6 @@ class Login extends React.Component {
 
     handleChange(e) {
         e.preventDefault();
-        // const user = Object.assign({}, this.state);
         this.props.processForm(this.state)
     }
 
@@ -38,14 +37,6 @@ class Login extends React.Component {
     }
 
     renderErrors() {
-        // return (
-        //     <ul>
-        //         <li >
-        //             {this.props.errors}
-        //         </li>
-        //     </ul>
-        // )
-
         if (this.props.errors.length > 0) {
             return (
                 <ul>
@@ -90,7 +81,6 @@ class Login extends React.Component {
                             value={this.state.password}
                             onChange={this.update("password")}
                         />
-                        {/* {this.renderErrors()} */}
                     </label>
                     </div>
                     <div className="space-between">
@@ -104,9 +94,6 @@ class Login extends React.Component {
                             <Link className="link" to="/signup">Sign up for eventbite</Link>
                         </div>
                     </div>
-                        {/* <div className="footer"> */}
-                            {/* <Footer/> */}
-                        {/* </div> */}
                     </div>
 
                 )

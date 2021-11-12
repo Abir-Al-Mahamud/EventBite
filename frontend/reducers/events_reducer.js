@@ -9,15 +9,10 @@ import {
 const eventsReducer = (oldState = {}, action) => {
     Object.freeze(oldState);
     let nextState = Object.assign({}, oldState);
-    // let nextUser;
-    // debugger
     switch (action.type) {
         case RECEIVE_EVENTS:
-            // debugger
             return action.events;
         case RECEIVE_USER_EVENTS:
-            // debugger
-            // console.log("What!!!", action.events)
             return action.events;
         case RECEIVE_EVENT:
             console.log(action.event)

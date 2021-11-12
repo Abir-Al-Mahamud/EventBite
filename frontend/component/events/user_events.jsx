@@ -23,7 +23,6 @@ class UserEvents extends React.Component {
     }
 
     componentDidMount() {
-        // console.log(this.props.currentUser)
         this.props.requestUserEvents(this.props.currentUser);
       
     }
@@ -49,7 +48,6 @@ class UserEvents extends React.Component {
                 return (<h2>Loading...</h2>)
             } else {
     
-                // console.log(this.props.events)
                 return (
                     <div className="user-event-index">
                       
