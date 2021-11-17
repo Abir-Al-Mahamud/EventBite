@@ -14,7 +14,6 @@ class EventIndexCard extends React.Component {
 
     handleClick() {
         const { event } = this.props;
-        console.log(event)
         this.props.history.push(`/events/${event.id}`)
     }
 
@@ -23,7 +22,6 @@ class EventIndexCard extends React.Component {
 
         return (
             <div className="event-index-item">
-                {/* <h1 className="events-near-you">Events Near You </h1> */}
                 <div className="event-index-image">  
                     <img src={event.pic_url} alt={event.title} onClick={this.handleClick}/>
                 </div>
@@ -37,7 +35,7 @@ class EventIndexCard extends React.Component {
                     {event.title}
                 </div>
                 <div className="event-index-date">
-                    {format(new Date(event.date), 'MM-dd-yyyy')}
+                    {format(new Date(event.date), 'MM/dd/yyyy')}
                 </div>
 
                 

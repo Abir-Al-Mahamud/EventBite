@@ -20,19 +20,14 @@ class EventShow extends React.Component{
 
         this.props.fetchEvent(this.props.match.params.eventId);
         this.props.fetchRegistrations(this.props.currentUser)
+        // this.setState({})
+        // this.completeRegistration()
 
     }
 
-    completeRegistration(){
-
-        if (!this.props.registrations.includes(this.props.event.id)){ 
-            this.props.createRegistration(this.props.event.id)
-            this.setState({ buttonType: "registered" })
-        }
-    }
-
+    
     filterRegistrations(){
-
+        
         const { currentUser, registrations } = this.props
         for(let i = 0; i < registrations.length; i+=1){
             if(registrations[i].buyer_id == currentUser){
@@ -40,11 +35,22 @@ class EventShow extends React.Component{
             }
         }
         return false 
+        
+    }
+    
+    completeRegistration(){
 
+        if (!this.props.registrations.includes(this.props.event.id)){ 
+            this.props.createRegistration(this.props.event.id)
+                .then(window.location.reload(false))
+            this.setState({ buttonType: "registered" })
+        }
     }
 
     removeRegistration(){
+        console.log()
         this.props.deleteRegistration(this.props.event.id, this.props.registration.registration_id)
+        // .then(this.reload())
         this.setState({ buttonType: "register" })
     }
 
