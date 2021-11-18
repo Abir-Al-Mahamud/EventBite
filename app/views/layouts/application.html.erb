@@ -2,13 +2,17 @@
 <html>
   <head>
     <title>eventbite</title>
-
+    
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta property="og:title" content="EventBite" />
-    <meta property="og:image" content="/assets/images/eventtt.png" />
-    <meta property="og:description" content="This is an app that allows you to create, edit, delete and join an event that interests you." />
-    <meta property="og:url" content="https://eventbrite-a.herokuapp.com/#/" />
+     <meta property='og:image' content="<%= image_url('eventtt.png') %>"/>
+     <meta property="og:description"
+       content="A full stack web application inspired by EventBrite where users can browse, create, and attend events."
+     />
+     <meta property="og:url"
+       content="https://eventbrite-a.herokuapp.com/#/"
+     />
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
