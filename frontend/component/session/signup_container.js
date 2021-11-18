@@ -5,7 +5,7 @@ import { signup, clearSessionErrors } from '../../actions/session';
 import Signup from './signup';
 
 const mSTP = ({ errors }) => {
-    console.log(errors)
+    
     return {
         errors: errors.session,
         formType: 'signup'

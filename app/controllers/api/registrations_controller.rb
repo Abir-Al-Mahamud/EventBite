@@ -3,8 +3,7 @@ class Api::RegistrationsController < ApplicationController
     before_action :ensure_logged_in, only: [:index, :create, :destroy]
 
     def index 
-        # debugger
-        # @user = User.find_by(id: params[:buyer_id])
+        
         @user = current_user
         @registrations = @user.registrations
         render :index
@@ -17,10 +16,10 @@ class Api::RegistrationsController < ApplicationController
         @user = User.find_by(id: params[:id])
         @event_id = params[:event_id]
         
-        # @event = Event.find_by(id: params[:event_id])
+        
 
         if @registration.save
-            # debugger
+            
             render :show 
         else
             render json: @registration.errors.full_messages, status: 422
@@ -30,7 +29,7 @@ class Api::RegistrationsController < ApplicationController
     end 
 
     def destroy 
-        # debugger
+        
         
         @user_id = current_user.id 
         @event_id = params[:event_id].to_i
@@ -41,14 +40,6 @@ class Api::RegistrationsController < ApplicationController
         render :show
 
 
-        # @event = Event.find_by(id: params[:event_id])
-   
-        # if @registration && @registration.destroy 
-        #     @registrations = current_user.registrations
-        #     render :show
-        # else
-        #     render :show, status: 422
-        # end
     end
     
 end

@@ -12,9 +12,9 @@ const Navbar = ({ history, currentUser , logout, ...otherProps }) => {
             <Link id="my-button" to="/create">Create Event</Link>
             <Link className="button" to={`/users/${currentUser}/events`}>Events</Link>
             <button className="button" onClick={() => logout()}>Logout</button>
-            <div className="search-bar-div">
+            {/* <div className="search-bar-div">
                 <input className="search-bar" type="text" placeholder='  Search...' />
-            </div>
+            </div> */}
  
         </div>
     ) : (

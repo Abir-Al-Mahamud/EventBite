@@ -20,8 +20,7 @@ class EventShow extends React.Component{
 
         this.props.fetchEvent(this.props.match.params.eventId);
         this.props.fetchRegistrations(this.props.currentUser)
-        // this.setState({})
-        // this.completeRegistration()
+        
 
     }
 
@@ -48,9 +47,8 @@ class EventShow extends React.Component{
     }
 
     removeRegistration(){
-        console.log()
+        
         this.props.deleteRegistration(this.props.event.id, this.props.registration.registration_id)
-        // .then(this.reload())
         this.setState({ buttonType: "register" })
     }
 
